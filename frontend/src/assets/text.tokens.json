@@ -1,0 +1,446 @@
+{
+  "font": {
+    "action": {
+      "md": {
+        "comment": "Used on: button-medium;\nChip items-medium (WeMo-only component)",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.action.md.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.action.wt}",
+          "letterSpacing": "{style.text.action.md.ls}",
+          "lineHeight": "{style.text.action.md.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "md-low": {
+        "comment": "Lower hierarchy version of action.md\n\nUsed on list item",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.action.md.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.action.wt-low}",
+          "letterSpacing": "{style.text.action.md.ls}",
+          "lineHeight": "{style.text.action.md.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "sm": {
+        "comment": "Used for labels on action elements. \nUsed for button-small, button-slim (WeMo-only components); Medium Chip items, Suggestion chips",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.action.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.action.wt}",
+          "letterSpacing": "{style.text.action.sm.ls}",
+          "lineHeight": "{style.text.action.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "sm-low": {
+        "comment": "Lower hierarchy version of action.sm\nUsed for suggestion chips (unselected)",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.action.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.action.wt-low}",
+          "letterSpacing": "{style.text.action.sm.ls}",
+          "lineHeight": "{style.text.action.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "xs": {
+        "comment": "Used for labels on action elements. \nUsed for Small Chip item labels (WeMo-only component)",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.action.xs.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.action.wt}",
+          "letterSpacing": "{style.text.action.xs.ls}",
+          "lineHeight": "{style.text.action.xs.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "xs-low": {
+        "comment": "Lower hierarchy version of action.xs \nUsed in button-ghost-stacked",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.action.xs.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.action.wt-low}",
+          "letterSpacing": "{style.text.action.xs.ls}",
+          "lineHeight": "{style.text.action.xs.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      }
+    },
+    "body": {
+      "lg": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.body.lg.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.body.wt}",
+          "letterSpacing": "{style.text.body.ls}",
+          "lineHeight": "{style.text.body.lg.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "lg-strong": {
+        "comment": "Used for inline formatting of text (e.g. URL on CTV, link on WeMo) when used with body.lg",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.body.lg.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.body.wt-strong}",
+          "letterSpacing": "{style.text.body.ls}",
+          "lineHeight": "{style.text.body.lg.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "md": {
+        "comment": "Used for body text on dialogs.",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.body.md.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.body.wt}",
+          "letterSpacing": "{style.text.body.ls}",
+          "lineHeight": "{style.text.body.md.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "md-strong": {
+        "comment": "Used for inline formatting of text (e.g. URL on CTV, link on WeMo) when used with body.md",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.body.md.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.body.wt-strong}",
+          "letterSpacing": "{style.text.body.ls}",
+          "lineHeight": "{style.text.body.md.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "sm": {
+        "comment": "Used for descriptions & helper text.",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.body.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.body.wt}",
+          "letterSpacing": "{style.text.body.ls}",
+          "lineHeight": "{style.text.body.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "sm-strong": {
+        "comment": "Used for inline formatting of text (e.g. URL on CTV, link on WeMo) when used with body.sm. \nUsed for error text when it replaces helper text.",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.body.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.body.wt-strong}",
+          "letterSpacing": "{style.text.body.ls}",
+          "lineHeight": "{style.text.body.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "xs": {
+        "comment": "Used for metadata text in info-block.",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.body.xs.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.body.wt}",
+          "letterSpacing": "{style.text.body.ls}",
+          "lineHeight": "{style.text.body.xs.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "xs-strong": {
+        "comment": "Used for inline formatting of text (e.g. URL on CTV, link) when used with body.xs",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.body.xs.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.body.wt-strong}",
+          "letterSpacing": "{style.text.body.ls}",
+          "lineHeight": "{style.text.body.xs.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      }
+    },
+    "heading": {
+      "lg": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.heading.lg.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.heading.wt}",
+          "letterSpacing": "{style.text.heading.ls}",
+          "lineHeight": "{style.text.heading.lg.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "md": {
+        "comment": "Used for dialog headings",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.heading.md.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.heading.wt}",
+          "letterSpacing": "{style.text.heading.ls}",
+          "lineHeight": "{style.text.heading.md.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "sm": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.heading.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.heading.wt}",
+          "letterSpacing": "{style.text.heading.ls}",
+          "lineHeight": "{style.text.heading.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "xl": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.heading.xl.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.heading.wt}",
+          "letterSpacing": "{style.text.heading.ls}",
+          "lineHeight": "{style.text.heading.xl.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "xs": {
+        "comment": "Used for list section headings",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.heading.xs.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.heading.wt}",
+          "letterSpacing": "{style.text.heading.ls}",
+          "lineHeight": "{style.text.heading.xs.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      }
+    },
+    "indicator": {
+      "code": {
+        "comment": "Used for the error code shown in messaging.",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.indicator.code.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.indicator.wt-low}",
+          "letterSpacing": "{style.text.indicator.code.ls}",
+          "lineHeight": "{style.text.indicator.code.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "sm": {
+        "comment": "Used for badge and tile-banner text",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.indicator.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.indicator.wt}",
+          "letterSpacing": "{style.text.indicator.ls}",
+          "lineHeight": "{style.text.indicator.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "sm-low": {
+        "comment": "Used for less prominent indicator information on badges and tile-banners",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.indicator.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.indicator.wt-low}",
+          "letterSpacing": "{style.text.indicator.ls}",
+          "lineHeight": "{style.text.indicator.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      }
+    },
+    "input": {
+      "inline": {
+        "comment": "radio button & checkbox option label",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.input.inline.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.input.inline.wt}",
+          "letterSpacing": "{style.text.input.ls}",
+          "lineHeight": "{style.text.input.inline.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "inset": {
+        "comment": "text input and text area input -  field text",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.input.inset.md.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.input.inset.wt}",
+          "letterSpacing": "{style.text.input.ls}",
+          "lineHeight": "{style.text.input.inset.md.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "inset-high": {
+        "comment": "text input and text area input -  field text",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.input.inset.md.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.input.inset.wt-strong}",
+          "letterSpacing": "{style.text.input.ls}",
+          "lineHeight": "{style.text.input.inset.md.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "inset-segment": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.input.inset.lg.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.input.inset.wt-strong}",
+          "letterSpacing": "{style.text.input.ls}",
+          "lineHeight": "{style.text.input.inset.lg.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "stacked": {
+        "comment": "radio button group label; external labels for fields: text inputs, dropdowns",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.input.stacked.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.input.stacked.wt}",
+          "letterSpacing": "{style.text.input.ls}",
+          "lineHeight": "{style.text.input.stacked.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      }
+    },
+    "metadata": {
+      "sm": {
+        "comment": "Used for tile and info-block text",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.metadata.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontWeightName": "{style.text.metadata.wt-low}",
+          "letterSpacing": "{style.text.metadata.ls}",
+          "lineHeight": "{style.text.metadata.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      },
+      "sm-high": {
+        "comment": "Used only for metadata.",
+        "type": "typography",
+        "value": {
+          "fontFamily": "{style.text.font.font-family}",
+          "fontSize": "{style.text.metadata.sm.sz}",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontWeightName": "{style.text.metadata.wt}",
+          "letterSpacing": "{style.text.metadata.ls}",
+          "lineHeight": "{style.text.metadata.sm.lh}",
+          "textDecoration": "none"
+        },
+        "version": "3.0"
+      }
+    }
+  }
+}

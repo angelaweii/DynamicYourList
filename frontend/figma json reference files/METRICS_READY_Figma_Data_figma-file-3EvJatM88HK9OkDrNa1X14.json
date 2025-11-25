@@ -1,0 +1,230 @@
+{
+  "components": { "components": [] },
+  "styles": { "styles": [] },
+  "variables": {
+    "variableCollections": {
+      "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16": {
+        "defaultModeId": "7566:0",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16",
+        "key": "334a1f5ccb2129b7e36a236f4f0117cc5b717841",
+        "modes": [{ "modeId": "7566:0", "name": "Mode 1" }],
+        "name": "Spacing - Universal",
+        "remote": true,
+        "variableIds": [
+          "VariableID:543eb9832961ad12c0eaaaee8442963c8fb20b71/8292:1",
+          "VariableID:4b067eca662a8c9defafc1a7e75119aaf0669cff/7632:18",
+          "VariableID:902e785f9e0c4b5dba0b08f5256d296fb4de2520/7632:30"
+        ]
+      },
+      "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43": {
+        "defaultModeId": "3602:0",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43",
+        "key": "396c025d1215084e796fca4c935add49256b7159",
+        "modes": [{ "modeId": "3602:0", "name": "Mode 1" }],
+        "name": "Spacing",
+        "remote": true,
+        "variableIds": [
+          "VariableID:ef9f1fc713b88b12d0d4f42383c4c9d23201775c/3637:27",
+          "VariableID:de2d58d7adad5760aef9ca5bcd509759be08eeed/3881:2",
+          "VariableID:aaec1440ebdfecb728507dbf6f7b55cf480c47b2/3637:39",
+          "VariableID:14c6076e7244d5f218ba48547d7f4ffe4e8ebfa5/3637:31"
+        ]
+      },
+      "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128": {
+        "defaultModeId": "20:0",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128",
+        "key": "93389c78bdd3e7b8cfc032b2783046cb2943b596",
+        "modes": [
+          { "modeId": "20:0", "name": "max" },
+          { "modeId": "226:1", "name": "dplus" },
+          { "modeId": "611:0", "name": "stress" }
+        ],
+        "name": "🌐 Color - WeMo",
+        "remote": true,
+        "variableIds": [
+          "VariableID:d955a0ffdeb788a3b1eab7107c06405ebd78bc9a/1170:516",
+          "VariableID:345115737c8fdb00ab55ae7668025ff3df15c152/1262:422"
+        ]
+      },
+      "VariableCollectionId:ad8d58853878e4b7b74345ba1112e043340788bd/3602:94": {
+        "defaultModeId": "3602:1",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:ad8d58853878e4b7b74345ba1112e043340788bd/3602:94",
+        "key": "ad8d58853878e4b7b74345ba1112e043340788bd",
+        "modes": [{ "modeId": "3602:1", "name": "Mode 1" }],
+        "name": "Corner Radius",
+        "remote": true,
+        "variableIds": [
+          "VariableID:c897e59ce5774ba52d06f78c5e19cc7deacc38db/3602:107",
+          "VariableID:481840b302a0db820151b61a34d9d87bbba805d1/3602:111",
+          "VariableID:1491fe74630c6b25ffee81231947e66bb3941de1/3602:113"
+        ]
+      }
+    },
+    "variables": {
+      "VariableID:1491fe74630c6b25ffee81231947e66bb3941de1/3602:113": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:1491fe74630c6b25ffee81231947e66bb3941de1/3602:113",
+        "key": "1491fe74630c6b25ffee81231947e66bb3941de1",
+        "name": "corner-full",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "3602:1": 999 },
+        "variableCollectionId": "VariableCollectionId:ad8d58853878e4b7b74345ba1112e043340788bd/3602:94"
+      },
+      "VariableID:14c6076e7244d5f218ba48547d7f4ffe4e8ebfa5/3637:31": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:14c6076e7244d5f218ba48547d7f4ffe4e8ebfa5/3637:31",
+        "key": "14c6076e7244d5f218ba48547d7f4ffe4e8ebfa5",
+        "name": "Spacers/spacer-32",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "3602:0": 32 },
+        "variableCollectionId": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43"
+      },
+      "VariableID:345115737c8fdb00ab55ae7668025ff3df15c152/1262:422": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:345115737c8fdb00ab55ae7668025ff3df15c152/1262:422",
+        "key": "345115737c8fdb00ab55ae7668025ff3df15c152",
+        "name": "mode 👾 🌐",
+        "remote": true,
+        "resolvedType": "STRING",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": { "20:0": "max", "226:1": "dplus", "611:0": "stress" },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:481840b302a0db820151b61a34d9d87bbba805d1/3602:111": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:481840b302a0db820151b61a34d9d87bbba805d1/3602:111",
+        "key": "481840b302a0db820151b61a34d9d87bbba805d1",
+        "name": "corner-md",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "3602:1": 8 },
+        "variableCollectionId": "VariableCollectionId:ad8d58853878e4b7b74345ba1112e043340788bd/3602:94"
+      },
+      "VariableID:4b067eca662a8c9defafc1a7e75119aaf0669cff/7632:18": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:4b067eca662a8c9defafc1a7e75119aaf0669cff/7632:18",
+        "key": "4b067eca662a8c9defafc1a7e75119aaf0669cff",
+        "name": "spacer-04",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "7566:0": 4 },
+        "variableCollectionId": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16"
+      },
+      "VariableID:543eb9832961ad12c0eaaaee8442963c8fb20b71/8292:1": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:543eb9832961ad12c0eaaaee8442963c8fb20b71/8292:1",
+        "key": "543eb9832961ad12c0eaaaee8442963c8fb20b71",
+        "name": "spacer-00",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": { "7566:0": 0 },
+        "variableCollectionId": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16"
+      },
+      "VariableID:902e785f9e0c4b5dba0b08f5256d296fb4de2520/7632:30": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:902e785f9e0c4b5dba0b08f5256d296fb4de2520/7632:30",
+        "key": "902e785f9e0c4b5dba0b08f5256d296fb4de2520",
+        "name": "spacer-60",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "7566:0": 60 },
+        "variableCollectionId": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16"
+      },
+      "VariableID:aaec1440ebdfecb728507dbf6f7b55cf480c47b2/3637:39": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:aaec1440ebdfecb728507dbf6f7b55cf480c47b2/3637:39",
+        "key": "aaec1440ebdfecb728507dbf6f7b55cf480c47b2",
+        "name": "Spacers/spacer-08",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "3602:0": 8 },
+        "variableCollectionId": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43"
+      },
+      "VariableID:c897e59ce5774ba52d06f78c5e19cc7deacc38db/3602:107": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:c897e59ce5774ba52d06f78c5e19cc7deacc38db/3602:107",
+        "key": "c897e59ce5774ba52d06f78c5e19cc7deacc38db",
+        "name": "corner-none",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "3602:1": 0 },
+        "variableCollectionId": "VariableCollectionId:ad8d58853878e4b7b74345ba1112e043340788bd/3602:94"
+      },
+      "VariableID:d955a0ffdeb788a3b1eab7107c06405ebd78bc9a/1170:516": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:d955a0ffdeb788a3b1eab7107c06405ebd78bc9a/1170:516",
+        "key": "d955a0ffdeb788a3b1eab7107c06405ebd78bc9a",
+        "name": "🌐 foreground/onbase/text-01 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 1, "b": 1, "g": 1, "r": 1 },
+          "226:1": { "a": 1, "b": 1, "g": 1, "r": 1 },
+          "611:0": { "a": 1, "b": 0.6936768293380737, "g": 0, "r": 0.770751953125 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:de2d58d7adad5760aef9ca5bcd509759be08eeed/3881:2": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:de2d58d7adad5760aef9ca5bcd509759be08eeed/3881:2",
+        "key": "de2d58d7adad5760aef9ca5bcd509759be08eeed",
+        "name": "Spacers/spacer-00",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": { "3602:0": 0 },
+        "variableCollectionId": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43"
+      },
+      "VariableID:ef9f1fc713b88b12d0d4f42383c4c9d23201775c/3637:27": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:ef9f1fc713b88b12d0d4f42383c4c9d23201775c/3637:27",
+        "key": "ef9f1fc713b88b12d0d4f42383c4c9d23201775c",
+        "name": "Margin/margin-130",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "3602:0": 130 },
+        "variableCollectionId": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43"
+      }
+    }
+  }
+}

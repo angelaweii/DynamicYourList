@@ -1,0 +1,880 @@
+{
+  "color": {
+    "action": {
+      "link": {
+        "text": {
+          "base": {
+            "comment": "For links only.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.link.text.base}",
+            "version": "3.0"
+          },
+          "hover": {
+            "comment": "For links only.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.link.text.hover}",
+            "version": "3.0"
+          },
+          "press": {
+            "comment": "For links only.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.link.text.press}",
+            "version": "3.0"
+          }
+        }
+      },
+      "neutral": {
+        "border": {
+          "high": {
+            "comment": "Often used in hover states.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.border.high}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Often used in the standard state.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.border.mid}",
+            "version": "3.0"
+          },
+          "selected": {
+            "comment": "For selected use only.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.border.selected}",
+            "version": "3.0"
+          }
+        },
+        "fill": {
+          "high": {
+            "comment": "Neutral action high is used for hover states on a secondary and tertiary interactions.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Neutral Low is most commonly used for press states on secondary and tertiary interactions.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Neutral Mid is often used as the standard fill for secondary and tertiary interactions actions. It may also be used as a hover state on secondary and tertiary actions.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.fill.mid}",
+            "version": "3.0"
+          },
+          "selected": {
+            "comment": "For use as the selected state on secondary and tertiary interactions.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.fill.selected}",
+            "version": "3.0"
+          }
+        },
+        "text": {
+          "high": {
+            "comment": "Neutral action text should always be paired with the neutral action fills. High is often used as a hover or standard state.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.text.high}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Neutral action text should always be paired with the neutral action fills. Mid is often used as a standard state.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.neutral.text.mid}",
+            "version": "3.0"
+          }
+        }
+      },
+      "primary": {
+        "fill": {
+          "high": {
+            "comment": "Primary high is used for hover states on a primary or secondary action.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.primary.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Primary Low is most commonly used for press states.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.primary.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Primary Mid is often used as the standard fill for primary actions. It may also be used as a hover state on secondary and tertiary actions.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.primary.fill.mid}",
+            "version": "3.0"
+          }
+        },
+        "text": {
+          "comment": "Primary action text should always be paired with the primary action fills.",
+          "type": "color",
+          "value": "{color-context.brand.stress.action.primary.text}",
+          "version": "3.0"
+        }
+      },
+      "secondary": {
+        "fill": {
+          "high": {
+            "comment": "Secondary action high is used for hover states on a secondary and tertiary action.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.secondary.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Secondary Low is most commonly used for press states on secondary and tertiary actions.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.secondary.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Secondary Mid is often used as the standard fill for secondary actions. It may also be used as a hover state on secondary and tertiary actions.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.secondary.fill.mid}",
+            "version": "3.0"
+          },
+          "selected": {
+            "comment": "For use as the selected state on secondary actions.",
+            "type": "color",
+            "value": "{color-context.brand.stress.action.secondary.fill.selected}",
+            "version": "3.0"
+          }
+        },
+        "text": {
+          "comment": "Secondary action text should always be paired with secondary action fills.",
+          "type": "color",
+          "value": "{color-context.brand.stress.action.secondary.text}",
+          "version": "3.0"
+        }
+      }
+    },
+    "card": {
+      "border": {
+        "high": {
+          "comment": "Often used in hover states.",
+          "type": "color",
+          "value": "{color-context.brand.stress.card.border.high}",
+          "version": "3.0"
+        },
+        "low": {
+          "comment": "Often used in the pressed state.",
+          "type": "color",
+          "value": "{color-context.brand.stress.card.border.low}",
+          "version": "3.0"
+        },
+        "mid": {
+          "comment": "Often used in the standard state.",
+          "type": "color",
+          "value": "{color-context.brand.stress.card.border.mid}",
+          "version": "3.0"
+        },
+        "selected": {
+          "comment": "For selected use only.",
+          "type": "color",
+          "value": "{color-context.brand.stress.card.border.selected}",
+          "version": "3.0"
+        }
+      },
+      "neutral": {
+        "fill": {
+          "high": {
+            "comment": "Hover color for cards using the neutral palette.",
+            "type": "color",
+            "value": "{color.action.neutral.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Pressed color for cards using the neutral palette.",
+            "type": "color",
+            "value": "{color.action.neutral.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Standard color for cards using the neutral palette.",
+            "type": "color",
+            "value": "{color.action.neutral.fill.mid}",
+            "version": "3.0"
+          }
+        }
+      },
+      "primary": {
+        "fill": {
+          "high": {
+            "comment": "Hover color for primary cards.",
+            "type": "color",
+            "value": "{color-context.brand.stress.card.primary.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Pressed color for primary cards.",
+            "type": "color",
+            "value": "{color-context.brand.stress.card.primary.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Standard color for primary cards.",
+            "type": "color",
+            "value": "{color-context.brand.stress.card.primary.fill.mid}",
+            "version": "3.0"
+          }
+        }
+      }
+    },
+    "general": {
+      "border": {
+        "low": {
+          "comment": "Secondary border color.",
+          "type": "color",
+          "value": "{color-context.brand.stress.general.border.low}",
+          "version": "3.0"
+        },
+        "lowest": {
+          "comment": "Secondary border color.",
+          "type": "color",
+          "value": "{color-context.brand.stress.general.border.lowest}",
+          "version": "3.0"
+        },
+        "mid": {
+          "comment": "Standard border color.",
+          "type": "color",
+          "value": "{color-context.brand.stress.general.border.mid}",
+          "version": "3.0"
+        }
+      },
+      "text": {
+        "high": {
+          "comment": "Standard and hover text color.",
+          "type": "color",
+          "value": "{color-context.brand.stress.general.text.high}",
+          "version": "3.0"
+        },
+        "low": {
+          "comment": "Tertiary text color.",
+          "type": "color",
+          "value": "{color-context.brand.stress.general.text.low}",
+          "version": "3.0"
+        },
+        "mid": {
+          "comment": "Standard and secondary text color.",
+          "type": "color",
+          "value": "{color-context.brand.stress.general.text.mid}",
+          "version": "3.0"
+        }
+      },
+      "transparent": {
+        "comment": "100% transparent",
+        "type": "color",
+        "value": "{color-context.brand.stress.general.transparent}",
+        "version": "3.0"
+      }
+    },
+    "indicator": {
+      "ad": {
+        "fill": {
+          "comment": "For use in ad badges only.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.ad.fill}",
+          "version": "3.0"
+        },
+        "text": {
+          "comment": "This text is paired with Ad fill.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.ad.text}",
+          "version": "3.0"
+        }
+      },
+      "commerce": {
+        "primary": {
+          "fill": {
+            "comment": "Emphasizes priority commerce messaging. Use sparingly.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.commerce.primary.fill}",
+            "version": "3.0"
+          },
+          "text": {
+            "comment": "This text is paired with commerce indicators that have a primary fill.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.commerce.primary.text}",
+            "version": "3.0"
+          }
+        },
+        "secondary": {
+          "fill": {
+            "comment": "Emphasizes secondary commerce message. Use sparingly.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.commerce.secondary.fill}",
+            "version": "3.0"
+          },
+          "text": {
+            "comment": "This text is paired with commerce indicators that have a secondary fill.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.commerce.secondary.text}",
+            "version": "3.0"
+          }
+        },
+        "tertiary": {
+          "fill": {
+            "comment": "Emphasizes tertiary commerce message. Use sparingly.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.commerce.tertiary.fill}",
+            "version": "3.0"
+          },
+          "text": {
+            "comment": "This text is paired with commerce indicators that have a tertiary fill.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.commerce.tertiary.text}",
+            "version": "3.0"
+          }
+        }
+      },
+      "live": {
+        "fill": {
+          "comment": "Used to indicate an item currently in a “Live” status.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.live.fill}",
+          "version": "3.0"
+        },
+        "text": {
+          "comment": "This text is paired with Live fill.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.live.text}",
+          "version": "3.0"
+        }
+      },
+      "neutral": {
+        "border": {
+          "high": {
+            "comment": "Higher emphasis border color.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.neutral.border.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Lower emphasis border color.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.neutral.border.low}",
+            "version": "3.0"
+          }
+        },
+        "fill": {
+          "low": {
+            "comment": "Draws attention with a moderate amount of intensity.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.neutral.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Draws attention with a moderate amount of intensity.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.neutral.fill.mid}",
+            "version": "3.0"
+          }
+        },
+        "text": {
+          "comment": "Indicator neutral text pairs with indicator neutral fills.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.neutral.text}",
+          "version": "3.0"
+        }
+      },
+      "player": {
+        "fill": {
+          "comment": "Paired with the player indicator text.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.player.fill}",
+          "version": "3.0"
+        },
+        "text": {
+          "comment": "This text is paired with player indicator fill.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.player.text}",
+          "version": "3.0"
+        }
+      },
+      "primary": {
+        "fill": {
+          "comment": "Primary color for badges and indicators.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.primary.fill}",
+          "version": "3.0"
+        },
+        "text": {
+          "comment": "This text is paired with indicator primary fill.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.primary.text}",
+          "version": "3.0"
+        }
+      },
+      "secondary": {
+        "fill": {
+          "comment": "Central color for badging.",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.secondary.fill}",
+          "version": "3.0"
+        },
+        "text": {
+          "low": {
+            "comment": "This text is paired with indicator secondary fill when the text not as prominent.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.secondary.text.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "This text is paired with indicator secondary fill.",
+            "type": "color",
+            "value": "{color-context.brand.stress.indicator.secondary.text.mid}",
+            "version": "3.0"
+          }
+        }
+      },
+      "sport": {
+        "fill": {
+          "comment": "Used as the highlighted score background on alert message",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.sport.fill}",
+          "version": "3.0"
+        },
+        "text": {
+          "comment": "This text is paired with sport fill",
+          "type": "color",
+          "value": "{color-context.brand.stress.indicator.sport.text}",
+          "version": "3.0"
+        }
+      }
+    },
+    "input": {
+      "neutral": {
+        "border": {
+          "low": {
+            "comment": "A more subtle unselected border color for form elements. Used for toggle.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.neutral.border.low}",
+            "version": "3.0"
+          },
+          "unselected": {
+            "comment": "Standard unselected border color for form elements.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.neutral.border.unselected}",
+            "version": "3.0"
+          }
+        },
+        "fill": {
+          "high": {
+            "comment": "Text field backplate when a field is filled, but not currently active.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.neutral.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Use for some unselected states of form elements. Used on unselected toggle backplate.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.neutral.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Form element backplate when unfilled. Used for unfilled Text fields.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.neutral.fill.mid}",
+            "version": "3.0"
+          }
+        },
+        "indicator": {
+          "comment": "Form element icons and indicators, used directly on neutral input fills. Used for unselected thumb on toggle.",
+          "type": "color",
+          "value": "{color-context.brand.stress.input.neutral.indicator}",
+          "version": "3.0"
+        },
+        "text": {
+          "high": {
+            "comment": "Typed text in a text input field that is filled, but not currently active. Also used for in-field actions when the field backplate uses a fill from the input/neutral group.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.neutral.text.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Placeholder text in a text input field that is unfilled and is not currently active. Also used for in-field actions when the field backplate uses a fill from the input/neutral group.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.neutral.text.low}",
+            "version": "3.0"
+          }
+        }
+      },
+      "primary": {
+        "border": {
+          "low": {
+            "comment": "⛔️ #DEPRECATED. Replace with: color.input.neutral.border.low\n🪦Deletion date: after 2025-DEC-01",
+            "deprecated": true,
+            "type": "color",
+            "value": "{color.input.neutral.border.low}",
+            "version": "3.0"
+          },
+          "selected": {
+            "comment": "Border used for the selected status of most form input elements.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.primary.border.selected}",
+            "version": "3.0"
+          }
+        },
+        "fill": {
+          "high": {
+            "comment": "Backplate of an active text field.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.primary.fill.high}",
+            "version": "3.0"
+          },
+          "indicator": {
+            "comment": "⛔️ #DEPRECATED. Replace with: color.input.primary.option.indicator\n🪦Deletion date: after 2025-DEC-01",
+            "deprecated": true,
+            "type": "color",
+            "value": "{color.input.primary.option.indicator}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "⛔️ #DEPRECATED. Replace with: color.input.neutral.fill.low\n🪦Deletion date: after 2025-DEC-01",
+            "deprecated": true,
+            "type": "color",
+            "value": "{color.input.neutral.fill.low}",
+            "version": "3.0"
+          },
+          "selected": {
+            "comment": "⛔️ #DEPRECATED. Replace with: color.input.primary.option.fill.selected\n🪦Deletion date: after 2025-DEC-01",
+            "deprecated": true,
+            "type": "color",
+            "value": "{color.input.primary.option.fill.selected}",
+            "version": "3.0"
+          }
+        },
+        "option": {
+          "fill": {
+            "selected": {
+              "comment": "Use for the selected status of option form elements, such as checkbox, radio button, and toggle. Use only with indicators in the primary/option group.",
+              "type": "color",
+              "value": "{color-context.brand.stress.input.primary.option.fill.selected}",
+              "version": "3.0"
+            }
+          },
+          "indicator": {
+            "comment": "Form element icons and indicators. Use only with fills in the primary/option group.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.primary.option.indicator}",
+            "version": "3.0"
+          }
+        },
+        "text": {
+          "high": {
+            "comment": "Typed text in an active text input field. Also used for in-field actions when the field backplate uses a fill from the input/primary group.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.primary.text.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Placeholder text in an active text field. Also used for in-field actions when the field backplate uses a fill from the input/primary group.",
+            "type": "color",
+            "value": "{color-context.brand.stress.input.primary.text.low}",
+            "version": "3.0"
+          }
+        }
+      },
+      "spotlight": {
+        "comment": "Primarily used with option-based form elements to help hover and press states stand out better. Can be used under primary or neutral inputs.",
+        "type": "color",
+        "value": "{color-context.brand.stress.input.spotlight}",
+        "version": "3.0"
+      }
+    },
+    "scrim": {
+      "low": {
+        "type": "color",
+        "value": "{color-context.brand.stress.scrim.low}",
+        "version": "3.0"
+      },
+      "mid": {
+        "type": "color",
+        "value": "{color-context.brand.stress.scrim.mid}",
+        "version": "3.0"
+      }
+    },
+    "surface": {
+      "border": {
+        "high": {
+          "experimental": true,
+          "type": "color",
+          "value": "{color-context.brand.stress.surface.border.high}",
+          "version": "3.0"
+        },
+        "mid": {
+          "experimental": true,
+          "type": "color",
+          "value": "{color-context.brand.stress.surface.border.mid}",
+          "version": "3.0"
+        }
+      },
+      "high": {
+        "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, high would be to top layer.",
+        "type": "color",
+        "value": "{color-context.brand.stress.surface.high}",
+        "version": "3.0"
+      },
+      "low": {
+        "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, would be to top bottom.",
+        "type": "color",
+        "value": "{color-context.brand.stress.surface.low}",
+        "version": "3.0"
+      },
+      "mid": {
+        "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, mid would be a middle layer.",
+        "type": "color",
+        "value": "{color-context.brand.stress.surface.mid}",
+        "version": "3.0"
+      },
+      "opacity": {
+        "low": {
+          "experimental": true,
+          "type": "color",
+          "value": "{color-context.brand.stress.surface.opacity.low}",
+          "version": "3.0"
+        }
+      }
+    },
+    "tile": {
+      "fill": {
+        "focus": {
+          "comment": "Focus color for CTV tiles that have a background color and focus ring.",
+          "type": "color",
+          "value": "{color-context.brand.stress.tile.fill.focus}",
+          "version": "3.0"
+        },
+        "high": {
+          "comment": "Used for hover states on tiles that have a background.",
+          "type": "color",
+          "value": "{color-context.brand.stress.tile.fill.high}",
+          "version": "3.0"
+        },
+        "low": {
+          "comment": "Pressed color for tiles that have a background.",
+          "type": "color",
+          "value": "{color-context.brand.stress.tile.fill.low}",
+          "version": "3.0"
+        },
+        "mid": {
+          "comment": "Standard color for tiles that have a background.",
+          "type": "color",
+          "value": "{color-context.brand.stress.tile.fill.mid}",
+          "version": "3.0"
+        }
+      },
+      "neutral": {
+        "border": {
+          "low": {
+            "comment": "Used for tiles when an outline is needed (not used for focus).",
+            "type": "color",
+            "value": "{color-context.brand.stress.tile.neutral.border.low}",
+            "version": "3.0"
+          }
+        },
+        "fill": {
+          "high": {
+            "comment": "Used for hover states on tiles that have a background and are used over images or video.",
+            "type": "color",
+            "value": "{color-context.brand.stress.tile.neutral.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Pressed color for tiles that have a background, and are used over images or video.",
+            "type": "color",
+            "value": "{color-context.brand.stress.tile.neutral.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Standard color for tiles that have a background and are used over images or video.",
+            "type": "color",
+            "value": "{color-context.brand.stress.tile.neutral.fill.mid}",
+            "version": "3.0"
+          }
+        }
+      }
+    },
+    "utility": {
+      "commerce": {
+        "accent": {
+          "text": {
+            "comment": "Used for emphasizing non-actionable text",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.commerce.accent.text}",
+            "version": "3.0"
+          }
+        }
+      },
+      "error": {
+        "border": {
+          "low": {
+            "comment": "Error state border,",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.error.border.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Error state border.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.error.border.mid}",
+            "version": "3.0"
+          }
+        },
+        "fill": {
+          "comment": "Background fill for error messages.",
+          "type": "color",
+          "value": "{color-context.brand.stress.utility.error.fill}",
+          "version": "3.0"
+        },
+        "text": {
+          "link": {
+            "base": {
+              "comment": "Error state link.",
+              "type": "color",
+              "value": "{color-context.brand.stress.utility.error.text.link.base}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Error state link.",
+              "type": "color",
+              "value": "{color-context.brand.stress.utility.error.text.link.hover}",
+              "version": "3.0"
+            }
+          },
+          "mid": {
+            "comment": "Error state text and icons.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.error.text.mid}",
+            "version": "3.0"
+          }
+        }
+      },
+      "focus": {
+        "border": {
+          "inner": {
+            "comment": "For CTV focus states and keyboard focus rings.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.focus.border.inner}",
+            "version": "3.0"
+          },
+          "outer": {
+            "comment": "For CTV focus states and keyboard focus rings.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.focus.border.outer}",
+            "version": "3.0"
+          }
+        },
+        "ctv": {
+          "fill": {
+            "focus": {
+              "comment": "📺 For CTV focus state",
+              "type": "color",
+              "value": "{color-context.brand.stress.utility.focus.ctv.fill.focus}",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "📺 For CTV focus press state.",
+              "type": "color",
+              "value": "{color-context.brand.stress.utility.focus.ctv.fill.press}",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "comment": "📺 Text used on CTV focus and press states.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.focus.ctv.text}",
+            "version": "3.0"
+          }
+        }
+      },
+      "info": {
+        "border": {
+          "low": {
+            "comment": "Used for inline notifications borders.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.info.border.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Used for inline notifications borders.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.info.border.mid}",
+            "version": "3.0"
+          }
+        },
+        "fill": {
+          "comment": "Used for inline notification background fill.",
+          "type": "color",
+          "value": "{color-context.brand.stress.utility.info.fill}",
+          "version": "3.0"
+        },
+        "text": {
+          "link": {
+            "base": {
+              "comment": "Info link text. Pairs with info fill.",
+              "type": "color",
+              "value": "{color.general.text.mid}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Info link text. Pairs with info fill.",
+              "type": "color",
+              "value": "{color-context.brand.stress.utility.info.text.link.hover}",
+              "version": "3.0"
+            }
+          },
+          "mid": {
+            "comment": "Used for inline notification text and icons.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.info.text.mid}",
+            "version": "3.0"
+          }
+        }
+      },
+      "progress": {
+        "fill": {
+          "high": {
+            "comment": "Used for progress track",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.progress.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Used for progress track",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.progress.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Used for pagination dot inactive state",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.progress.fill.mid}",
+            "version": "3.0"
+          }
+        }
+      },
+      "skeleton": {
+        "fill": {
+          "high": {
+            "comment": "Skeleton state when in hover and focus.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.skeleton.fill.high}",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Skeleton press state.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.skeleton.fill.low}",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Standard skeleton state fill.",
+            "type": "color",
+            "value": "{color-context.brand.stress.utility.skeleton.fill.mid}",
+            "version": "3.0"
+          }
+        }
+      }
+    }
+  }
+}

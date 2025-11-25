@@ -1,0 +1,229 @@
+{
+  "motion": {
+    "duration": {
+      "0": {
+        "comment": "Used for instant micro animations. 0 ms; 0 fps",
+        "type": "number",
+        "value": 0,
+        "version": "3.0"
+      },
+      "10": {
+        "comment": "Used for very short micro animations. 100 ms; 6 fps",
+        "type": "number",
+        "value": 100,
+        "version": "3.0"
+      },
+      "100": {
+        "comment": "Used for the longest standard animations, ideal for pivotal events.  1000 ms; 60 fps",
+        "type": "number",
+        "value": 1000,
+        "version": "3.0"
+      },
+      "20": {
+        "comment": "Used for short micro animations. 200 ms; 12 fps",
+        "type": "number",
+        "value": 200,
+        "version": "3.0"
+      },
+      "30": {
+        "comment": "Used for shorter length macro animations.   300 ms; 18 fps",
+        "type": "number",
+        "value": 300,
+        "version": "3.0"
+      },
+      "40": {
+        "comment": "Used for medium length macro animations. 400 ms; 24 fps",
+        "type": "number",
+        "value": 400,
+        "version": "3.0"
+      },
+      "50": {
+        "comment": "Used for longer length macro animations.  500 ms; 30 fps",
+        "type": "number",
+        "value": 500,
+        "version": "3.0"
+      },
+      "60": {
+        "comment": "Used for longer actions or transitions in key moments.     600 ms; 36 fps",
+        "type": "number",
+        "value": 600,
+        "version": "3.0"
+      },
+      "70": {
+        "comment": "Used for major scene animations that require a slower pace.  700 ms; 42 fps",
+        "type": "number",
+        "value": 700,
+        "version": "3.0"
+      },
+      "80": {
+        "comment": "Used for substantial transitions that are critical to an experience. 800 ms; 48 fps",
+        "type": "number",
+        "value": 800,
+        "version": "3.0"
+      },
+      "90": {
+        "comment": "Used for detailed, slower sequences that require careful attention. 900 ms; 54 fps",
+        "type": "number",
+        "value": 900,
+        "version": "3.0"
+      }
+    },
+    "easing": {
+      "ease-in": {
+        "type": "cubicBezier",
+        "value": {
+          "x1": 0.3,
+          "x2": 0.8,
+          "y1": 0,
+          "y2": 0.15
+        },
+        "version": "3.0"
+      },
+      "ease-in-out": {
+        "type": "cubicBezier",
+        "value": {
+          "x1": 0.66,
+          "x2": 0.34,
+          "y1": 0,
+          "y2": 1
+        },
+        "version": "3.0"
+      },
+      "ease-out": {
+        "type": "cubicBezier",
+        "value": {
+          "x1": 0,
+          "x2": 0.34,
+          "y1": 0,
+          "y2": 1
+        },
+        "version": "3.0"
+      },
+      "linear": {
+        "type": "cubicBezier",
+        "value": {
+          "x1": 0,
+          "x2": 1,
+          "y1": 0,
+          "y2": 1
+        },
+        "version": "3.0"
+      }
+    },
+    "opacity": {
+      "off": {
+        "type": "number",
+        "value": 0,
+        "version": "3.0"
+      },
+      "on": {
+        "type": "number",
+        "value": 1,
+        "version": "3.0"
+      }
+    },
+    "position": {
+      "x": {
+        "left-10": {
+          "type": "number",
+          "value": -15,
+          "version": "3.0"
+        },
+        "left-20": {
+          "type": "number",
+          "value": -30,
+          "version": "3.0"
+        },
+        "left-30": {
+          "type": "number",
+          "value": -60,
+          "version": "3.0"
+        },
+        "origin": {
+          "type": "number",
+          "value": 0,
+          "version": "3.0"
+        },
+        "right-10": {
+          "type": "number",
+          "value": 15,
+          "version": "3.0"
+        },
+        "right-20": {
+          "type": "number",
+          "value": 30,
+          "version": "3.0"
+        },
+        "right-30": {
+          "type": "number",
+          "value": 60,
+          "version": "3.0"
+        }
+      },
+      "y": {
+        "down-10": {
+          "type": "number",
+          "value": -15,
+          "version": "3.0"
+        },
+        "down-20": {
+          "type": "number",
+          "value": -30,
+          "version": "3.0"
+        },
+        "down-30": {
+          "type": "number",
+          "value": -60,
+          "version": "3.0"
+        },
+        "origin": {
+          "type": "number",
+          "value": 0,
+          "version": "3.0"
+        },
+        "up-10": {
+          "type": "number",
+          "value": 15,
+          "version": "3.0"
+        },
+        "up-20": {
+          "type": "number",
+          "value": 30,
+          "version": "3.0"
+        },
+        "up-30": {
+          "type": "number",
+          "value": 60,
+          "version": "3.0"
+        }
+      }
+    },
+    "scale": {
+      "down-10": {
+        "type": "number",
+        "value": 0.97,
+        "version": "3.0"
+      },
+      "down-20": {
+        "type": "number",
+        "value": 0.91,
+        "version": "3.0"
+      },
+      "origin": {
+        "type": "number",
+        "value": 1,
+        "version": "3.0"
+      },
+      "up-10": {
+        "type": "number",
+        "value": 1.03,
+        "version": "3.0"
+      },
+      "up-20": {
+        "type": "number",
+        "value": 1.09,
+        "version": "3.0"
+      }
+    }
+  }
+}

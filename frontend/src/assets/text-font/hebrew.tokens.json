@@ -1,0 +1,365 @@
+{
+  "text-font": {
+    "basic": {
+      "font": {
+        "font-family": {
+          "type": "string",
+          "value": "Handset Sans Hebrew UI",
+          "version": "3.0"
+        },
+        "weight": {
+          "regular": {
+            "type": "string",
+            "value": "Regular",
+            "version": "3.0"
+          },
+          "strong": {
+            "type": "string",
+            "value": "Bold",
+            "version": "3.0"
+          }
+        }
+      }
+    },
+    "info": {
+      "font-category": {
+        "type": "string",
+        "value": "english-like",
+        "version": "3.0"
+      },
+      "font-lang": {
+        "comment": "ISO 639-1 Alpha 2 language codes https://wbd-beam-typescript.dev.beam.discomax.com/wbd-localization-core/api/localization-core.isolanguagecode/",
+        "type": "string",
+        "value": "he,yi",
+        "version": "3.0"
+      },
+      "font-mode": {
+        "type": "string",
+        "value": "Hebrew",
+        "version": "3.0"
+      },
+      "font-script": {
+        "comment": "The script subtags from the IETF BCP 47 standard https://wbd-beam-typescript.dev.beam.discomax.com/wbd-localization-core/api/localization-core.ietfscriptcode/",
+        "type": "string",
+        "value": "Hebr",
+        "version": "3.0"
+      }
+    },
+    "lh": {
+      "default": {
+        "default-percent": {
+          "type": "string",
+          "value": "135%",
+          "version": "3.0"
+        }
+      },
+      "tight": {
+        "tight-percent": {
+          "type": "string",
+          "value": "125%",
+          "version": "3.0"
+        }
+      }
+    },
+    "scale": {
+      "basic": {
+        "lh": {
+          "default": {
+            "l": {
+              "step 0": {
+                "type": "number",
+                "value": 43.2,
+                "version": "3.0"
+              },
+              "step 1": {
+                "type": "number",
+                "value": 51.84,
+                "version": "3.0"
+              },
+              "step 2": {
+                "type": "number",
+                "value": 62.208,
+                "version": "3.0"
+              },
+              "step 3": {
+                "type": "number",
+                "value": 74.65,
+                "version": "3.0"
+              },
+              "step-1": {
+                "type": "number",
+                "value": 36,
+                "version": "3.0"
+              },
+              "step-2": {
+                "type": "number",
+                "value": 30,
+                "version": "3.0"
+              }
+            },
+            "m": {
+              "step 0": {
+                "type": "number",
+                "value": 27,
+                "version": "3.0"
+              },
+              "step 1": {
+                "type": "number",
+                "value": 32.4,
+                "version": "3.0"
+              },
+              "step 2": {
+                "type": "number",
+                "value": 38.88,
+                "version": "3.0"
+              },
+              "step 3": {
+                "type": "number",
+                "value": 46.656,
+                "version": "3.0"
+              },
+              "step-1": {
+                "type": "number",
+                "value": 22.5,
+                "version": "3.0"
+              },
+              "step-2": {
+                "type": "number",
+                "value": 18.75,
+                "version": "3.0"
+              }
+            },
+            "s": {
+              "step 0": {
+                "type": "number",
+                "value": 21.6,
+                "version": "3.0"
+              },
+              "step 1": {
+                "type": "number",
+                "value": 27,
+                "version": "3.0"
+              },
+              "step 2": {
+                "type": "number",
+                "value": 33.75,
+                "version": "3.0"
+              },
+              "step 3": {
+                "type": "number",
+                "value": 42.188,
+                "version": "3.0"
+              },
+              "step-1": {
+                "type": "number",
+                "value": 17.28,
+                "version": "3.0"
+              },
+              "step-2": {
+                "type": "number",
+                "value": 13.824,
+                "version": "3.0"
+              }
+            }
+          },
+          "tight": {
+            "l": {
+              "step 0": {
+                "type": "number",
+                "value": 40,
+                "version": "3.0"
+              },
+              "step 1": {
+                "type": "number",
+                "value": 48,
+                "version": "3.0"
+              },
+              "step 2": {
+                "type": "number",
+                "value": 57.6,
+                "version": "3.0"
+              },
+              "step 3": {
+                "type": "number",
+                "value": 69.12,
+                "version": "3.0"
+              },
+              "step-1": {
+                "type": "number",
+                "value": 33.333,
+                "version": "3.0"
+              },
+              "step-2": {
+                "type": "number",
+                "value": 27.778,
+                "version": "3.0"
+              }
+            },
+            "m": {
+              "step 0": {
+                "type": "number",
+                "value": 25,
+                "version": "3.0"
+              },
+              "step 1": {
+                "type": "number",
+                "value": 30,
+                "version": "3.0"
+              },
+              "step 2": {
+                "type": "number",
+                "value": 36,
+                "version": "3.0"
+              },
+              "step 3": {
+                "type": "number",
+                "value": 43.2,
+                "version": "3.0"
+              },
+              "step-1": {
+                "type": "number",
+                "value": 20.833,
+                "version": "3.0"
+              },
+              "step-2": {
+                "type": "number",
+                "value": 17.361,
+                "version": "3.0"
+              }
+            },
+            "s": {
+              "step 0": {
+                "type": "number",
+                "value": 20,
+                "version": "3.0"
+              },
+              "step 1": {
+                "type": "number",
+                "value": 25,
+                "version": "3.0"
+              },
+              "step 2": {
+                "type": "number",
+                "value": 31.25,
+                "version": "3.0"
+              },
+              "step 3": {
+                "type": "number",
+                "value": 39.063,
+                "version": "3.0"
+              },
+              "step-1": {
+                "type": "number",
+                "value": 16,
+                "version": "3.0"
+              },
+              "step-2": {
+                "type": "number",
+                "value": 12.8,
+                "version": "3.0"
+              }
+            }
+          }
+        },
+        "sz": {
+          "l": {
+            "step 0": {
+              "type": "number",
+              "value": 32,
+              "version": "3.0"
+            },
+            "step 1": {
+              "type": "number",
+              "value": 38.4,
+              "version": "3.0"
+            },
+            "step 2": {
+              "type": "number",
+              "value": 46.08,
+              "version": "3.0"
+            },
+            "step 3": {
+              "type": "number",
+              "value": 55.296,
+              "version": "3.0"
+            },
+            "step-1": {
+              "type": "number",
+              "value": 26.667,
+              "version": "3.0"
+            },
+            "step-2": {
+              "type": "number",
+              "value": 22.222,
+              "version": "3.0"
+            }
+          },
+          "m": {
+            "step 0": {
+              "type": "number",
+              "value": 20,
+              "version": "3.0"
+            },
+            "step 1": {
+              "type": "number",
+              "value": 24,
+              "version": "3.0"
+            },
+            "step 2": {
+              "type": "number",
+              "value": 28.8,
+              "version": "3.0"
+            },
+            "step 3": {
+              "type": "number",
+              "value": 34.56,
+              "version": "3.0"
+            },
+            "step-1": {
+              "type": "number",
+              "value": 16.667,
+              "version": "3.0"
+            },
+            "step-2": {
+              "type": "number",
+              "value": 13.889,
+              "version": "3.0"
+            }
+          },
+          "s": {
+            "step 0": {
+              "type": "number",
+              "value": 16,
+              "version": "3.0"
+            },
+            "step 1": {
+              "type": "number",
+              "value": 20,
+              "version": "3.0"
+            },
+            "step 2": {
+              "type": "number",
+              "value": 25,
+              "version": "3.0"
+            },
+            "step 3": {
+              "type": "number",
+              "value": 31.25,
+              "version": "3.0"
+            },
+            "step-1": {
+              "type": "number",
+              "value": 12.8,
+              "version": "3.0"
+            },
+            "step-2": {
+              "type": "number",
+              "value": 10.24,
+              "version": "3.0"
+            }
+          }
+        }
+      }
+    }
+  }
+}

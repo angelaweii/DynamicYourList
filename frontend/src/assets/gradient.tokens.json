@@ -1,0 +1,3390 @@
+{
+  "gradient": {
+    "alert-message": {
+      "action": {
+        "comment": "Protection gradient in the corner of the image, for the action on alert messages.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.220395,
+                "y": 0.792763
+              },
+              {
+                "x": 0.384581,
+                "y": 0.628577
+              },
+              {
+                "x": 0.384581,
+                "y": 0.956949
+              }
+            ],
+            "opacity": 0.6,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.80}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 100
+              }
+            ],
+            "type": "radial"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "background": {
+      "ctv": {
+        "browse": {
+          "comment": "📺 CTV Background with bottom glow, used primarily on content pages.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.base}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.base}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": -0.055469,
+                  "y": 1
+                },
+                {
+                  "x": 0.238802,
+                  "y": 0.693518
+                },
+                {
+                  "x": 0.097748,
+                  "y": 1.464948
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.browse.radial.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.browse.radial.100-stop}",
+                  "position": 100
+                }
+              ],
+              "type": "radial"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": -0.047917,
+                  "y": 1.025926
+                },
+                {
+                  "x": 0.385417,
+                  "y": 0.777315
+                },
+                {
+                  "x": 0.076389,
+                  "y": 1.7107
+                }
+              ],
+              "opacity": 0.3,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.browse.linear.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.browse.linear.36-stop}",
+                  "position": 36
+                },
+                {
+                  "color": "{style.gradient.bg.browse.linear.60-stop-ctv}",
+                  "position": 60
+                },
+                {
+                  "color": "{style.gradient.bg.browse.linear.96-stop-ctv}",
+                  "position": 96
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "utility": {
+          "comment": "📺 CTV Background with top glow, used primarily on utility pages like settings.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.base}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.base}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.488021,
+                  "y": 0.145833
+                },
+                {
+                  "x": 0.00368,
+                  "y": 0.380171
+                },
+                {
+                  "x": 0.37087,
+                  "y": -0.619425
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.utility.radial.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.utility.radial.100-stop}",
+                  "position": 100
+                }
+              ],
+              "type": "radial"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": -0.078241
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.866667
+                },
+                {
+                  "x": 0.027546,
+                  "y": -0.078241
+                }
+              ],
+              "opacity": 0.3,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.utility.linear.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.utility.linear.36-stop}",
+                  "position": 36
+                },
+                {
+                  "color": "{style.gradient.bg.utility.linear.59-stop-ctv}",
+                  "position": 59
+                },
+                {
+                  "color": "{style.gradient.bg.utility.linear.98-stop-ctv}",
+                  "position": 98
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      },
+      "wemo": {
+        "browse": {
+          "comment": "Background with bottom glow, used primarily on content pages.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.base}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.base}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.489019,
+                  "y": 1.177734
+                },
+                {
+                  "x": 0.489019,
+                  "y": 0.466308
+                },
+                {
+                  "x": 1.009488,
+                  "y": 1.177734
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.browse.radial.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.browse.radial.100-stop}",
+                  "position": 100
+                }
+              ],
+              "type": "radial"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 1.073242
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.132813
+                },
+                {
+                  "x": 0.970215,
+                  "y": 1.073242
+                }
+              ],
+              "opacity": 0.3,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.browse.linear.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.browse.linear.36-stop}",
+                  "position": 36
+                },
+                {
+                  "color": "{style.gradient.bg.browse.linear.66-stop-wemo}",
+                  "position": 66
+                },
+                {
+                  "color": "{style.gradient.bg.browse.linear.95-stop-wemo}",
+                  "position": 95
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "utility": {
+          "comment": "Background with top glow, used primarily on utility pages like settings.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.base}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.base}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.484261,
+                  "y": 0
+                },
+                {
+                  "x": 0.00368,
+                  "y": 0.380171
+                },
+                {
+                  "x": 0.243581,
+                  "y": -0.783811
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.utility.radial.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.utility.radial.100-stop}",
+                  "position": 100
+                }
+              ],
+              "type": "radial"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": -0.078241
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.866667
+                },
+                {
+                  "x": 0.027546,
+                  "y": -0.078241
+                }
+              ],
+              "opacity": 0.3,
+              "stops": [
+                {
+                  "color": "{style.gradient.bg.utility.linear.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.bg.utility.linear.36-stop}",
+                  "position": 36
+                },
+                {
+                  "color": "{style.gradient.bg.utility.linear.62-stop-wemo}",
+                  "position": 62
+                },
+                {
+                  "color": "{style.gradient.bg.utility.linear.96-stop-wemo}",
+                  "position": 96
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      }
+    },
+    "button": {
+      "sticky-group": {
+        "scroll": {
+          "comment": "Protection gradient above the Floating Sticky Button group",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 1,
+                  "y": 1
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.100}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.30}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 70
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      }
+    },
+    "card": {
+      "select": {
+        "high": {
+          "comment": "Used for the selected and/or focus state of some cards, including plan cards, add-ons, and billing cycle cards.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.500986,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": -0.491252,
+                  "y": -0.001475
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.card.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.card.80-stop}",
+                  "position": 80
+                },
+                {
+                  "color": "{style.gradient.card.95-stop}",
+                  "position": 95
+                }
+              ],
+              "type": "radial"
+            }
+          ],
+          "version": "3.0"
+        },
+        "low": {
+          "comment": "Used for the selected (not focus) state of some cards, including plan cards, add-ons, and billing cycle cards.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.500986,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": -0.491252,
+                  "y": -0.001475
+                }
+              ],
+              "opacity": 0.4,
+              "stops": [
+                {
+                  "color": "{style.gradient.card.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.card.80-stop}",
+                  "position": 80
+                },
+                {
+                  "color": "{style.gradient.card.95-stop}",
+                  "position": 95
+                }
+              ],
+              "type": "radial"
+            }
+          ],
+          "version": "3.0"
+        }
+      }
+    },
+    "channel-hub": {
+      "ctv": {
+        "comment": "Primary Channel Hub protection layer gradient used beneath the channel rail and above the video playing.\n",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.40}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.20}",
+                "position": 20
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 35
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.032812,
+                "y": 0.671296
+              },
+              {
+                "x": 0.75,
+                "y": 0.066987
+              },
+              {
+                "x": 0.446823,
+                "y": 1.223629
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.75}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.25}",
+                "position": 50
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 90
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "content-details": {
+      "ctv": {
+        "comment": "Gradient background on CDP for CTV.  Used for landing and tab view.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.25,
+                "y": 0.933013
+              },
+              {
+                "x": 0.75,
+                "y": 0.066987
+              },
+              {
+                "x": 0.683013,
+                "y": 1.183013
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.65}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.25}",
+                "position": 50
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 75
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 0.5
+              },
+              {
+                "x": 0,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.60}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.38}",
+                "position": 45
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 65
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.70}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.20}",
+                "position": 30
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 55
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "dialog": {
+      "surface": {
+        "comment": "Used for the surface in the Dialog component.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.500986,
+                "y": 0
+              },
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": -0.491252,
+                "y": -0.001475
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.surface.dialog.radial.0-step}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.surface.dialog.radial.80-step}",
+                "position": 80
+              },
+              {
+                "color": "{style.gradient.surface.dialog.radial.95-step}",
+                "position": 95
+              }
+            ],
+            "type": "radial"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "general": {
+      "full-width": {
+        "fade-out": {
+          "comment": "Place after the main area of a full-width component to create a \"fade-out\" transition into the app background. ",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.100}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.80}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      }
+    },
+    "header": {
+      "ctv": {
+        "comment": "Layered protection gradient for Header, used for CTV",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 0.5
+              },
+              {
+                "x": 0,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.80}",
+                "position": 15
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "landscape": {
+        "comment": "Layered protection gradient for Header, used for landscape viewports",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 70
+              },
+              {
+                "color": "{style.gradient.palette.base.80}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 0.5
+              },
+              {
+                "x": 0,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.80}",
+                "position": 15
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "portrait": {
+        "comment": "Layered protection gradient for Header, used for portrait viewports",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 70
+              },
+              {
+                "color": "{style.gradient.palette.base.80}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "hero": {
+      "immersive": {
+        "bottom": {
+          "fade-down": {
+            "comment": "⛔️ #DEPRECATED. Replace with: gradient.general.full-width.fade-out \n\n🪦Deletion date: after 2025-OCT-01",
+            "deprecated": true,
+            "type": "gradient",
+            "value": [
+              {
+                "gradientHandlePositions": [
+                  {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 1
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "opacity": 1,
+                "stops": [
+                  {
+                    "color": "{style.gradient.palette.base.100}",
+                    "position": 0
+                  },
+                  {
+                    "color": "{style.gradient.palette.base.80}",
+                    "position": 30
+                  },
+                  {
+                    "color": "{style.gradient.palette.base.0}",
+                    "position": 100
+                  }
+                ],
+                "type": "linear"
+              }
+            ],
+            "version": "3.0"
+          },
+          "fade-up": {
+            "comment": "⛔️ #DEPRECATED. Replace with: gradient.immersive-hero.bottom-ctv\n\n🪦Deletion date: after 2025-OCT-01",
+            "deprecated": true,
+            "type": "gradient",
+            "value": [
+              {
+                "gradientHandlePositions": [
+                  {
+                    "x": 0.5,
+                    "y": 1
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  {
+                    "x": 1,
+                    "y": 1
+                  }
+                ],
+                "opacity": 1,
+                "stops": [
+                  {
+                    "color": "{style.gradient.palette.base.100}",
+                    "position": 0
+                  },
+                  {
+                    "color": "{style.gradient.palette.base.20}",
+                    "position": 18
+                  },
+                  {
+                    "color": "{style.gradient.palette.base.0}",
+                    "position": 35
+                  }
+                ],
+                "type": "linear"
+              }
+            ],
+            "version": "3.0"
+          }
+        },
+        "info-ctv": {
+          "comment": "⛔️ #DEPRECATED. Replace with: gradient.immersive-hero.info.ctv\n\n🪦Deletion date: after 2025-OCT-01",
+          "deprecated": true,
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.049479,
+                  "y": 0
+                },
+                {
+                  "x": 0.579167,
+                  "y": 1
+                },
+                {
+                  "x": -0.114295,
+                  "y": 0.847203
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.38}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.36}",
+                  "position": 25
+                },
+                {
+                  "color": "{style.gradient.palette.base.29}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.base.17}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 0.5
+                },
+                {
+                  "x": 1,
+                  "y": 0.5
+                },
+                {
+                  "x": 0,
+                  "y": 1
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.35}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.30}",
+                  "position": 15
+                },
+                {
+                  "color": "{style.gradient.palette.base.25}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.palette.base.13}",
+                  "position": 45
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 60
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.2125,
+                  "y": 0.999679
+                },
+                {
+                  "x": 0.774479,
+                  "y": 0.000605
+                },
+                {
+                  "x": 0.707531,
+                  "y": 1.272864
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.40}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.27}",
+                  "position": 25
+                },
+                {
+                  "color": "{style.gradient.palette.base.15}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.base.8}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      },
+      "info-ctv-fallback": {
+        "comment": "⛔️ #DEPRECATED. Replace with: gradient.immersive-hero.info.ctv-fallback\n\n🪦Deletion date: after 2025-OCT-01",
+        "deprecated": true,
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 0.5
+              },
+              {
+                "x": 0,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.20}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.19}",
+                "position": 15
+              },
+              {
+                "color": "{style.gradient.palette.base.18}",
+                "position": 30
+              },
+              {
+                "color": "{style.gradient.palette.base.9}",
+                "position": 45
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 60
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "immersive-hero": {
+      "bottom": {
+        "comment": "Placed at the base of the Immersive Hero to create a smooth fade-to-black transition between the component image and the app background.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 1
+              },
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 0.570866,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 35
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "bottom-ctv": {
+        "comment": "Used in the CTV Immersive Hero scroll state, to create a smooth fade-to-black transition between the component image and the app background.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.20}",
+                "position": 18
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 35
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "info": {
+        "ctv": {
+          "comment": "Primary gradient for CTV Immersive Hero. Creates appropriate contrast layer between Info-block and artwork/video layer.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.049479,
+                  "y": 0
+                },
+                {
+                  "x": 0.579167,
+                  "y": 1
+                },
+                {
+                  "x": -0.114295,
+                  "y": 0.847203
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.38}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.36}",
+                  "position": 25
+                },
+                {
+                  "color": "{style.gradient.palette.base.29}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.base.17}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 0.5
+                },
+                {
+                  "x": 1,
+                  "y": 0.5
+                },
+                {
+                  "x": 0,
+                  "y": 1
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.35}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.30}",
+                  "position": 15
+                },
+                {
+                  "color": "{style.gradient.palette.base.25}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.palette.base.13}",
+                  "position": 45
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 60
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.2125,
+                  "y": 0.999679
+                },
+                {
+                  "x": 0.774479,
+                  "y": 0.000605
+                },
+                {
+                  "x": 0.707531,
+                  "y": 1.272864
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.40}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.27}",
+                  "position": 25
+                },
+                {
+                  "color": "{style.gradient.palette.base.15}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.base.8}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "ctv-fallback": {
+          "comment": "CTV Fallback token used to create additional contrast in the Immersive Hero for platforms that can’t support text-shadow on info-block. Used in addition to the Primary gradient.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 0.5
+                },
+                {
+                  "x": 1,
+                  "y": 0.5
+                },
+                {
+                  "x": 0,
+                  "y": 1
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.20}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.19}",
+                  "position": 15
+                },
+                {
+                  "color": "{style.gradient.palette.base.18}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.palette.base.9}",
+                  "position": 45
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 60
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      },
+      "landscape": {
+        "comment": "Primary gradient for WeMo Landscape Immersive Hero. Gradient provides protection and contrast for InfoBlockShort, Nav, and Audio CTA icon.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 0.372354
+              },
+              {
+                "x": 1.402344,
+                "y": 0.372354
+              },
+              {
+                "x": 0.5,
+                "y": 1.028887
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              },
+              {
+                "color": "{style.gradient.palette.base.60}",
+                "position": 100
+              }
+            ],
+            "type": "radial"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0.5
+              },
+              {
+                "x": 0.515365,
+                "y": 0.5
+              },
+              {
+                "x": -0.329888,
+                "y": 2.335127
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.45}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.30}",
+                "position": 40
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 90
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 0.517708,
+                "y": 1
+              },
+              {
+                "x": -0.883456,
+                "y": 1.203367
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.45}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.30}",
+                "position": 50
+              },
+              {
+                "color": "{style.gradient.palette.base.10}",
+                "position": 75
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.197024,
+                "y": -0.027513
+              },
+              {
+                "x": 1,
+                "y": 0.5
+              },
+              {
+                "x": 0.063307,
+                "y": 1.255862
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 75
+              },
+              {
+                "color": "{style.gradient.palette.base.15}",
+                "position": 85
+              },
+              {
+                "color": "{style.gradient.palette.base.40}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "portrait": {
+        "comment": "Primary gradient for Portrait Immersive Hero. Provides protection and contrast for InfoBlockShort, Nav & Audio CTA icon, and creates a fade-to-black transition.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 0,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 35
+              },
+              {
+                "color": "{style.gradient.palette.base.55}",
+                "position": 100
+              }
+            ],
+            "type": "radial"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.75}",
+                "position": 25
+              },
+              {
+                "color": "{style.gradient.palette.base.45}",
+                "position": 45
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 70
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 0.5,
+                "y": 1.5
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.10}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              }
+            ],
+            "type": "linear"
+          },
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 1.5,
+                "y": 0.5
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.10}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "inline-hero": {
+      "landscape": {
+        "comment": "Protection gradient for landscape view of Inline Hero for CTV & WeMo. Gradient provides protection and contrast for InfoBlockShort displayed over artwork.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 0.5
+              },
+              {
+                "x": 0,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.80}",
+                "position": 30
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 70
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "portrait": {
+        "comment": "Protection gradient for portrait view of Inline Hero. Gradient provides protection and contrast for InfoBlockShort displayed over artwork.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.88}",
+                "position": 29
+              },
+              {
+                "color": "{style.gradient.palette.base.80}",
+                "position": 47
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 73
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "navigation": {
+      "side": {
+        "ctv": {
+          "comment": "CTV navigation protection gradient used to separate the navigation menu from the underlying page when expanded.\n\n",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 0.454167
+                },
+                {
+                  "x": 1,
+                  "y": 0.454167
+                },
+                {
+                  "x": 0,
+                  "y": 0.714969
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.100}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.80}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "ctv-collapsed-fallback": {
+          "comment": "CTV Roku navigation protection gradient for the collapsed state to be used on browse pages that include horizontal scrolling (in lieu of tile overflow state)\n",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 0.678571
+                },
+                {
+                  "x": 1,
+                  "y": 0.678571
+                },
+                {
+                  "x": 0,
+                  "y": 3.373087
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.70}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.45}",
+                  "position": 41
+                },
+                {
+                  "color": "{style.gradient.palette.base.26}",
+                  "position": 67
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "wemo": {
+          "comment": "Navigation menu protection gradient for web and mobile. Displayed when the navigation menu is expanded to separate the menu from the underlying page.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 0.658896
+                },
+                {
+                  "x": 1,
+                  "y": 0.658896
+                },
+                {
+                  "x": 0,
+                  "y": 0.765884
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.100}",
+                  "position": 35
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      },
+      "top": {
+        "mobile": {
+          "comment": "Top app bar protection gradient for mobile apps. Displayed when in an un-scrolled state.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.55}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.50}",
+                  "position": 25
+                },
+                {
+                  "color": "{style.gradient.palette.base.45}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.base.25}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      }
+    },
+    "pagination": {
+      "next": {
+        "base": {
+          "comment": "Used for the right arrow pagination hover gradient to provide contrast with the background; default state",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 1,
+                  "y": 0.5
+                },
+                {
+                  "x": 0,
+                  "y": 0.5
+                },
+                {
+                  "x": 1,
+                  "y": 0.487679
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.protection.pagination.base.30-stop}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.protection.pagination.base.100-stop}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "hover": {
+          "comment": "Used for the right arrow pagination hover gradient to provide contrast with the background; arrow hover state",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 1,
+                  "y": 0.5
+                },
+                {
+                  "x": 0,
+                  "y": 0.5
+                },
+                {
+                  "x": 1,
+                  "y": 0.487679
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.protection.pagination.hover.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.protection.pagination.hover.35-stop}",
+                  "position": 35
+                },
+                {
+                  "color": "{style.gradient.protection.pagination.hover.100-stop}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      },
+      "previous": {
+        "base": {
+          "comment": "Used for left arrow pagination gradient to provide contrast with the background; default state",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 0.5
+                },
+                {
+                  "x": 1,
+                  "y": 0.5
+                },
+                {
+                  "x": 0,
+                  "y": 1
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.protection.pagination.base.30-stop}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.protection.pagination.base.100-stop}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "hover": {
+          "comment": "Used for the left arrow pagination hover gradient to provide contrast with the background; arrow hover state",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 0.5
+                },
+                {
+                  "x": 1,
+                  "y": 0.5
+                },
+                {
+                  "x": 0,
+                  "y": 1
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.protection.pagination.hover.0-stop}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.protection.pagination.hover.35-stop}",
+                  "position": 35
+                },
+                {
+                  "color": "{style.gradient.protection.pagination.hover.100-stop}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      }
+    },
+    "player": {
+      "message": {
+        "overlay": {
+          "comment": "Gradient needs to overlay over video as well as Up Next and End Cards.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 1
+                },
+                {
+                  "x": 1.154687,
+                  "y": 0.397222
+                },
+                {
+                  "x": 0.166281,
+                  "y": 1.553521
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.100}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.90}",
+                  "position": 10
+                },
+                {
+                  "color": "{style.gradient.palette.base.32}",
+                  "position": 40
+                },
+                {
+                  "color": "{style.gradient.palette.base.20}",
+                  "position": 45
+                },
+                {
+                  "color": "{style.gradient.palette.base.10}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 60
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 1,
+                  "y": 1
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.100}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.65}",
+                  "position": 20
+                },
+                {
+                  "color": "{style.gradient.palette.base.45}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.palette.base.30}",
+                  "position": 40
+                },
+                {
+                  "color": "{style.gradient.palette.base.25}",
+                  "position": 45
+                },
+                {
+                  "color": "{style.gradient.palette.base.20}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.base.5}",
+                  "position": 60
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 70
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "overlay-ctv": {
+          "comment": "Gradient for CTV to overlay over video as well as Up Next and End Cards.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0,
+                  "y": 1
+                },
+                {
+                  "x": 1.154687,
+                  "y": 0.397222
+                },
+                {
+                  "x": 0.166281,
+                  "y": 1.553521
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.100}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.90}",
+                  "position": 10
+                },
+                {
+                  "color": "{style.gradient.palette.base.20}",
+                  "position": 34
+                },
+                {
+                  "color": "{style.gradient.palette.base.10}",
+                  "position": 38
+                },
+                {
+                  "color": "{style.gradient.palette.base.4}",
+                  "position": 42
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 50
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 0.5,
+                  "y": 0
+                },
+                {
+                  "x": 1,
+                  "y": 1
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.100}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.39}",
+                  "position": 28
+                },
+                {
+                  "color": "{style.gradient.palette.base.32}",
+                  "position": 32
+                },
+                {
+                  "color": "{style.gradient.palette.base.26}",
+                  "position": 38
+                },
+                {
+                  "color": "{style.gradient.palette.base.21}",
+                  "position": 44
+                },
+                {
+                  "color": "{style.gradient.palette.base.5}",
+                  "position": 60
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 70
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      }
+    },
+    "preview-rail": {
+      "bottom": {
+        "comment": "gradient protection layer used on the bottom of the preview rail",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.102667,
+                "y": 1.000247
+              },
+              {
+                "x": 0.102667,
+                "y": 0.00075
+              },
+              {
+                "x": 0.708943,
+                "y": 1.000247
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 6
+              },
+              {
+                "color": "{style.gradient.palette.base.98}",
+                "position": 11
+              },
+              {
+                "color": "{style.gradient.palette.base.96}",
+                "position": 15
+              },
+              {
+                "color": "{style.gradient.palette.base.93}",
+                "position": 19
+              },
+              {
+                "color": "{style.gradient.palette.base.89}",
+                "position": 23
+              },
+              {
+                "color": "{style.gradient.palette.base.84}",
+                "position": 26
+              },
+              {
+                "color": "{style.gradient.palette.base.78}",
+                "position": 29
+              },
+              {
+                "color": "{style.gradient.palette.base.71}",
+                "position": 34
+              },
+              {
+                "color": "{style.gradient.palette.base.64}",
+                "position": 39
+              },
+              {
+                "color": "{style.gradient.palette.base.55}",
+                "position": 45
+              },
+              {
+                "color": "{style.gradient.palette.base.46}",
+                "position": 52
+              },
+              {
+                "color": "{style.gradient.palette.base.36}",
+                "position": 61
+              },
+              {
+                "color": "{style.gradient.palette.base.25}",
+                "position": 72
+              },
+              {
+                "color": "{style.gradient.palette.base.13}",
+                "position": 85
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "side": {
+        "comment": "gradient protection layer used on the side of the preview rail",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 0.5
+              },
+              {
+                "x": 0,
+                "y": 2.049792
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.100}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.92}",
+                "position": 9
+              },
+              {
+                "color": "{style.gradient.palette.base.85}",
+                "position": 17
+              },
+              {
+                "color": "{style.gradient.palette.base.78}",
+                "position": 24
+              },
+              {
+                "color": "{style.gradient.palette.base.72}",
+                "position": 29
+              },
+              {
+                "color": "{style.gradient.palette.base.67}",
+                "position": 34
+              },
+              {
+                "color": "{style.gradient.palette.base.61}",
+                "position": 39
+              },
+              {
+                "color": "{style.gradient.palette.base.56}",
+                "position": 43
+              },
+              {
+                "color": "{style.gradient.palette.base.50}",
+                "position": 47
+              },
+              {
+                "color": "{style.gradient.palette.base.44}",
+                "position": 51
+              },
+              {
+                "color": "{style.gradient.palette.base.39}",
+                "position": 57
+              },
+              {
+                "color": "{style.gradient.palette.base.32}",
+                "position": 62
+              },
+              {
+                "color": "{style.gradient.palette.base.25}",
+                "position": 70
+              },
+              {
+                "color": "{style.gradient.palette.base.18}",
+                "position": 78
+              },
+              {
+                "color": "{style.gradient.palette.base.9}",
+                "position": 88
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "scrim": {
+      "consumer-messaging": {
+        "comment": "Used for the scrim in the full screen message component for consumer messaging.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.500986,
+                "y": 0
+              },
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": -0.491252,
+                "y": -0.001475
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.scrim.consumer-messaging.radial.0-step}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.scrim.consumer-messaging.radial.80-step}",
+                "position": 80
+              },
+              {
+                "color": "{style.gradient.scrim.consumer-messaging.radial.95-step}",
+                "position": 95
+              }
+            ],
+            "type": "radial"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "showcase": {
+      "hero": {
+        "ctv": {
+          "comment": "Used on the Showcase Hero, on CTV. Creates appropriate contrast for the info-block when placed on top of an artwork/video layer.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.999767,
+                  "y": 0.475464
+                },
+                {
+                  "x": -0.000233,
+                  "y": 0.475464
+                },
+                {
+                  "x": 0.999767,
+                  "y": -1.104769
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.8}",
+                  "position": 33
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.25}",
+                  "position": 52
+                },
+                {
+                  "color": "{style.gradient.palette.alt.4.25}",
+                  "position": 72
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.30}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.999767,
+                  "y": -0.000101
+                },
+                {
+                  "x": -0.000233,
+                  "y": 1.000828
+                },
+                {
+                  "x": 0.499302,
+                  "y": -1.580335
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.2.0}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.palette.alt.2.15}",
+                  "position": 54
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.25}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.25}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "ctv-fallback": {
+          "comment": "Fallback Gradient for CTV Showcase Hero. Creates the appropriate contrast layer between info-block and artwork/video layer when there’s no drop shadow on info block text.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.999767,
+                  "y": 0.475464
+                },
+                {
+                  "x": -0.000233,
+                  "y": 0.475464
+                },
+                {
+                  "x": 0.999767,
+                  "y": -1.104769
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.15}",
+                  "position": 33
+                },
+                {
+                  "color": "{style.gradient.palette.alt.4.30}",
+                  "position": 47
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.38}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.999767,
+                  "y": -0.000101
+                },
+                {
+                  "x": -0.000233,
+                  "y": 1.000828
+                },
+                {
+                  "x": 0.499302,
+                  "y": -1.580335
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.2.4}",
+                  "position": 30
+                },
+                {
+                  "color": "{style.gradient.palette.alt.2.28}",
+                  "position": 53
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.35}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.38}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5,
+                  "y": -0.000101
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": -0.000051,
+                  "y": -0.000101
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 44
+                },
+                {
+                  "color": "{style.gradient.palette.base.10}",
+                  "position": 70
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "medium": {
+          "comment": "Used on the Showcase Hero, on breakpoints BP-03+. Creates appropriate contrast for the info-block when placed on top of an artwork/video layer, particularly useful if the info block text has no dropshadow.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.999767,
+                  "y": 0.475464
+                },
+                {
+                  "x": -0.000233,
+                  "y": 0.475464
+                },
+                {
+                  "x": 0.999767,
+                  "y": -1.104769
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.2.0}",
+                  "position": 35
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.28}",
+                  "position": 66
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.30}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.471458,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 1.000453
+                },
+                {
+                  "x": -0.028722,
+                  "y": -0.744966
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.25}",
+                  "position": 57
+                },
+                {
+                  "color": "{style.gradient.palette.alt.4.35}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.38}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 1,
+                  "y": 0.000903
+                },
+                {
+                  "x": 1,
+                  "y": 0.999543
+                },
+                {
+                  "x": 0.500769,
+                  "y": 0.000992
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.0}",
+                  "position": 50
+                },
+                {
+                  "color": "{style.gradient.palette.alt.4.4}",
+                  "position": 64
+                },
+                {
+                  "color": "{style.gradient.palette.alt.5.8}",
+                  "position": 75
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.8}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": -0.007136,
+                  "y": 0
+                },
+                {
+                  "x": 1,
+                  "y": 1.016765
+                },
+                {
+                  "x": -0.515518,
+                  "y": 1.591883
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 83
+                },
+                {
+                  "color": "{style.gradient.palette.base.14}",
+                  "position": 91
+                },
+                {
+                  "color": "{style.gradient.palette.base.15}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "small": {
+          "comment": "Used on the Showcase Hero, on smaller breakpoints (BP 01-02). Creates appropriate contrast for the info-block when placed on top of an artwork/video layer.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 0.999767,
+                  "y": 0.475464
+                },
+                {
+                  "x": -0.000233,
+                  "y": 0.475464
+                },
+                {
+                  "x": 0.999767,
+                  "y": -1.104769
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.2.0}",
+                  "position": 35
+                },
+                {
+                  "color": "{style.gradient.palette.alt.2.15}",
+                  "position": 51
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.28}",
+                  "position": 66
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.38}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 1,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 1.000453
+                },
+                {
+                  "x": 0.499773,
+                  "y": -1.580234
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.2.10}",
+                  "position": 22
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.28}",
+                  "position": 36
+                },
+                {
+                  "color": "{style.gradient.palette.alt.4.30}",
+                  "position": 54
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.30}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            },
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 1,
+                  "y": 0.000903
+                },
+                {
+                  "x": 1,
+                  "y": 0.999543
+                },
+                {
+                  "x": 0.500769,
+                  "y": 0.000992
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.alt.3.8}",
+                  "position": 33
+                },
+                {
+                  "color": "{style.gradient.palette.alt.4.20}",
+                  "position": 64
+                },
+                {
+                  "color": "{style.gradient.palette.alt.6.25}",
+                  "position": 100
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      },
+      "tile": {
+        "comment": "Used on the Showcase Tile to create contrast between Logo and Artwork.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.500772,
+                "y": 0
+              },
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.000772,
+                "y": -0.00125
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.35}",
+                "position": 50
+              },
+              {
+                "color": "{style.gradient.palette.base.55}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      }
+    },
+    "tile": {
+      "action": {
+        "comment": "(WeMo) Used as protection gradient for the Action icons (Play, Now Playing) in Tiles to provide contrast with the key art. Used when a progress bar is present.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.50}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 50
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "action-ctv": {
+        "comment": "(CTV) Used as protection gradient for the Action icons (Play, Now Playing) in Tiles to provide contrast with the key art.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.70}",
+                "position": 0
+              },
+              {
+                "color": "{style.gradient.palette.base.20}",
+                "position": 70
+              },
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "action-indicator": {
+        "comment": "Used as protection gradient for the Action icons (Play, Now Playing) in Tiles to provide contrast with the key art. Used when a progress bar is not present.",
+        "type": "gradient",
+        "value": [
+          {
+            "gradientHandlePositions": [
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": -0.5
+              }
+            ],
+            "opacity": 1,
+            "stops": [
+              {
+                "color": "{style.gradient.palette.base.0}",
+                "position": 70
+              },
+              {
+                "color": "{style.gradient.palette.base.30}",
+                "position": 85
+              },
+              {
+                "color": "{style.gradient.palette.base.50}",
+                "position": 100
+              }
+            ],
+            "type": "linear"
+          }
+        ],
+        "version": "3.0"
+      },
+      "menu": {
+        "base": {
+          "comment": "Used as default protection gradient for the Action Menu (Kebab) in Tiles to provide contrast with the key art.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 1,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 1
+                },
+                {
+                  "x": 0.5,
+                  "y": -0.5
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.50}",
+                  "position": 0
+                },
+                {
+                  "color": "{style.gradient.palette.base.30}",
+                  "position": 12
+                },
+                {
+                  "color": "{style.gradient.palette.base.20}",
+                  "position": 24
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 50
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        },
+        "hover": {
+          "comment": "On hover, used as protection gradient for the Action Menu (Kebab) in Tiles to provide contrast with the key art.",
+          "type": "gradient",
+          "value": [
+            {
+              "gradientHandlePositions": [
+                {
+                  "x": 1,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 1
+                },
+                {
+                  "x": 0.5,
+                  "y": -0.5
+                }
+              ],
+              "opacity": 1,
+              "stops": [
+                {
+                  "color": "{style.gradient.palette.base.61}",
+                  "position": 6
+                },
+                {
+                  "color": "{style.gradient.palette.base.30}",
+                  "position": 24
+                },
+                {
+                  "color": "{style.gradient.palette.base.17}",
+                  "position": 36
+                },
+                {
+                  "color": "{style.gradient.palette.base.0}",
+                  "position": 55
+                }
+              ],
+              "type": "linear"
+            }
+          ],
+          "version": "3.0"
+        }
+      }
+    }
+  }
+}

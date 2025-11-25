@@ -1,0 +1,1098 @@
+{
+  "breakpoint": {
+    "corner": {
+      "basic": {
+        "action": {
+          "lg": {
+            "type": "corner",
+            "value": "{breakpoint.corner.basic.general.lg}",
+            "version": "3.0"
+          },
+          "md": {
+            "type": "corner",
+            "value": "{breakpoint.corner.basic.general.md}",
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "corner",
+            "value": "{breakpoint.corner.basic.general.sm}",
+            "version": "3.0"
+          }
+        },
+        "general": {
+          "full": {
+            "type": "corner",
+            "value": {
+              "bottomLeft": 999,
+              "bottomRight": 999,
+              "topLeft": 999,
+              "topRight": 999
+            },
+            "version": "3.0"
+          },
+          "lg": {
+            "type": "corner",
+            "value": {
+              "bottomLeft": 8,
+              "bottomRight": 8,
+              "topLeft": 8,
+              "topRight": 8
+            },
+            "version": "3.0"
+          },
+          "md": {
+            "type": "corner",
+            "value": {
+              "bottomLeft": 4,
+              "bottomRight": 4,
+              "topLeft": 4,
+              "topRight": 4
+            },
+            "version": "3.0"
+          },
+          "none": {
+            "type": "corner",
+            "value": {
+              "bottomLeft": 0,
+              "bottomRight": 0,
+              "topLeft": 0,
+              "topRight": 0
+            },
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "corner",
+            "value": {
+              "bottomLeft": 2,
+              "bottomRight": 2,
+              "topLeft": 2,
+              "topRight": 2
+            },
+            "version": "3.0"
+          }
+        },
+        "indicator": {
+          "sm": {
+            "type": "corner",
+            "value": "{breakpoint.corner.basic.general.sm}",
+            "version": "3.0"
+          }
+        }
+      },
+      "brand": {
+        "dplus": {
+          "action": {
+            "lg": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 1.5,
+                "bottomRight": 1.5,
+                "topLeft": 1.5,
+                "topRight": 1.5
+              },
+              "version": "3.0"
+            },
+            "md": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 1,
+                "bottomRight": 1,
+                "topLeft": 1,
+                "topRight": 1
+              },
+              "version": "3.0"
+            },
+            "sm": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 1,
+                "bottomRight": 1,
+                "topLeft": 1,
+                "topRight": 1
+              },
+              "version": "3.0"
+            }
+          },
+          "general": {
+            "lg": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 6,
+                "bottomRight": 6,
+                "topLeft": 6,
+                "topRight": 6
+              },
+              "version": "3.0"
+            },
+            "md": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 2,
+                "bottomRight": 2,
+                "topLeft": 2,
+                "topRight": 2
+              },
+              "version": "3.0"
+            },
+            "sm": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 1,
+                "bottomRight": 1,
+                "topLeft": 1,
+                "topRight": 1
+              },
+              "version": "3.0"
+            }
+          },
+          "indicator": {
+            "sm": {
+              "type": "corner",
+              "value": "{breakpoint.corner.brand.dplus.general.sm}",
+              "version": "3.0"
+            }
+          }
+        },
+        "stress": {
+          "action": {
+            "lg": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 999,
+                "bottomRight": 999,
+                "topLeft": 999,
+                "topRight": 999
+              },
+              "version": "3.0"
+            },
+            "md": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 6,
+                "bottomRight": 6,
+                "topLeft": 6,
+                "topRight": 6
+              },
+              "version": "3.0"
+            },
+            "sm": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 3,
+                "bottomRight": 3,
+                "topLeft": 3,
+                "topRight": 3
+              },
+              "version": "3.0"
+            }
+          },
+          "general": {
+            "lg": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 8,
+                "bottomRight": 8,
+                "topLeft": 8,
+                "topRight": 8
+              },
+              "version": "3.0"
+            },
+            "md": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 6,
+                "bottomRight": 6,
+                "topLeft": 6,
+                "topRight": 6
+              },
+              "version": "3.0"
+            },
+            "sm": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 4,
+                "bottomRight": 4,
+                "topLeft": 4,
+                "topRight": 4
+              },
+              "version": "3.0"
+            }
+          },
+          "indicator": {
+            "sm": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 3,
+                "bottomRight": 3,
+                "topLeft": 3,
+                "topRight": 3
+              },
+              "version": "3.0"
+            }
+          }
+        },
+        "tntsports": {
+          "action": {
+            "lg": {
+              "type": "corner",
+              "value": "{breakpoint.corner.basic.general.none}",
+              "version": "3.0"
+            },
+            "md": {
+              "type": "corner",
+              "value": "{breakpoint.corner.basic.general.none}",
+              "version": "3.0"
+            },
+            "sm": {
+              "type": "corner",
+              "value": "{breakpoint.corner.basic.general.none}",
+              "version": "3.0"
+            }
+          },
+          "general": {
+            "lg": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 2,
+                "bottomRight": 2,
+                "topLeft": 2,
+                "topRight": 2
+              },
+              "version": "3.0"
+            },
+            "md": {
+              "type": "corner",
+              "value": {
+                "bottomLeft": 1,
+                "bottomRight": 1,
+                "topLeft": 1,
+                "topRight": 1
+              },
+              "version": "3.0"
+            },
+            "sm": {
+              "type": "corner",
+              "value": "{breakpoint.corner.basic.general.none}",
+              "version": "3.0"
+            }
+          },
+          "indicator": {
+            "sm": {
+              "type": "corner",
+              "value": "{breakpoint.corner.basic.general.none}",
+              "version": "3.0"
+            }
+          }
+        }
+      }
+    },
+    "elevation": {
+      "basic": {
+        "blur": {
+          "high-height": {
+            "type": "number",
+            "value": 32,
+            "version": "3.0"
+          },
+          "low-height": {
+            "type": "number",
+            "value": 8,
+            "version": "3.0"
+          },
+          "mid-height": {
+            "type": "number",
+            "value": 16,
+            "version": "3.0"
+          },
+          "offset-left": {
+            "type": "number",
+            "value": 10,
+            "version": "3.0"
+          },
+          "offset-right": {
+            "type": "number",
+            "value": 12,
+            "version": "3.0"
+          }
+        },
+        "showcase": {
+          "layer-2": {
+            "blur": {
+              "type": "number",
+              "value": 40,
+              "version": "3.0"
+            },
+            "color": {
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.4)",
+              "version": "3.0"
+            },
+            "x": {
+              "type": "number",
+              "value": 20,
+              "version": "3.0"
+            },
+            "y": {
+              "type": "number",
+              "value": 40,
+              "version": "3.0"
+            }
+          },
+          "layer-3": {
+            "blur": {
+              "type": "number",
+              "value": 60,
+              "version": "3.0"
+            },
+            "color": {
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.1)",
+              "version": "3.0"
+            },
+            "x": {
+              "type": "number",
+              "value": 10,
+              "version": "3.0"
+            },
+            "y": {
+              "type": "number",
+              "value": 100,
+              "version": "3.0"
+            }
+          }
+        },
+        "spread": {
+          "default": {
+            "type": "number",
+            "value": 1,
+            "version": "3.0"
+          },
+          "none": {
+            "type": "number",
+            "value": 0,
+            "version": "3.0"
+          },
+          "offset": {
+            "type": "number",
+            "value": 4,
+            "version": "3.0"
+          }
+        },
+        "x": {
+          "left-emphasis-offset": {
+            "type": "number",
+            "value": -6,
+            "version": "3.0"
+          },
+          "low-right-offset": {
+            "type": "number",
+            "value": 1,
+            "version": "3.0"
+          },
+          "no-offset": {
+            "type": "number",
+            "value": 0,
+            "version": "3.0"
+          }
+        },
+        "y": {
+          "high-height": {
+            "type": "number",
+            "value": 8,
+            "version": "3.0"
+          },
+          "low-height": {
+            "type": "number",
+            "value": 2,
+            "version": "3.0"
+          },
+          "mid-height": {
+            "type": "number",
+            "value": 4,
+            "version": "3.0"
+          },
+          "no-offset": {
+            "type": "number",
+            "value": 0,
+            "version": "3.0"
+          }
+        }
+      },
+      "stress": {
+        "showcase": {
+          "layer-2": {
+            "color": {
+              "type": "color",
+              "value": "rgba(84, 241, 100, 0.4)",
+              "version": "3.0"
+            }
+          },
+          "layer-3": {
+            "color": {
+              "type": "color",
+              "value": "rgba(202, 1, 110, 0.6)",
+              "version": "3.0"
+            }
+          }
+        }
+      }
+    },
+    "grid": {
+      "gutter": {
+        "comment": "Spacing between layout columns",
+        "type": "number",
+        "value": 10,
+        "version": "3.0"
+      },
+      "margin": {
+        "comment": "L/R page margins. Margins may also be used to define dimension",
+        "type": "number",
+        "value": 20,
+        "version": "3.0"
+      },
+      "page-end": {
+        "comment": "Use this vertical spacer at the bottom of each page (before the footer on web) below all components on the page.",
+        "type": "number",
+        "value": 100,
+        "version": "3.0"
+      },
+      "vertical-spacer": {
+        "comment": "std vertical spacing between elements",
+        "type": "number",
+        "value": "{breakpoint.grid.margin}",
+        "version": "3.0"
+      },
+      "viewport": {
+        "width-max": {
+          "type": "number",
+          "value": 439,
+          "version": "3.0"
+        },
+        "width-min": {
+          "type": "number",
+          "value": 0,
+          "version": "3.0"
+        }
+      }
+    },
+    "icons": {
+      "basic": {
+        "body": {
+          "lg": {
+            "type": "number",
+            "value": 16,
+            "version": "3.0"
+          },
+          "md": {
+            "type": "number",
+            "value": 14,
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": 12,
+            "version": "3.0"
+          },
+          "xl": {
+            "type": "number",
+            "value": 20,
+            "version": "3.0"
+          },
+          "xs": {
+            "type": "number",
+            "value": 10,
+            "version": "3.0"
+          }
+        },
+        "heading": {
+          "lg": {
+            "type": "number",
+            "value": 48,
+            "version": "3.0"
+          },
+          "md": {
+            "type": "number",
+            "value": 40,
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": 32,
+            "version": "3.0"
+          },
+          "xs": {
+            "type": "number",
+            "value": 24,
+            "version": "3.0"
+          }
+        },
+        "rating": {
+          "md": {
+            "type": "number",
+            "value": 19,
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": 15,
+            "version": "3.0"
+          }
+        },
+        "unique": {
+          "inline": {
+            "type": "number",
+            "value": 16,
+            "version": "3.0"
+          },
+          "message-lg": {
+            "type": "number",
+            "value": 24,
+            "version": "3.0"
+          },
+          "player": {
+            "type": "number",
+            "value": 40,
+            "version": "3.0"
+          }
+        }
+      }
+    },
+    "min-height": {
+      "basic": {
+        "2xs": {
+          "comment": "Badges",
+          "type": "number",
+          "value": 16,
+          "version": "3.0"
+        },
+        "lg": {
+          "type": "number",
+          "value": 64,
+          "version": "3.0"
+        },
+        "md": {
+          "type": "number",
+          "value": 48,
+          "version": "3.0"
+        },
+        "sm": {
+          "type": "number",
+          "value": 40,
+          "version": "3.0"
+        },
+        "xs": {
+          "type": "number",
+          "value": 32,
+          "version": "3.0"
+        }
+      }
+    },
+    "space": {
+      "basic": {
+        "none": {
+          "type": "number",
+          "value": 0,
+          "version": "3.0"
+        },
+        "responsive": {
+          "2xl": {
+            "type": "number",
+            "value": 48,
+            "version": "3.0"
+          },
+          "2xs": {
+            "type": "number",
+            "value": 10,
+            "version": "3.0"
+          },
+          "3xs": {
+            "type": "number",
+            "value": 8,
+            "version": "3.0"
+          },
+          "lg": {
+            "type": "number",
+            "value": 24,
+            "version": "3.0"
+          },
+          "md": {
+            "type": "number",
+            "value": 20,
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": 16,
+            "version": "3.0"
+          },
+          "xl": {
+            "type": "number",
+            "value": 32,
+            "version": "3.0"
+          },
+          "xs": {
+            "type": "number",
+            "value": 12,
+            "version": "3.0"
+          }
+        },
+        "static": {
+          "2xs": {
+            "type": "number",
+            "value": 1,
+            "version": "3.0"
+          },
+          "md": {
+            "type": "number",
+            "value": 6,
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": 4,
+            "version": "3.0"
+          },
+          "xs": {
+            "type": "number",
+            "value": 2,
+            "version": "3.0"
+          }
+        }
+      }
+    },
+    "stroke": {
+      "basic": {
+        "action": {
+          "md": {
+            "type": "number",
+            "value": 1.5,
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": 1,
+            "version": "3.0"
+          }
+        },
+        "general": {
+          "lg": {
+            "type": "number",
+            "value": 2,
+            "version": "3.0"
+          },
+          "md": {
+            "type": "number",
+            "value": 1.5,
+            "version": "3.0"
+          },
+          "none": {
+            "type": "number",
+            "value": 0,
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": 1,
+            "version": "3.0"
+          }
+        },
+        "indicator": {
+          "md": {
+            "comment": "Used for badge border strokes",
+            "type": "number",
+            "value": 2,
+            "version": "3.0"
+          },
+          "sm": {
+            "comment": "Used for badge border strokes",
+            "type": "number",
+            "value": 1,
+            "version": "3.0"
+          }
+        },
+        "input": {
+          "emphasis": {
+            "comment": "Used for badge border strokes",
+            "type": "number",
+            "value": 1.5,
+            "version": "3.0"
+          },
+          "emphasis-plus": {
+            "type": "number",
+            "value": 3,
+            "version": "3.0"
+          },
+          "regular": {
+            "comment": "Used for badge border strokes",
+            "type": "number",
+            "value": 1,
+            "version": "3.0"
+          }
+        },
+        "utility": {
+          "progress": {
+            "type": "number",
+            "value": 2,
+            "version": "3.0"
+          }
+        }
+      },
+      "brand": {
+        "dplus": {
+          "action": {
+            "md": {
+              "type": "number",
+              "value": 2,
+              "version": "3.0"
+            }
+          },
+          "general": {
+            "lg": {
+              "type": "number",
+              "value": 3,
+              "version": "3.0"
+            },
+            "md": {
+              "type": "number",
+              "value": 2,
+              "version": "3.0"
+            }
+          },
+          "input": {
+            "emphasis": {
+              "comment": "Used for badge border strokes",
+              "type": "number",
+              "value": 2,
+              "version": "3.0"
+            }
+          }
+        },
+        "stress": {
+          "action": {
+            "md": {
+              "type": "number",
+              "value": 3,
+              "version": "3.0"
+            },
+            "sm": {
+              "type": "number",
+              "value": 2,
+              "version": "3.0"
+            }
+          },
+          "general": {
+            "lg": {
+              "type": "number",
+              "value": 4,
+              "version": "3.0"
+            },
+            "md": {
+              "type": "number",
+              "value": 2,
+              "version": "3.0"
+            },
+            "sm": {
+              "type": "number",
+              "value": 0.5,
+              "version": "3.0"
+            }
+          },
+          "indicator": {
+            "md": {
+              "comment": "Used for badge border strokes",
+              "type": "number",
+              "value": 2,
+              "version": "3.0"
+            },
+            "sm": {
+              "comment": "Used for badge border strokes",
+              "type": "number",
+              "value": 0.5,
+              "version": "3.0"
+            }
+          },
+          "input": {
+            "emphasis": {
+              "comment": "Used for badge border strokes",
+              "type": "number",
+              "value": 0.5,
+              "version": "3.0"
+            },
+            "emphasis-plus": {
+              "type": "number",
+              "value": 4,
+              "version": "3.0"
+            },
+            "regular": {
+              "comment": "Used for badge border strokes",
+              "type": "number",
+              "value": 1.5,
+              "version": "3.0"
+            }
+          },
+          "utility": {
+            "progress": {
+              "type": "number",
+              "value": 3,
+              "version": "3.0"
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "action": {
+        "md": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step 0}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 0}",
+            "version": "3.0"
+          }
+        },
+        "sm": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step-1}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step-1}",
+            "version": "3.0"
+          }
+        },
+        "xs": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step-2}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step-2}",
+            "version": "3.0"
+          }
+        }
+      },
+      "body": {
+        "lg": {
+          "lh-default": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.default.s.step 1}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 1}",
+            "version": "3.0"
+          }
+        },
+        "md": {
+          "lh-default": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.default.s.step 0}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 0}",
+            "version": "3.0"
+          }
+        },
+        "sm": {
+          "lh-default": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.default.s.step-1}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step-1}",
+            "version": "3.0"
+          }
+        },
+        "xs": {
+          "lh-default": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.default.s.step-2}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step-2}",
+            "version": "3.0"
+          }
+        }
+      },
+      "heading": {
+        "lg": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step 2}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 2}",
+            "version": "3.0"
+          }
+        },
+        "md": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step 1}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 1}",
+            "version": "3.0"
+          }
+        },
+        "sm": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step 0}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 0}",
+            "version": "3.0"
+          }
+        },
+        "xl": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step 3}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 3}",
+            "version": "3.0"
+          }
+        },
+        "xs": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step-1}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step-1}",
+            "version": "3.0"
+          }
+        }
+      },
+      "indicator": {
+        "code": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step-1}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step-1}",
+            "version": "3.0"
+          }
+        },
+        "sm": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step-2}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step-2}",
+            "version": "3.0"
+          }
+        }
+      },
+      "input": {
+        "inline": {
+          "lh-default": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.default.s.step 0}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 0}",
+            "version": "3.0"
+          }
+        },
+        "inset": {
+          "lh-default": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.default.s.step 0}",
+            "version": "3.0"
+          },
+          "segment": {
+            "lh-default": {
+              "type": "number",
+              "value": "{text-font.scale.basic.lh.default.s.step 1}",
+              "version": "3.0"
+            },
+            "sz": {
+              "type": "number",
+              "value": "{text-font.scale.basic.sz.s.step 1}",
+              "version": "3.0"
+            }
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 0}",
+            "version": "3.0"
+          }
+        },
+        "stacked": {
+          "lh-default": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.default.s.step 0}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step 0}",
+            "version": "3.0"
+          }
+        }
+      },
+      "ls": {
+        "ls-default": {
+          "type": "number",
+          "value": 0,
+          "version": "3.0"
+        },
+        "ls-wide": {
+          "type": "number",
+          "value": 1,
+          "version": "3.0"
+        }
+      },
+      "metadata": {
+        "sm": {
+          "lh-tight": {
+            "type": "number",
+            "value": "{text-font.scale.basic.lh.tight.s.step-2}",
+            "version": "3.0"
+          },
+          "sz": {
+            "type": "number",
+            "value": "{text-font.scale.basic.sz.s.step-2}",
+            "version": "3.0"
+          }
+        }
+      }
+    }
+  }
+}

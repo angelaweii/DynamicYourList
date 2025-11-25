@@ -1,0 +1,1010 @@
+{
+  "border": {
+    "corner": {
+      "component": {
+        "badge": {
+          "anchor": {
+            "comment": "Corner radius token for the top-left of the tile badge",
+            "type": "corner",
+            "value": "{border.corner.component.tile.standard}",
+            "version": "3.0"
+          },
+          "edge": {
+            "comment": "Corner radius token for the bottom-left and top-right of the tile badge",
+            "type": "corner",
+            "value": {
+              "bottomLeft": 0,
+              "bottomRight": 0,
+              "topLeft": 0,
+              "topRight": 0
+            },
+            "version": "3.0"
+          },
+          "standard": {
+            "comment": "Corner radius token for the bottom-right of the tile badge",
+            "type": "corner",
+            "value": "{border.corner.indicator.sm}",
+            "version": "3.0"
+          }
+        },
+        "button": {
+          "small": {
+            "comment": "Border token used for button (small size)",
+            "type": "corner",
+            "value": "{border.corner.general.sm}",
+            "version": "3.0"
+          },
+          "standard": {
+            "comment": "Border token used for button (standard size)",
+            "type": "corner",
+            "value": "{border.corner.general.full}",
+            "version": "3.0"
+          },
+          "utility": {
+            "comment": "Border token used for utility buttons",
+            "type": "corner",
+            "value": "{border.corner.general.none}",
+            "version": "3.0"
+          }
+        },
+        "card": {
+          "standard": {
+            "comment": "Corner radius used on cards",
+            "type": "corner",
+            "value": "{border.corner.general.md}",
+            "version": "3.0"
+          }
+        },
+        "checkbox": {
+          "comment": "Corner radius token used for checkbox.",
+          "type": "corner",
+          "value": "{border.corner.input.standard}",
+          "version": "3.0"
+        },
+        "chip": {
+          "standard": {
+            "comment": "Corner radius for the standard chip item",
+            "type": "corner",
+            "value": "{border.corner.general.md}",
+            "version": "3.0"
+          },
+          "suggestion": {
+            "comment": "Corner radius for the suggestion chip item",
+            "type": "corner",
+            "value": "{border.corner.general.md}",
+            "version": "3.0"
+          }
+        },
+        "input": {
+          "field-action": {
+            "comment": "(WeMo only) Used for the corner radii for the backplate of in-field action buttons.",
+            "type": "corner",
+            "value": "{border.corner.general.full}",
+            "version": "3.0"
+          }
+        },
+        "pagination-indicator": {
+          "comment": "Corner radius token used for pagination Indicators (pagination dots)",
+          "type": "corner",
+          "value": "{component-bp.pagination-indicator.corner.basic}",
+          "version": "3.0"
+        },
+        "row": {
+          "comment": "Corner radius token used for rows",
+          "type": "corner",
+          "value": "{border.corner.component.card.standard}",
+          "version": "3.0"
+        },
+        "tile": {
+          "standard": {
+            "comment": "Corner radius token for tile standard",
+            "type": "corner",
+            "value": {
+              "bottomLeft": 0,
+              "bottomRight": 0,
+              "topLeft": 0,
+              "topRight": 0
+            },
+            "version": "3.0"
+          }
+        },
+        "toggle": {
+          "comment": "Corner radius token used on toggle (container and thumb)",
+          "type": "corner",
+          "value": "{border.corner.general.md}",
+          "version": "3.0"
+        }
+      }
+    },
+    "stroke": {
+      "component": {
+        "button": {
+          "progress-ring": {
+            "comment": "Stroke token used for button progress ring",
+            "type": "number",
+            "value": "{border.stroke.general.md}",
+            "version": "3.0"
+          },
+          "quiet": {
+            "base": {
+              "comment": "Stroke token used for base state of quiet button",
+              "mode": "wemo",
+              "type": "number",
+              "value": "{border.stroke.action.md}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Stroke token used for hover state of quiet button",
+              "mode": "wemo",
+              "type": "number",
+              "value": "{border.stroke.action.sm}",
+              "version": "3.0"
+            }
+          }
+        },
+        "chip": {
+          "selected": {
+            "comment": "Border stroke for selected standard chip item",
+            "type": "number",
+            "value": "{component-bp.chip.stroke.basic}",
+            "version": "3.0"
+          },
+          "unselected": {
+            "comment": "Border stroke for unselected standard chip item",
+            "type": "number",
+            "value": "{component-bp.chip.stroke.basic}",
+            "version": "3.0"
+          }
+        },
+        "focus-ring": {
+          "md": {
+            "inner": {
+              "comment": "Inner focus ring stroke token for the medium variant",
+              "type": "number",
+              "value": "{component-bp.focus-ring.md.inner.basic}",
+              "version": "3.0"
+            },
+            "outer": {
+              "comment": "Outer focus ring stroke token for the medium variant",
+              "type": "number",
+              "value": "{component-bp.focus-ring.md.outer.stress}",
+              "version": "3.0"
+            }
+          },
+          "sm": {
+            "inner": {
+              "comment": "Inner focus ring stroke token for the small variant",
+              "type": "number",
+              "value": "{component-bp.focus-ring.sm.inner.basic}",
+              "version": "3.0"
+            },
+            "outer": {
+              "comment": "Outer focus ring stroke token for the small variant",
+              "type": "number",
+              "value": "{component-bp.focus-ring.sm.outer.stress}",
+              "version": "3.0"
+            }
+          }
+        }
+      }
+    }
+  },
+  "color": {
+    "component": {
+      "badge": {
+        "rating": {
+          "fill": {
+            "comment": "Color token for ratings badge fill",
+            "type": "color",
+            "value": "{color.surface.mid}",
+            "version": "3.0"
+          }
+        }
+      },
+      "button": {
+        "ghost": {
+          "fill": {
+            "base": {
+              "comment": "Fill color for ghost button in default state",
+              "type": "color",
+              "value": "{color.general.transparent}",
+              "version": "3.0"
+            },
+            "focus": {
+              "comment": "Fill color for ghost button in focus state",
+              "mode": "ctv",
+              "type": "color",
+              "value": "{color.utility.focus.ctv.fill.focus}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Fill color for ghost button in hover state",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.secondary.fill.high}",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Fill color for ghost button in press state",
+              "type": "color",
+              "value": "{component-bp.button.ghost.fill.press.stress}",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "base": {
+              "comment": "Text color for ghost button in default state",
+              "type": "color",
+              "value": "{component-bp.button.ghost.text.base.stress}",
+              "version": "3.0"
+            },
+            "focus": {
+              "comment": "Text color for ghost button in focus state",
+              "mode": "ctv",
+              "type": "color",
+              "value": "{color.utility.focus.ctv.text}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Text color for ghost button in hover state",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.secondary.text}",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Text color for ghost button in press state",
+              "type": "color",
+              "value": "{component-bp.button.ghost.text.press.stress}",
+              "version": "3.0"
+            }
+          }
+        },
+        "loud": {
+          "fill": {
+            "base": {
+              "comment": "Fill color used on default state of button loud",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.primary.fill.mid}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Fill color used on hover state of button loud",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.primary.fill.high}",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Fill color used on press state of button loud",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.primary.fill.low}",
+              "version": "3.0"
+            }
+          },
+          "progress": {
+            "fill": {
+              "basic": {
+                "comment": "Fill color used for progress of button loud",
+                "mode": "wemo",
+                "type": "color",
+                "value": "{color.indicator.neutral.text}",
+                "version": "3.0"
+              },
+              "live": {
+                "comment": "Fill color used for live progress fill of button loud",
+                "mode": "wemo",
+                "type": "color",
+                "value": "{color.indicator.live.fill}",
+                "version": "3.0"
+              },
+              "time": {
+                "comment": "Fill color used for elapsed time on progress ring of button loud",
+                "mode": "wemo",
+                "type": "color",
+                "value": "{color.component.button.loud.text.base}",
+                "version": "3.0"
+              }
+            },
+            "track": {
+              "basic": {
+                "comment": "Fill color used for the track on progress of button loud",
+                "mode": "wemo",
+                "type": "color",
+                "value": "{color.indicator.secondary.fill}",
+                "version": "3.0"
+              },
+              "live": {
+                "comment": "Fill color used for the track on live progress of button loud",
+                "mode": "wemo",
+                "type": "color",
+                "value": "{color.component.button.loud.progress.track.basic}",
+                "version": "3.0"
+              },
+              "time": {
+                "comment": "Fill color used for the track on progress ring of button loud",
+                "mode": "wemo",
+                "type": "color",
+                "value": "{color.component.button.loud.progress.track.basic}",
+                "version": "3.0"
+              }
+            }
+          },
+          "text": {
+            "base": {
+              "comment": "Text color used on default state of button loud",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.primary.text}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Text color used on hover state of button loud",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.primary.text}",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Text color used on press state of button loud",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.primary.text}",
+              "version": "3.0"
+            }
+          }
+        },
+        "quiet": {
+          "border": {
+            "base": {
+              "comment": "Border color used on default state of quiet button",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.general.transparent}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Border color used on default state of quiet button",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.general.border.low}",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Border color used on press state of quiet button",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.general.transparent}",
+              "version": "3.0"
+            }
+          },
+          "fill": {
+            "base": {
+              "comment": "Fill color used on default state of quiet button",
+              "type": "color",
+              "value": "{component-bp.button.quiet.fill.base.basic}",
+              "version": "3.0"
+            },
+            "focus": {
+              "comment": "Fill color used on focus state of quiet button",
+              "mode": "ctv",
+              "type": "color",
+              "value": "{color.utility.focus.ctv.fill.focus}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Fill color used on hover state of quiet button",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.secondary.fill.high}",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Fill color used on press state of quiet button",
+              "type": "color",
+              "value": "{component-bp.button.quiet.fill.press.stress}",
+              "version": "3.0"
+            }
+          },
+          "progress": {
+            "fill": {
+              "basic": {
+                "base": {
+                  "comment": "Fill color used for the progress of quiet button",
+                  "type": "color",
+                  "value": "{component-bp.button.quiet.progress.fill.basic.basic}",
+                  "version": "3.0"
+                },
+                "focus": {
+                  "comment": "Fill color used for the progress of quiet button",
+                  "mode": "ctv",
+                  "type": "color",
+                  "value": "{color.utility.focus.ctv.text}",
+                  "version": "3.0"
+                }
+              },
+              "live": {
+                "base": {
+                  "comment": "Fill color used for the live progress of quiet button",
+                  "type": "color",
+                  "value": "{component-bp.button.quiet.progress.fill.live.basic}",
+                  "version": "3.0"
+                },
+                "focus": {
+                  "mode": "ctv",
+                  "type": "color",
+                  "value": "{color.component.button.quiet.progress.fill.live.base}",
+                  "version": "3.0"
+                }
+              },
+              "time": {
+                "base": {
+                  "type": "color",
+                  "value": "{color.component.button.quiet.progress.fill.basic.base}",
+                  "version": "3.0"
+                },
+                "focus": {
+                  "mode": "ctv",
+                  "type": "color",
+                  "value": "{color.component.button.quiet.text.focus}",
+                  "version": "3.0"
+                }
+              }
+            },
+            "track": {
+              "basic": {
+                "base": {
+                  "comment": "Fill color for the progress track on quiet button in default state",
+                  "type": "color",
+                  "value": "{component-bp.button.quiet.progress.track.basic.stress}",
+                  "version": "3.0"
+                },
+                "focus": {
+                  "comment": "Fill color used for the progress track of quiet button on focus",
+                  "mode": "ctv",
+                  "type": "color",
+                  "value": "{color.action.secondary.fill.high}",
+                  "version": "3.0"
+                }
+              },
+              "live": {
+                "base": {
+                  "comment": "Fill color used for the live progress track of quiet button in default state",
+                  "type": "color",
+                  "value": "{component-bp.button.quiet.progress.track.live.stress}",
+                  "version": "3.0"
+                },
+                "focus": {
+                  "comment": "Fill color used for the live progress track of quiet button on focus",
+                  "mode": "ctv",
+                  "type": "color",
+                  "value": "{color.component.button.quiet.progress.track.basic.focus}",
+                  "version": "3.0"
+                }
+              },
+              "time": {
+                "base": {
+                  "type": "color",
+                  "value": "{color.component.button.quiet.progress.track.basic.base}",
+                  "version": "3.0"
+                },
+                "focus": {
+                  "mode": "ctv",
+                  "type": "color",
+                  "value": "{color.component.button.quiet.progress.track.basic.focus}",
+                  "version": "3.0"
+                }
+              }
+            }
+          },
+          "text": {
+            "base": {
+              "comment": "Text color used on default state of quiet button",
+              "type": "color",
+              "value": "{component-bp.button.quiet.text.base.stress}",
+              "version": "3.0"
+            },
+            "focus": {
+              "comment": "Text color used on focus state of quiet button",
+              "mode": "ctv",
+              "type": "color",
+              "value": "{color.utility.focus.ctv.text}",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Text color used on hover state of quiet button",
+              "mode": "wemo",
+              "type": "color",
+              "value": "{color.action.neutral.text.high}",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Text color used on press state of quiet button",
+              "type": "color",
+              "value": "{component-bp.button.quiet.text.press.stress}",
+              "version": "3.0"
+            }
+          }
+        },
+        "utility-overlay": {
+          "fill": {
+            "base": {
+              "comment": "Fill color for utility overlay button in default state. Used for scenarios where the utility button must have a backplate to preserve contrast, such as overlaying an image.",
+              "mode": "wemo",
+              "type": "color",
+              "value": "rgba(13, 133, 171, 0.8)",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Fill color for utility overlay button in hover state. Used for scenarios where the utility button must have a backplate to preserve contrast, such as overlaying an image.",
+              "mode": "wemo",
+              "type": "color",
+              "value": "rgb(13, 171, 29)",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Fill color for utility overlay button in press state. Used for scenarios where the utility button must have a backplate to preserve contrast, such as overlaying an image.",
+              "mode": "wemo",
+              "type": "color",
+              "value": "rgba(13, 171, 29, 0.3)",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "base": {
+              "comment": "Text color for utility overlay button in default state. Used for scenarios where the utility button must have a backplate to preserve contrast, such as overlaying an image.",
+              "mode": "wemo",
+              "type": "color",
+              "value": "rgba(255, 200, 160, 0.65)",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "Text color for utility overlay button in hover state. Used for scenarios where the utility button must have a backplate to preserve contrast, such as overlaying an image.",
+              "mode": "wemo",
+              "type": "color",
+              "value": "rgb(116, 32, 222)",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "Text color for utility overlay button in press state. Used for scenarios where the utility button must have a backplate to preserve contrast, such as overlaying an image.",
+              "mode": "wemo",
+              "type": "color",
+              "value": "rgb(20, 181, 152)",
+              "version": "3.0"
+            }
+          }
+        }
+      },
+      "card": {
+        "border": {
+          "unselected": {
+            "base": {
+              "comment": "border color used on cards",
+              "type": "color",
+              "value": "{color.general.border.lowest}",
+              "version": "3.0"
+            }
+          }
+        }
+      },
+      "checkbox": {
+        "fill": {
+          "unselected": {
+            "comment": "⛔️ #DEPRECATED. Replace with: color.general.transparent \n🪦Deletion date: after 2025-DEC-01",
+            "deprecated": true,
+            "type": "color",
+            "value": "{color.general.transparent}",
+            "version": "3.0"
+          }
+        },
+        "indicator": {
+          "icon": {
+            "comment": "⛔️ #DEPRECATED. Replace with: color.input.primary.option.indicator\n🪦Deletion date: after 2025-DEC-01",
+            "deprecated": true,
+            "type": "color",
+            "value": "{color.input.primary.option.indicator}",
+            "version": "3.0"
+          }
+        }
+      },
+      "chip": {
+        "border": {
+          "focus": {
+            "comment": "Border color token for focused standard chip item",
+            "mode": "ctv",
+            "type": "color",
+            "value": "{color.surface.mid}",
+            "version": "3.0"
+          },
+          "hover": {
+            "comment": "Border color token for hovered standard chip item",
+            "mode": "wemo",
+            "type": "color",
+            "value": "{color.surface.mid}",
+            "version": "3.0"
+          },
+          "press": {
+            "comment": "Border color token for pressed standard chip item",
+            "type": "color",
+            "value": "{component-bp.chip.border.press.stress}",
+            "version": "3.0"
+          },
+          "selected": {
+            "base": {
+              "comment": "Border color token for selected standard chip item",
+              "type": "color",
+              "value": "{color.general.border.mid}",
+              "version": "3.0"
+            }
+          },
+          "unselected": {
+            "base": {
+              "comment": "Border color token for unselected standard chip item",
+              "type": "color",
+              "value": "{color.general.border.low}",
+              "version": "3.0"
+            }
+          }
+        },
+        "fill": {
+          "focus": {
+            "comment": "Fill color token for focused standard chip item",
+            "mode": "ctv",
+            "type": "color",
+            "value": "{color.utility.focus.ctv.fill.focus}",
+            "version": "3.0"
+          },
+          "hover": {
+            "comment": "Fill color token for hovered standard chip item",
+            "mode": "wemo",
+            "type": "color",
+            "value": "{color.utility.skeleton.fill.high}",
+            "version": "3.0"
+          },
+          "press": {
+            "comment": "Fill color token for pressed standard chip item",
+            "type": "color",
+            "value": "{component-bp.chip.fill.press.basic}",
+            "version": "3.0"
+          },
+          "selected": {
+            "base": {
+              "comment": "Fill color token for selected standard chip item",
+              "type": "color",
+              "value": "{color.action.secondary.fill.mid}",
+              "version": "3.0"
+            }
+          },
+          "unselected": {
+            "base": {
+              "comment": "Fill color token for unselected standard chip item",
+              "type": "color",
+              "value": "{color.surface.mid}",
+              "version": "3.0"
+            }
+          }
+        },
+        "stacked": {
+          "fill": {
+            "selected": {
+              "base": {
+                "comment": "Fill color token for selected stacked chip item",
+                "type": "color",
+                "value": "{color.component.chip.suggestion.fill.selected.base}",
+                "version": "3.0"
+              }
+            },
+            "unselected": {
+              "base": {
+                "comment": "Fill color token for unselected stacked chip item",
+                "type": "color",
+                "value": "{color.surface.high}",
+                "version": "3.0"
+              }
+            }
+          },
+          "text": {
+            "selected": {
+              "base": {
+                "comment": "Text color token for selected stacked chip item",
+                "type": "color",
+                "value": "{color.component.chip.suggestion.text.selected.base}",
+                "version": "3.0"
+              }
+            },
+            "unselected": {
+              "base": {
+                "comment": "Text color token for unselected stacked chip item",
+                "type": "color",
+                "value": "{color.component.chip.suggestion.text.unselected.base}",
+                "version": "3.0"
+              }
+            }
+          }
+        },
+        "suggestion": {
+          "border": {
+            "selected": {
+              "base": {
+                "comment": "Border color token for selected suggestion chip item",
+                "type": "color",
+                "value": "{color.general.border.mid}",
+                "version": "3.0"
+              }
+            },
+            "unselected": {
+              "base": {
+                "comment": "Fill color token for unselected suggestion chip item",
+                "type": "color",
+                "value": "{color.general.border.low}",
+                "version": "3.0"
+              }
+            }
+          },
+          "fill": {
+            "selected": {
+              "base": {
+                "comment": "Fill color token for selected suggestion chip item",
+                "type": "color",
+                "value": "{color.action.neutral.text.mid}",
+                "version": "3.0"
+              }
+            },
+            "unselected": {
+              "base": {
+                "comment": "Fill color token for unselected suggestion chip item",
+                "type": "color",
+                "value": "{color.surface.mid}",
+                "version": "3.0"
+              }
+            }
+          },
+          "text": {
+            "selected": {
+              "base": {
+                "comment": "Text color token for selected suggestion chip item",
+                "type": "color",
+                "value": "{color.action.neutral.text.high}",
+                "version": "3.0"
+              }
+            },
+            "unselected": {
+              "base": {
+                "comment": "Text color token for unselected suggestion chip item",
+                "type": "color",
+                "value": "{color.action.neutral.text.mid}",
+                "version": "3.0"
+              }
+            }
+          }
+        },
+        "text": {
+          "focus": {
+            "comment": "Text color token for focused standard chip item",
+            "mode": "ctv",
+            "type": "color",
+            "value": "{color.utility.focus.ctv.text}",
+            "version": "3.0"
+          },
+          "hover": {
+            "comment": "Text color token for hovered standard chip item",
+            "mode": "wemo",
+            "type": "color",
+            "value": "{color.action.primary.text}",
+            "version": "3.0"
+          },
+          "press": {
+            "comment": "Text color token for pressed standard chip item",
+            "type": "color",
+            "value": "{component-bp.chip.text.press.basic}",
+            "version": "3.0"
+          },
+          "selected": {
+            "base": {
+              "comment": "Text color token for selected standard chip item",
+              "type": "color",
+              "value": "{color.action.neutral.text.high}",
+              "version": "3.0"
+            }
+          },
+          "unselected": {
+            "base": {
+              "comment": "Text color token for unselected standard chip item",
+              "type": "color",
+              "value": "{color.action.neutral.text.mid}",
+              "version": "3.0"
+            }
+          }
+        }
+      },
+      "inline-message": {
+        "error": {
+          "border": {
+            "comment": "Border color token used for the inline-message error state",
+            "type": "color",
+            "value": "{color.utility.info.border.mid}",
+            "version": "3.0"
+          }
+        },
+        "info": {
+          "border": {
+            "comment": "Border color token used for inline-message info",
+            "type": "color",
+            "value": "{color.utility.error.border.mid}",
+            "version": "3.0"
+          }
+        }
+      },
+      "input": {
+        "field": {
+          "active": {
+            "border": {
+              "comment": "Use for the border of text input fields in an active state.",
+              "type": "color",
+              "value": "{component-bp.field.stress}",
+              "version": "3.0"
+            }
+          }
+        },
+        "field-action": {
+          "active": {
+            "fill": {
+              "comment": "(WeMo only) Use for the backplate of in-field buttons, when the field is in an active state. Use text from the input/primary group for the icon or text on this action.",
+              "type": "color",
+              "value": "{color.input.spotlight}",
+              "version": "3.0"
+            }
+          },
+          "basic": {
+            "fill": {
+              "comment": "(WeMo only) Use for the backplate of in-field buttons, when the field is in an inactive state. Use text from the input/neutral group for the icon or text on this action.",
+              "type": "color",
+              "value": "{color.input.spotlight}",
+              "version": "3.0"
+            }
+          }
+        }
+      },
+      "list-item": {
+        "progress": {
+          "fill": {
+            "basic": {
+              "type": "color",
+              "value": "{color.utility.progress.fill.high}",
+              "version": "3.0"
+            },
+            "live": {
+              "type": "color",
+              "value": "{color.indicator.live.fill}",
+              "version": "3.0"
+            }
+          },
+          "track": {
+            "basic": {
+              "comment": "Fill color for the progress track on quiet button in default state",
+              "type": "color",
+              "value": "{color.scrim.low}",
+              "version": "3.0"
+            },
+            "live": {
+              "comment": "Fill color for the progress track on quiet button in default state",
+              "type": "color",
+              "value": "{color.component.list-item.progress.track.basic}",
+              "version": "3.0"
+            }
+          }
+        }
+      },
+      "radio-button": {
+        "fill": {
+          "unselected": {
+            "comment": "⛔️ #DEPRECATED. Replace with: color.general.transparent \n🪦Deletion date: after 2025-DEC-01",
+            "deprecated": true,
+            "type": "color",
+            "value": "{color.general.transparent}",
+            "version": "3.0"
+          }
+        }
+      },
+      "sheet": {
+        "grabber": {
+          "fill": {
+            "comment": "Color fill for the sheet grabber, if native grabber color is not used.",
+            "type": "color",
+            "value": "{color.general.text.low}",
+            "version": "3.0"
+          }
+        }
+      },
+      "tile": {
+        "overlay": {
+          "press": {
+            "comment": "Fill color token used for tile overlay in the press state",
+            "type": "color",
+            "value": "rgba(238, 134, 42, 0.3)",
+            "version": "3.0"
+          }
+        },
+        "progress": {
+          "fill": {
+            "basic": {
+              "type": "color",
+              "value": "{color.indicator.primary.fill}",
+              "version": "3.0"
+            },
+            "live": {
+              "comment": "Fill color token used for tile progress on live events",
+              "type": "color",
+              "value": "{color.indicator.live.fill}",
+              "version": "3.0"
+            }
+          },
+          "track": {
+            "basic": {
+              "comment": "Fill color token used for tile progress track",
+              "type": "color",
+              "value": "{color.scrim.low}",
+              "version": "3.0"
+            },
+            "live": {
+              "comment": "Fill color token used for tile progress track on live events",
+              "type": "color",
+              "value": "{color.scrim.low}",
+              "version": "3.0"
+            }
+          }
+        }
+      },
+      "toggle": {
+        "indicator": {
+          "icon": {
+            "comment": "Icon color token used for toggle icon",
+            "type": "color",
+            "value": "{color.input.primary.text.low}",
+            "version": "3.0"
+          }
+        }
+      }
+    }
+  },
+  "space-size": {
+    "size": {
+      "icon": {
+        "component": {
+          "tile": {
+            "access": {
+              "list": {
+                "comment": "Used on list Tiles for icons indicating unentitled content.",
+                "type": "number",
+                "value": "{space-size.size.icon.action.md}",
+                "version": "3.0"
+              },
+              "standard": {
+                "comment": "Icon size token for access item (banner icon) icon on tile",
+                "type": "number",
+                "value": "{space-size.size.icon.action.md}",
+                "version": "3.0"
+              }
+            },
+            "action": {
+              "list": {
+                "comment": "Used on list Tiles for icons indicating unentitled content.",
+                "type": "number",
+                "value": "{space-size.size.icon.action.xs}",
+                "version": "3.0"
+              },
+              "standard": {
+                "comment": "Icon size token for action (play) icon on tile",
+                "type": "number",
+                "value": "{space-size.size.icon.action.md}",
+                "version": "3.0"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

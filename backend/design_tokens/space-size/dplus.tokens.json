@@ -1,0 +1,357 @@
+{
+  "space-size": {
+    "size": {
+      "icon": {
+        "action": {
+          "jumbo": {
+            "type": "number",
+            "value": "{breakpoint.icons.basic.unique.player}",
+            "version": "3.0"
+          },
+          "lg": {
+            "type": "number",
+            "value": "{breakpoint.icons.basic.heading.xs}",
+            "version": "3.0"
+          },
+          "md": {
+            "type": "number",
+            "value": "{breakpoint.icons.basic.body.xl}",
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": "{breakpoint.icons.basic.body.lg}",
+            "version": "3.0"
+          },
+          "xs": {
+            "type": "number",
+            "value": "{breakpoint.icons.basic.body.sm}",
+            "version": "3.0"
+          }
+        },
+        "badge": {
+          "type": "number",
+          "value": "{breakpoint.icons.basic.body.xs}",
+          "version": "3.0"
+        },
+        "inline": {
+          "type": "number",
+          "value": "{breakpoint.icons.basic.unique.inline}",
+          "version": "3.0"
+        },
+        "message": {
+          "lg": {
+            "type": "number",
+            "value": "{breakpoint.icons.basic.unique.message-lg}",
+            "version": "3.0"
+          },
+          "md": {
+            "type": "number",
+            "value": "{breakpoint.icons.basic.body.xl}",
+            "version": "3.0"
+          }
+        },
+        "rating": {
+          "md": {
+            "comment": "Used for pictogram ratings in Info Block and CDP components.",
+            "type": "number",
+            "value": "{breakpoint.icons.basic.rating.md}",
+            "version": "3.0"
+          },
+          "sm": {
+            "comment": "Used for pictogram ratings in Tiles and List Item Accordion.",
+            "type": "number",
+            "value": "{breakpoint.icons.basic.rating.sm}",
+            "version": "3.0"
+          }
+        }
+      },
+      "min-height": {
+        "2xs": {
+          "comment": "Use for the min-height of elements",
+          "experimental": true,
+          "type": "number",
+          "value": "{breakpoint.min-height.basic.2xs}",
+          "version": "3.0"
+        },
+        "lg": {
+          "comment": "Use for the min-height of elements",
+          "experimental": true,
+          "type": "number",
+          "value": "{breakpoint.min-height.basic.lg}",
+          "version": "3.0"
+        },
+        "md": {
+          "comment": "Use for the min-height of elements",
+          "experimental": true,
+          "type": "number",
+          "value": "{breakpoint.min-height.basic.md}",
+          "version": "3.0"
+        },
+        "sm": {
+          "comment": "Use for the min-height of elements",
+          "experimental": true,
+          "type": "number",
+          "value": "{breakpoint.min-height.basic.sm}",
+          "version": "3.0"
+        },
+        "xs": {
+          "comment": "Use for the min-height of elements",
+          "experimental": true,
+          "type": "number",
+          "value": "{breakpoint.min-height.basic.xs}",
+          "version": "3.0"
+        }
+      }
+    },
+    "space": {
+      "grid": {
+        "gutter": {
+          "type": "number",
+          "value": "{breakpoint.grid.gutter}",
+          "version": "3.0"
+        },
+        "page margin": {
+          "type": "number",
+          "value": "{breakpoint.grid.margin}",
+          "version": "3.0"
+        }
+      },
+      "horizontal": {
+        "far": {
+          "lg": {
+            "comment": "Use for horizontal spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.lg}",
+            "version": "3.0"
+          },
+          "md": {
+            "comment": "Use for horizontal spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.md}",
+            "version": "3.0"
+          },
+          "sm": {
+            "comment": "Use for horizontal spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.3xs}",
+            "version": "3.0"
+          },
+          "xl": {
+            "comment": "Use for horizontal spacing between elements in a layout",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.2xl}",
+            "version": "3.0"
+          },
+          "xs": {
+            "comment": "Use for horizontal spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.md}",
+            "version": "3.0"
+          }
+        },
+        "near": {
+          "lg": {
+            "comment": "Use for horizontal spacing between elements in a layout",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.md}",
+            "version": "3.0"
+          },
+          "md": {
+            "comment": "Use for horizontal spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.xs}",
+            "version": "3.0"
+          },
+          "sm": {
+            "comment": "Use for horizontal spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.sm}",
+            "version": "3.0"
+          },
+          "xl": {
+            "comment": "Use for horizontal spacing between elements in a layout",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.lg}",
+            "version": "3.0"
+          },
+          "xs": {
+            "comment": "Use for horizontal spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.xs}",
+            "version": "3.0"
+          }
+        },
+        "none": {
+          "comment": "Use for horizontal spacing (gap) between objects in elements",
+          "type": "number",
+          "value": "{breakpoint.space.basic.none}",
+          "version": "3.0"
+        }
+      },
+      "padding": {
+        "large": {
+          "ample": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.2xl}",
+            "version": "3.0"
+          },
+          "dense": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.md}",
+            "version": "3.0"
+          },
+          "regular": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.lg}",
+            "version": "3.0"
+          },
+          "spacious": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.xl}",
+            "version": "3.0"
+          }
+        },
+        "medium": {
+          "dense": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.3xs}",
+            "version": "3.0"
+          },
+          "regular": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.xs}",
+            "version": "3.0"
+          },
+          "spacious": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.sm}",
+            "version": "3.0"
+          }
+        },
+        "none": {
+          "comment": "Use for inset padding within an element",
+          "type": "number",
+          "value": "{breakpoint.space.basic.none}",
+          "version": "3.0"
+        },
+        "small": {
+          "dense": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.2xs}",
+            "version": "3.0"
+          },
+          "regular": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.xs}",
+            "version": "3.0"
+          },
+          "spacious": {
+            "comment": "Use for inset padding within an element",
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.sm}",
+            "version": "3.0"
+          }
+        }
+      },
+      "vertical": {
+        "far": {
+          "lg": {
+            "comment": "Use for vertical spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.lg}",
+            "version": "3.0"
+          },
+          "md": {
+            "comment": "Use for vertical spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.sm}",
+            "version": "3.0"
+          },
+          "sm": {
+            "comment": "Use for vertical spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.xs}",
+            "version": "3.0"
+          },
+          "xl": {
+            "comment": "Use for vertical spacing between elements in a layout",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.xl}",
+            "version": "3.0"
+          },
+          "xs": {
+            "comment": "Use for vertical spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.md}",
+            "version": "3.0"
+          }
+        },
+        "near": {
+          "lg": {
+            "comment": "Use for vertical spacing between elements in a layout",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.xs}",
+            "version": "3.0"
+          },
+          "md": {
+            "comment": "Use for vertical spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.3xs}",
+            "version": "3.0"
+          },
+          "sm": {
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.sm}",
+            "version": "3.0"
+          },
+          "xl": {
+            "comment": "Use for vertical spacing (gap) between objects in elements",
+            "type": "number",
+            "value": "{breakpoint.space.basic.responsive.sm}",
+            "version": "3.0"
+          },
+          "xs": {
+            "comment": "Use for vertical spacing (gap) between objects in elements. (was stack/2xs)",
+            "type": "number",
+            "value": "{breakpoint.space.basic.static.xs}",
+            "version": "3.0"
+          }
+        },
+        "none": {
+          "comment": "Use for vertical spacing (gap) between objects in elements",
+          "type": "number",
+          "value": "{breakpoint.space.basic.none}",
+          "version": "3.0"
+        },
+        "page compact": {
+          "comment": "Use this spacer vertically between components in a page layout. This is the compact vertical spacing between sections.",
+          "type": "number",
+          "value": "{breakpoint.space.basic.responsive.md}",
+          "version": "3.0"
+        },
+        "page end": {
+          "comment": "Use this vertical spacer at the bottom of each page (before the footer on web) below all components on the page.",
+          "type": "number",
+          "value": "{breakpoint.grid.page-end}",
+          "version": "3.0"
+        },
+        "page standard": {
+          "comment": "Use this spacer vertically between components in a page layout. This is the standard vertical spacing between elements.",
+          "type": "number",
+          "value": "{breakpoint.grid.vertical-spacer}",
+          "version": "3.0"
+        }
+      }
+    }
+  }
+}

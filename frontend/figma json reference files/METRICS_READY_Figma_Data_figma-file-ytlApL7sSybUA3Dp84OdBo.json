@@ -1,0 +1,851 @@
+{
+  "components": { "components": [] },
+  "styles": { "styles": [] },
+  "variables": {
+    "variableCollections": {
+      "VariableCollectionId:10350:6383": {
+        "defaultModeId": "10350:0",
+        "hiddenFromPublishing": false,
+        "id": "VariableCollectionId:10350:6383",
+        "key": "0225e85efa3b053bc14ecc1ff00a45ce1bca810e",
+        "modes": [{ "modeId": "10350:0", "name": "Mode 1" }],
+        "name": "Collection 1",
+        "remote": false,
+        "variableIds": []
+      },
+      "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16": {
+        "defaultModeId": "7566:0",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16",
+        "key": "334a1f5ccb2129b7e36a236f4f0117cc5b717841",
+        "modes": [{ "modeId": "7566:0", "name": "Mode 1" }],
+        "name": "Spacing - Universal",
+        "remote": true,
+        "variableIds": [
+          "VariableID:08f3439de232e9251451af381142039e9f563d06/7632:19",
+          "VariableID:57f5e14a4d75f695e7ce570d78cf4087ffc8bddd/7632:21",
+          "VariableID:734ea66af045b75dd93bfdaf1216dfe64d0c031b/7632:22",
+          "VariableID:5382e9ce82a0299bd7c84ae93894a1db62a275fb/7632:23"
+        ]
+      },
+      "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43": {
+        "defaultModeId": "3602:0",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43",
+        "key": "396c025d1215084e796fca4c935add49256b7159",
+        "modes": [{ "modeId": "3602:0", "name": "Mode 1" }],
+        "name": "Spacing",
+        "remote": true,
+        "variableIds": [
+          "VariableID:def3364b4a94a9e74cae4dda670d7c15c4ba5eff/3637:42",
+          "VariableID:aaec1440ebdfecb728507dbf6f7b55cf480c47b2/3637:39",
+          "VariableID:c933d2ee971104c81e521639cd5b4f9e79a57235/3637:38"
+        ]
+      },
+      "VariableCollectionId:58c4451a0917e117c3a2f3ac161e275ceb3b5f26/7566:141": {
+        "defaultModeId": "7566:1",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:58c4451a0917e117c3a2f3ac161e275ceb3b5f26/7566:141",
+        "key": "58c4451a0917e117c3a2f3ac161e275ceb3b5f26",
+        "modes": [{ "modeId": "7566:1", "name": "Mode 1" }],
+        "name": "Corner Radius",
+        "remote": true,
+        "variableIds": [
+          "VariableID:65d61bea9be9bca3866a75599e59b26b708d33ae/7576:2",
+          "VariableID:4e29108add60589a380380f9517725eeccc91802/7570:3",
+          "VariableID:9626b57f68c1152caded7eb255a7feda9ea509c4/7570:5"
+        ]
+      },
+      "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128": {
+        "defaultModeId": "20:0",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128",
+        "key": "93389c78bdd3e7b8cfc032b2783046cb2943b596",
+        "modes": [
+          { "modeId": "20:0", "name": "max" },
+          { "modeId": "226:1", "name": "dplus" },
+          { "modeId": "611:0", "name": "stress" }
+        ],
+        "name": "🌐 Color - WeMo",
+        "remote": true,
+        "variableIds": [
+          "VariableID:8b0f80e6561c811f0b537dfae10ec8303beddd8a/1160:46",
+          "VariableID:8d9f467e55775d836b1c8420823c21c398f54b6f/1160:55",
+          "VariableID:d955a0ffdeb788a3b1eab7107c06405ebd78bc9a/1170:516",
+          "VariableID:82a3dfd8f170bc19727de0b2b416ce37e0c20a40/1170:526",
+          "VariableID:9f468722eb806864d1c3bccea1c16a1376459979/1170:525",
+          "VariableID:0d08d87a0a10333edfa128aaf36391ac97de316e/1170:528",
+          "VariableID:2a86e2702fd199fa0a193630d7e69a91aae679eb/1170:537",
+          "VariableID:723ed7a580d5878b2f5319934c7b185cd399a84b/1069:136",
+          "VariableID:2535054734f72ed824beb66a6381a25fed04d521/1476:99",
+          "VariableID:df97ca48488a4d9426780a3d957795f9b75b936d/1523:192",
+          "VariableID:30d65ef696c2fc49f9e060a0d026b9ce38eda51b/1537:220",
+          "VariableID:4089436ccf109d4378599d790f8f35a630dc5978/1537:219",
+          "VariableID:345115737c8fdb00ab55ae7668025ff3df15c152/1262:422"
+        ]
+      },
+      "VariableCollectionId:ad8d58853878e4b7b74345ba1112e043340788bd/3602:94": {
+        "defaultModeId": "3602:1",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:ad8d58853878e4b7b74345ba1112e043340788bd/3602:94",
+        "key": "ad8d58853878e4b7b74345ba1112e043340788bd",
+        "modes": [{ "modeId": "3602:1", "name": "Mode 1" }],
+        "name": "Corner Radius",
+        "remote": true,
+        "variableIds": ["VariableID:e9d4fca543eb62a0877237bd8a377bdec558ae23/3602:109"]
+      },
+      "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353": {
+        "defaultModeId": "53:1",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353",
+        "key": "befee35bb1dee18c0d27a0ae5f87819ad163c0f0",
+        "modes": [
+          { "modeId": "53:1", "name": "max" },
+          { "modeId": "226:0", "name": "dplus" },
+          { "modeId": "625:0", "name": "stress" }
+        ],
+        "name": "📺 Color - CTV",
+        "remote": true,
+        "variableIds": [
+          "VariableID:3593709e9d380755ba2d69b7cefb5a4e7001cc14/1290:4436",
+          "VariableID:396f370c07100702894ef77e009c0243bdf50dea/1290:4411",
+          "VariableID:c71a0717e72a46d499eb9988fc396966e8d9f7c4/1290:4418",
+          "VariableID:a9531646a4676367672f4137ba184a60e4fa9d1c/1290:4381",
+          "VariableID:b6ec79abf6b96cf53d5ceadc96d6956204580d4c/1290:4398",
+          "VariableID:a7e13d23876d8f5fdfcd1f05e6c57e951eef775e/1290:4386",
+          "VariableID:5b14e81da597b166d7e9a7fa472f76ed64239985/1523:165",
+          "VariableID:17960ed4e77d924cb1b1bb9aeb8f98d171c2ae58/1336:18",
+          "VariableID:1dbb24d346a2a627afaf87d3b00e2d0fd7b1cc35/1290:4379",
+          "VariableID:f49ba2eb4380d77390350941387b6107c2cc351d/1290:4376",
+          "VariableID:4e0a3a59f8feb119e4fbb61ad82ff6a63c043e92/1262:423"
+        ]
+      },
+      "VariableCollectionId:d3fde12cf3597f23f2274f955bbdebb3996e0151/955:191": {
+        "defaultModeId": "274:0",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:d3fde12cf3597f23f2274f955bbdebb3996e0151/955:191",
+        "key": "d3fde12cf3597f23f2274f955bbdebb3996e0151",
+        "modes": [
+          { "modeId": "274:0", "name": "max" },
+          { "modeId": "323:0", "name": "dplus" },
+          { "modeId": "955:0", "name": "stress" }
+        ],
+        "name": "🌐 Border - WeMo ",
+        "remote": true,
+        "variableIds": [
+          "VariableID:db4e9b37d74a899f5c0040b0cc79a39dcaacb398/1584:30",
+          "VariableID:6b9307960b24cd6e9daf97862cf77a572a13f407/1584:46"
+        ]
+      },
+      "VariableCollectionId:d99a6206e03db74af53120972f89dbd900f7638e/955:284": {
+        "defaultModeId": "274:1",
+        "hiddenFromPublishing": true,
+        "id": "VariableCollectionId:d99a6206e03db74af53120972f89dbd900f7638e/955:284",
+        "key": "d99a6206e03db74af53120972f89dbd900f7638e",
+        "modes": [
+          { "modeId": "274:1", "name": "max" },
+          { "modeId": "274:3", "name": "dplus" },
+          { "modeId": "955:1", "name": "stress" }
+        ],
+        "name": "📺 Border - CTV",
+        "remote": true,
+        "variableIds": [
+          "VariableID:c4308a7035bbe7a7dc3b575a20dbcbd1f31d40b7/1605:0",
+          "VariableID:22c031d693f0f3f5b19faf34dc96c40f7346233d/1557:18",
+          "VariableID:61b8947b3cfdfcbea17ed97cb77e0b9e1dc0e921/1523:71"
+        ]
+      }
+    },
+    "variables": {
+      "VariableID:08f3439de232e9251451af381142039e9f563d06/7632:19": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:08f3439de232e9251451af381142039e9f563d06/7632:19",
+        "key": "08f3439de232e9251451af381142039e9f563d06",
+        "name": "spacer-08",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "7566:0": 8 },
+        "variableCollectionId": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16"
+      },
+      "VariableID:0d08d87a0a10333edfa128aaf36391ac97de316e/1170:528": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:0d08d87a0a10333edfa128aaf36391ac97de316e/1170:528",
+        "key": "0d08d87a0a10333edfa128aaf36391ac97de316e",
+        "name": "🌐 foreground/onbase/text-notify-error 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 1, "b": 0.3921568691730499, "g": 0.4274509847164154, "r": 1 },
+          "226:1": { "a": 1, "b": 0.5490196347236633, "g": 0.45098039507865906, "r": 1 },
+          "611:0": { "a": 1, "b": 0.04857812076807022, "g": 0.3036132752895355, "r": 0 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:17960ed4e77d924cb1b1bb9aeb8f98d171c2ae58/1336:18": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:17960ed4e77d924cb1b1bb9aeb8f98d171c2ae58/1336:18",
+        "key": "17960ed4e77d924cb1b1bb9aeb8f98d171c2ae58",
+        "name": "action📺/label-focus 🧪",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": {
+            "id": "VariableID:396f370c07100702894ef77e009c0243bdf50dea/1290:4411",
+            "type": "VARIABLE_ALIAS"
+          },
+          "53:1": {
+            "id": "VariableID:519e14476a0a5a170e27c392e0df1b6761d2c058/1290:4421",
+            "type": "VARIABLE_ALIAS"
+          },
+          "625:0": { "a": 1, "b": 0.973375678062439, "g": 0.7337564826011658, "r": 1 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:1dbb24d346a2a627afaf87d3b00e2d0fd7b1cc35/1290:4379": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:1dbb24d346a2a627afaf87d3b00e2d0fd7b1cc35/1290:4379",
+        "key": "1dbb24d346a2a627afaf87d3b00e2d0fd7b1cc35",
+        "name": "📺stroke/onbase/action-focused 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": { "a": 1, "b": 1, "g": 1, "r": 1 },
+          "53:1": { "a": 1, "b": 1, "g": 1, "r": 1 },
+          "625:0": { "a": 1, "b": 1, "g": 0.1600000113248825, "r": 0 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:22c031d693f0f3f5b19faf34dc96c40f7346233d/1557:18": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:22c031d693f0f3f5b19faf34dc96c40f7346233d/1557:18",
+        "key": "22c031d693f0f3f5b19faf34dc96c40f7346233d",
+        "name": "📺 stroke/input📺/emphasis  🧪",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["STROKE_FLOAT"],
+        "valuesByMode": {
+          "274:1": {
+            "id": "VariableID:314a8fb540529bfddb02156e561162492b108499/1288:4273",
+            "type": "VARIABLE_ALIAS"
+          },
+          "274:3": {
+            "id": "VariableID:e79fb4d68ed9ff4b886ca96960c025b7ab96f39a/1288:4276",
+            "type": "VARIABLE_ALIAS"
+          },
+          "955:1": 2
+        },
+        "variableCollectionId": "VariableCollectionId:d99a6206e03db74af53120972f89dbd900f7638e/955:284"
+      },
+      "VariableID:2535054734f72ed824beb66a6381a25fed04d521/1476:99": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:2535054734f72ed824beb66a6381a25fed04d521/1476:99",
+        "key": "2535054734f72ed824beb66a6381a25fed04d521",
+        "name": "input🌐/outline-active 🧪",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["STROKE_COLOR"],
+        "valuesByMode": {
+          "20:0": {
+            "id": "VariableID:9f468722eb806864d1c3bccea1c16a1376459979/1170:525",
+            "type": "VARIABLE_ALIAS"
+          },
+          "226:1": {
+            "id": "VariableID:9f468722eb806864d1c3bccea1c16a1376459979/1170:525",
+            "type": "VARIABLE_ALIAS"
+          },
+          "611:0": {
+            "id": "VariableID:9f468722eb806864d1c3bccea1c16a1376459979/1170:525",
+            "type": "VARIABLE_ALIAS"
+          }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:2a86e2702fd199fa0a193630d7e69a91aae679eb/1170:537": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:2a86e2702fd199fa0a193630d7e69a91aae679eb/1170:537",
+        "key": "2a86e2702fd199fa0a193630d7e69a91aae679eb",
+        "name": "🌐 stroke/onbase/outline-03 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 0.5, "b": 1, "g": 1, "r": 1 },
+          "226:1": { "a": 0.5, "b": 1, "g": 1, "r": 1 },
+          "611:0": { "a": 0.5, "b": 1, "g": 0.16078431904315948, "r": 0 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:30d65ef696c2fc49f9e060a0d026b9ce38eda51b/1537:220": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:30d65ef696c2fc49f9e060a0d026b9ce38eda51b/1537:220",
+        "key": "30d65ef696c2fc49f9e060a0d026b9ce38eda51b",
+        "name": "input🌐/field/fill-focus 🧪",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": {
+            "id": "VariableID:7ea3b40fb9df4fb89603628a24f2be24d893f2fb/1160:34",
+            "type": "VARIABLE_ALIAS"
+          },
+          "226:1": {
+            "id": "VariableID:a18fc29a6b7af5ba0c65518e9a7a23bff880a29b/1160:49",
+            "type": "VARIABLE_ALIAS"
+          },
+          "611:0": {
+            "id": "VariableID:a18fc29a6b7af5ba0c65518e9a7a23bff880a29b/1160:49",
+            "type": "VARIABLE_ALIAS"
+          }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:345115737c8fdb00ab55ae7668025ff3df15c152/1262:422": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:345115737c8fdb00ab55ae7668025ff3df15c152/1262:422",
+        "key": "345115737c8fdb00ab55ae7668025ff3df15c152",
+        "name": "mode 👾 🌐",
+        "remote": true,
+        "resolvedType": "STRING",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": { "20:0": "max", "226:1": "dplus", "611:0": "stress" },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:3593709e9d380755ba2d69b7cefb5a4e7001cc14/1290:4436": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:3593709e9d380755ba2d69b7cefb5a4e7001cc14/1290:4436",
+        "key": "3593709e9d380755ba2d69b7cefb5a4e7001cc14",
+        "name": "📺background/alt/surface-01 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": { "a": 1, "b": 0.8666666746139526, "g": 0.8666666746139526, "r": 0.8666666746139526 },
+          "53:1": { "a": 1, "b": 0.8666666746139526, "g": 0.8666666746139526, "r": 0.8666666746139526 },
+          "625:0": { "a": 1, "b": 0.15033699572086334, "g": 0.15033699572086334, "r": 0.7724934816360474 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:396f370c07100702894ef77e009c0243bdf50dea/1290:4411": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:396f370c07100702894ef77e009c0243bdf50dea/1290:4411",
+        "key": "396f370c07100702894ef77e009c0243bdf50dea",
+        "name": "📺foreground/onbase/text-01 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": { "a": 1, "b": 1, "g": 1, "r": 1 },
+          "53:1": { "a": 1, "b": 1, "g": 1, "r": 1 },
+          "625:0": { "a": 1, "b": 0.6936768293380737, "g": 0, "r": 0.770751953125 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:4089436ccf109d4378599d790f8f35a630dc5978/1537:219": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:4089436ccf109d4378599d790f8f35a630dc5978/1537:219",
+        "key": "4089436ccf109d4378599d790f8f35a630dc5978",
+        "name": "input🌐/field/text-focus 🧪",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": {
+            "id": "VariableID:d955a0ffdeb788a3b1eab7107c06405ebd78bc9a/1170:516",
+            "type": "VARIABLE_ALIAS"
+          },
+          "226:1": {
+            "id": "VariableID:63b8eec587a164a1eddc7a6d03cc3ffeff1881fc/1170:529",
+            "type": "VARIABLE_ALIAS"
+          },
+          "611:0": {
+            "id": "VariableID:63b8eec587a164a1eddc7a6d03cc3ffeff1881fc/1170:529",
+            "type": "VARIABLE_ALIAS"
+          }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:4e0a3a59f8feb119e4fbb61ad82ff6a63c043e92/1262:423": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:4e0a3a59f8feb119e4fbb61ad82ff6a63c043e92/1262:423",
+        "key": "4e0a3a59f8feb119e4fbb61ad82ff6a63c043e92",
+        "name": "mode 👾 📺",
+        "remote": true,
+        "resolvedType": "STRING",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": { "226:0": "dplus", "53:1": "max", "625:0": "stress" },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:4e29108add60589a380380f9517725eeccc91802/7570:3": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:4e29108add60589a380380f9517725eeccc91802/7570:3",
+        "key": "4e29108add60589a380380f9517725eeccc91802",
+        "name": "corner-sm",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "7566:1": 2 },
+        "variableCollectionId": "VariableCollectionId:58c4451a0917e117c3a2f3ac161e275ceb3b5f26/7566:141"
+      },
+      "VariableID:5382e9ce82a0299bd7c84ae93894a1db62a275fb/7632:23": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:5382e9ce82a0299bd7c84ae93894a1db62a275fb/7632:23",
+        "key": "5382e9ce82a0299bd7c84ae93894a1db62a275fb",
+        "name": "spacer-20",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "7566:0": 20 },
+        "variableCollectionId": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16"
+      },
+      "VariableID:57f5e14a4d75f695e7ce570d78cf4087ffc8bddd/7632:21": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:57f5e14a4d75f695e7ce570d78cf4087ffc8bddd/7632:21",
+        "key": "57f5e14a4d75f695e7ce570d78cf4087ffc8bddd",
+        "name": "spacer-12",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "7566:0": 12 },
+        "variableCollectionId": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16"
+      },
+      "VariableID:5b14e81da597b166d7e9a7fa472f76ed64239985/1523:165": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:5b14e81da597b166d7e9a7fa472f76ed64239985/1523:165",
+        "key": "5b14e81da597b166d7e9a7fa472f76ed64239985",
+        "name": "input📺/outline-error 🧪",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["STROKE_COLOR"],
+        "valuesByMode": {
+          "226:0": {
+            "id": "VariableID:c71a0717e72a46d499eb9988fc396966e8d9f7c4/1290:4418",
+            "type": "VARIABLE_ALIAS"
+          },
+          "53:1": {
+            "id": "VariableID:c71a0717e72a46d499eb9988fc396966e8d9f7c4/1290:4418",
+            "type": "VARIABLE_ALIAS"
+          },
+          "625:0": { "a": 1, "b": 0.6130589842796326, "g": 0.5774489045143127, "r": 0.01955820806324482 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:61b8947b3cfdfcbea17ed97cb77e0b9e1dc0e921/1523:71": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:61b8947b3cfdfcbea17ed97cb77e0b9e1dc0e921/1523:71",
+        "key": "61b8947b3cfdfcbea17ed97cb77e0b9e1dc0e921",
+        "name": "📺 corner/input📺/field",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "274:1": 4, "274:3": 2, "955:1": 7 },
+        "variableCollectionId": "VariableCollectionId:d99a6206e03db74af53120972f89dbd900f7638e/955:284"
+      },
+      "VariableID:65d61bea9be9bca3866a75599e59b26b708d33ae/7576:2": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:65d61bea9be9bca3866a75599e59b26b708d33ae/7576:2",
+        "key": "65d61bea9be9bca3866a75599e59b26b708d33ae",
+        "name": "corner-none",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "7566:1": 0 },
+        "variableCollectionId": "VariableCollectionId:58c4451a0917e117c3a2f3ac161e275ceb3b5f26/7566:141"
+      },
+      "VariableID:6b9307960b24cd6e9daf97862cf77a572a13f407/1584:46": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:6b9307960b24cd6e9daf97862cf77a572a13f407/1584:46",
+        "key": "6b9307960b24cd6e9daf97862cf77a572a13f407",
+        "name": "🌐 corner/md 🔷",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "274:0": 4, "323:0": 1, "955:0": 6 },
+        "variableCollectionId": "VariableCollectionId:d3fde12cf3597f23f2274f955bbdebb3996e0151/955:191"
+      },
+      "VariableID:723ed7a580d5878b2f5319934c7b185cd399a84b/1069:136": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:723ed7a580d5878b2f5319934c7b185cd399a84b/1069:136",
+        "key": "723ed7a580d5878b2f5319934c7b185cd399a84b",
+        "name": "🌐 fill/action-shade 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 0.20000000298023224, "b": 0, "g": 0, "r": 0 },
+          "226:1": { "a": 0.20000000298023224, "b": 0, "g": 0, "r": 0 },
+          "611:0": { "a": 0.20000000298023224, "b": 0, "g": 0.9607843160629272, "r": 1 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:734ea66af045b75dd93bfdaf1216dfe64d0c031b/7632:22": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:734ea66af045b75dd93bfdaf1216dfe64d0c031b/7632:22",
+        "key": "734ea66af045b75dd93bfdaf1216dfe64d0c031b",
+        "name": "spacer-16",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "7566:0": 16 },
+        "variableCollectionId": "VariableCollectionId:334a1f5ccb2129b7e36a236f4f0117cc5b717841/7632:16"
+      },
+      "VariableID:82a3dfd8f170bc19727de0b2b416ce37e0c20a40/1170:526": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:82a3dfd8f170bc19727de0b2b416ce37e0c20a40/1170:526",
+        "key": "82a3dfd8f170bc19727de0b2b416ce37e0c20a40",
+        "name": "🌐 foreground/onbase/text-02 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 0.800000011920929, "b": 1, "g": 1, "r": 1 },
+          "226:1": { "a": 0.800000011920929, "b": 1, "g": 1, "r": 1 },
+          "611:0": { "a": 0.800000011920929, "b": 0.6941176652908325, "g": 0, "r": 0.772549033164978 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:8b0f80e6561c811f0b537dfae10ec8303beddd8a/1160:46": {
+        "codeSyntax": { "WEB": "🌐 background/base/surface-accent 🔷" },
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:8b0f80e6561c811f0b537dfae10ec8303beddd8a/1160:46",
+        "key": "8b0f80e6561c811f0b537dfae10ec8303beddd8a",
+        "name": "🌐 background/base/surface-accent 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 1, "b": 0.10980392247438431, "g": 0.027450980618596077, "r": 0.027450980618596077 },
+          "226:1": { "a": 1, "b": 0.0784313753247261, "g": 0.054901961237192154, "r": 0.04313725605607033 },
+          "611:0": { "a": 1, "b": 0.9764705896377563, "g": 0.7372549176216125, "r": 0.95686274766922 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:8d9f467e55775d836b1c8420823c21c398f54b6f/1160:55": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:8d9f467e55775d836b1c8420823c21c398f54b6f/1160:55",
+        "key": "8d9f467e55775d836b1c8420823c21c398f54b6f",
+        "name": "🌐 background/alt/surface-01 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 1, "b": 0.8666666746139526, "g": 0.8666666746139526, "r": 0.8666666746139526 },
+          "226:1": { "a": 1, "b": 0.8666666746139526, "g": 0.8666666746139526, "r": 0.8666666746139526 },
+          "611:0": { "a": 1, "b": 0.14901961386203766, "g": 0.14901961386203766, "r": 0.772549033164978 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:9626b57f68c1152caded7eb255a7feda9ea509c4/7570:5": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:9626b57f68c1152caded7eb255a7feda9ea509c4/7570:5",
+        "key": "9626b57f68c1152caded7eb255a7feda9ea509c4",
+        "name": "corner-lg",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "7566:1": 8 },
+        "variableCollectionId": "VariableCollectionId:58c4451a0917e117c3a2f3ac161e275ceb3b5f26/7566:141"
+      },
+      "VariableID:9f468722eb806864d1c3bccea1c16a1376459979/1170:525": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:9f468722eb806864d1c3bccea1c16a1376459979/1170:525",
+        "key": "9f468722eb806864d1c3bccea1c16a1376459979",
+        "name": "🌐 foreground/onbase/text-action-accent 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 1, "b": 1, "g": 0.5437006950378418, "r": 0.30863749980926514 },
+          "226:1": { "a": 1, "b": 1, "g": 0.5372549295425415, "r": 0.15294118225574493 },
+          "611:0": { "a": 1, "b": 0.30980393290519714, "g": 0.5960784554481506, "r": 1 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:a7e13d23876d8f5fdfcd1f05e6c57e951eef775e/1290:4386": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:a7e13d23876d8f5fdfcd1f05e6c57e951eef775e/1290:4386",
+        "key": "a7e13d23876d8f5fdfcd1f05e6c57e951eef775e",
+        "name": "action📺/fill-focus 🧪",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": {
+            "id": "VariableID:b8f4db62b8c623d6f863ecb66994085eb0e69534/1290:4394",
+            "type": "VARIABLE_ALIAS"
+          },
+          "53:1": {
+            "id": "VariableID:a9531646a4676367672f4137ba184a60e4fa9d1c/1290:4381",
+            "type": "VARIABLE_ALIAS"
+          },
+          "625:0": { "a": 1, "b": 0.03780392184853554, "g": 0.9450980424880981, "r": 0 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:a9531646a4676367672f4137ba184a60e4fa9d1c/1290:4381": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:a9531646a4676367672f4137ba184a60e4fa9d1c/1290:4381",
+        "key": "a9531646a4676367672f4137ba184a60e4fa9d1c",
+        "name": "📺fill/action-focused 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": { "a": 1, "b": 0.9686274528503418, "g": 0.9607843160629272, "r": 0.9607843160629272 },
+          "53:1": { "a": 1, "b": 0.9686274528503418, "g": 0.9607843160629272, "r": 0.9607843160629272 },
+          "625:0": { "a": 1, "b": 0.717361330986023, "g": 0.943896472454071, "r": 0 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:aaec1440ebdfecb728507dbf6f7b55cf480c47b2/3637:39": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:aaec1440ebdfecb728507dbf6f7b55cf480c47b2/3637:39",
+        "key": "aaec1440ebdfecb728507dbf6f7b55cf480c47b2",
+        "name": "Spacers/spacer-08",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "3602:0": 8 },
+        "variableCollectionId": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43"
+      },
+      "VariableID:b6ec79abf6b96cf53d5ceadc96d6956204580d4c/1290:4398": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:b6ec79abf6b96cf53d5ceadc96d6956204580d4c/1290:4398",
+        "key": "b6ec79abf6b96cf53d5ceadc96d6956204580d4c",
+        "name": "📺fill/action-default 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": { "a": 0.5, "b": 0.3843137323856354, "g": 0.3529411852359772, "r": 0.3294117748737335 },
+          "53:1": {
+            "a": 0.30000001192092896,
+            "b": 0.8080000281333923,
+            "g": 0.5920000672340393,
+            "r": 0.5254902243614197
+          },
+          "625:0": {
+            "a": 0.4000000059604645,
+            "b": 0.40392157435417175,
+            "g": 0.615686297416687,
+            "r": 0.7607843279838562
+          }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:c4308a7035bbe7a7dc3b575a20dbcbd1f31d40b7/1605:0": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:c4308a7035bbe7a7dc3b575a20dbcbd1f31d40b7/1605:0",
+        "key": "c4308a7035bbe7a7dc3b575a20dbcbd1f31d40b7",
+        "name": "📺 stroke/input📺/basic 🧪",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["STROKE_FLOAT"],
+        "valuesByMode": {
+          "274:1": {
+            "id": "VariableID:09e8465633fefa331c341a928714eec092af99db/1288:4274",
+            "type": "VARIABLE_ALIAS"
+          },
+          "274:3": {
+            "id": "VariableID:314a8fb540529bfddb02156e561162492b108499/1288:4273",
+            "type": "VARIABLE_ALIAS"
+          },
+          "955:1": 7
+        },
+        "variableCollectionId": "VariableCollectionId:d99a6206e03db74af53120972f89dbd900f7638e/955:284"
+      },
+      "VariableID:c71a0717e72a46d499eb9988fc396966e8d9f7c4/1290:4418": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:c71a0717e72a46d499eb9988fc396966e8d9f7c4/1290:4418",
+        "key": "c71a0717e72a46d499eb9988fc396966e8d9f7c4",
+        "name": "📺foreground/onbase/text-notify-error 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": { "a": 1, "b": 0.5490196347236633, "g": 0.45098039507865906, "r": 1 },
+          "53:1": { "a": 1, "b": 0.3921568691730499, "g": 0.4274509847164154, "r": 1 },
+          "625:0": { "a": 1, "b": 0.0470588244497776, "g": 0.3019607961177826, "r": 0 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      },
+      "VariableID:c933d2ee971104c81e521639cd5b4f9e79a57235/3637:38": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:c933d2ee971104c81e521639cd5b4f9e79a57235/3637:38",
+        "key": "c933d2ee971104c81e521639cd5b4f9e79a57235",
+        "name": "Spacers/spacer-12",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "3602:0": 12 },
+        "variableCollectionId": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43"
+      },
+      "VariableID:d955a0ffdeb788a3b1eab7107c06405ebd78bc9a/1170:516": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:d955a0ffdeb788a3b1eab7107c06405ebd78bc9a/1170:516",
+        "key": "d955a0ffdeb788a3b1eab7107c06405ebd78bc9a",
+        "name": "🌐 foreground/onbase/text-01 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "20:0": { "a": 1, "b": 1, "g": 1, "r": 1 },
+          "226:1": { "a": 1, "b": 1, "g": 1, "r": 1 },
+          "611:0": { "a": 1, "b": 0.6936768293380737, "g": 0, "r": 0.770751953125 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:db4e9b37d74a899f5c0040b0cc79a39dcaacb398/1584:30": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:db4e9b37d74a899f5c0040b0cc79a39dcaacb398/1584:30",
+        "key": "db4e9b37d74a899f5c0040b0cc79a39dcaacb398",
+        "name": "🌐 stroke/bold 🔷",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["STROKE_FLOAT"],
+        "valuesByMode": { "274:0": 2, "323:0": 2, "955:0": 4 },
+        "variableCollectionId": "VariableCollectionId:d3fde12cf3597f23f2274f955bbdebb3996e0151/955:191"
+      },
+      "VariableID:def3364b4a94a9e74cae4dda670d7c15c4ba5eff/3637:42": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:def3364b4a94a9e74cae4dda670d7c15c4ba5eff/3637:42",
+        "key": "def3364b4a94a9e74cae4dda670d7c15c4ba5eff",
+        "name": "Spacers/spacer-02",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["GAP"],
+        "valuesByMode": { "3602:0": 2 },
+        "variableCollectionId": "VariableCollectionId:396c025d1215084e796fca4c935add49256b7159/3637:43"
+      },
+      "VariableID:df97ca48488a4d9426780a3d957795f9b75b936d/1523:192": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:df97ca48488a4d9426780a3d957795f9b75b936d/1523:192",
+        "key": "df97ca48488a4d9426780a3d957795f9b75b936d",
+        "name": "input🌐/outline-error 🧪",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["STROKE_COLOR"],
+        "valuesByMode": {
+          "20:0": {
+            "id": "VariableID:0d08d87a0a10333edfa128aaf36391ac97de316e/1170:528",
+            "type": "VARIABLE_ALIAS"
+          },
+          "226:1": {
+            "id": "VariableID:c71a0717e72a46d499eb9988fc396966e8d9f7c4/1290:4418",
+            "type": "VARIABLE_ALIAS"
+          },
+          "611:0": { "a": 1, "b": 0.7711383700370789, "g": 0, "r": 0.9886392951011658 }
+        },
+        "variableCollectionId": "VariableCollectionId:93389c78bdd3e7b8cfc032b2783046cb2943b596/1069:128"
+      },
+      "VariableID:e9d4fca543eb62a0877237bd8a377bdec558ae23/3602:109": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:e9d4fca543eb62a0877237bd8a377bdec558ae23/3602:109",
+        "key": "e9d4fca543eb62a0877237bd8a377bdec558ae23",
+        "name": "corner-sm",
+        "remote": true,
+        "resolvedType": "FLOAT",
+        "scopes": ["CORNER_RADIUS"],
+        "valuesByMode": { "3602:1": 4 },
+        "variableCollectionId": "VariableCollectionId:ad8d58853878e4b7b74345ba1112e043340788bd/3602:94"
+      },
+      "VariableID:f49ba2eb4380d77390350941387b6107c2cc351d/1290:4376": {
+        "codeSyntax": {},
+        "description": "",
+        "hiddenFromPublishing": true,
+        "id": "VariableID:f49ba2eb4380d77390350941387b6107c2cc351d/1290:4376",
+        "key": "f49ba2eb4380d77390350941387b6107c2cc351d",
+        "name": "📺stroke/onbase/action-default 🔷",
+        "remote": true,
+        "resolvedType": "COLOR",
+        "scopes": ["ALL_SCOPES"],
+        "valuesByMode": {
+          "226:0": { "a": 0.5, "b": 1, "g": 1, "r": 1 },
+          "53:1": { "a": 0.5, "b": 1, "g": 1, "r": 1 },
+          "625:0": { "a": 0.5, "b": 1, "g": 0.16078431904315948, "r": 0 }
+        },
+        "variableCollectionId": "VariableCollectionId:befee35bb1dee18c0d27a0ae5f87819ad163c0f0/955:353"
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "border": {
+    "corner": {
+      "action": {
+        "lg": {
+          "comment": "Used for large corner radii on elements where action is emphasized.",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.action.lg}",
+          "version": "3.0"
+        },
+        "md": {
+          "comment": "Used for medium corner radii on elements where action is emphasized.",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.action.md}",
+          "version": "3.0"
+        },
+        "sm": {
+          "comment": "Used for small corner radii on elements where action is emphasized.",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.action.sm}",
+          "version": "3.0"
+        }
+      },
+      "general": {
+        "full": {
+          "comment": "Corner General Full is used for containers with a fully rounded corner radius",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.general.full}",
+          "version": "3.0"
+        },
+        "lg": {
+          "comment": "Corner General Lg is used for containers with a large rounded corner radius",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.general.lg}",
+          "version": "3.0"
+        },
+        "md": {
+          "comment": "Corner General Md is used for containers with a medium rounded corner radius",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.general.md}",
+          "version": "3.0"
+        },
+        "none": {
+          "comment": "Corner General None is used on containers with no corner radius",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.general.none}",
+          "version": "3.0"
+        },
+        "sm": {
+          "comment": "Corner General Sm is used for containers with a small rounded corner radius",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.general.sm}",
+          "version": "3.0"
+        }
+      },
+      "indicator": {
+        "sm": {
+          "comment": "Used for small corner radii on indicator elements",
+          "type": "corner",
+          "value": "{breakpoint.corner.basic.indicator.sm}",
+          "version": "3.0"
+        }
+      },
+      "input": {
+        "standard": {
+          "comment": "Corner used for all text input fields.",
+          "type": "corner",
+          "value": "{border.corner.general.lg}",
+          "version": "3.0"
+        }
+      }
+    },
+    "stroke": {
+      "action": {
+        "md": {
+          "comment": "Stroke token used for medium borders on action components",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.action.md}",
+          "version": "3.0"
+        },
+        "sm": {
+          "comment": "Stroke token used for small borders on action components",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.action.sm}",
+          "version": "3.0"
+        }
+      },
+      "general": {
+        "lg": {
+          "comment": "Stroke token used for large general borders",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.general.lg}",
+          "version": "3.0"
+        },
+        "md": {
+          "comment": "Stroke token used for medium general borders",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.general.md}",
+          "version": "3.0"
+        },
+        "none": {
+          "comment": "Stroke token used for scenarios where a stroke token must be provided, but none should be displayed.",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.general.none}",
+          "version": "3.0"
+        },
+        "sm": {
+          "comment": "Stroke token used for small general borders",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.general.sm}",
+          "version": "3.0"
+        }
+      },
+      "indicator": {
+        "md": {
+          "comment": "Stroke token used for medium borders on indicator",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.indicator.md}",
+          "version": "3.0"
+        },
+        "sm": {
+          "comment": "Stroke token used for small borders on indicator components",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.indicator.sm}",
+          "version": "3.0"
+        }
+      },
+      "input": {
+        "emphasis": {
+          "comment": "Stroke width used for borders on input components when emphasized (typically hover and focus)",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.input.emphasis}",
+          "version": "3.0"
+        },
+        "emphasis-plus": {
+          "comment": "Stroke width used for borders on input components when heavily emphasized (active text field)",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.input.emphasis-plus}",
+          "version": "3.0"
+        },
+        "regular": {
+          "comment": "Standard stroke width used for borders on input components.",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.input.regular}",
+          "version": "3.0"
+        }
+      },
+      "utility": {
+        "progress": {
+          "comment": "Stroke token used to show progress within a component",
+          "type": "number",
+          "value": "{breakpoint.stroke.basic.utility.progress}",
+          "version": "3.0"
+        }
+      }
+    }
+  }
+}

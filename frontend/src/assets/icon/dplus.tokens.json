@@ -1,0 +1,2134 @@
+{
+  "icon": {
+    "adventure": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/adventure/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/adventure/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "airplay": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/airplay/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/airplay/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "alert": {
+      "announce": {
+        "off": {
+          "regular": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/alert/announce/off/regular.svg"
+            },
+            "version": "3.0"
+          }
+        },
+        "on": {
+          "regular": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/alert/announce/on/regular.svg"
+            },
+            "version": "3.0"
+          }
+        }
+      },
+      "new": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/alert/new/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/alert/new/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "on": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/alert/on/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/alert/on/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "standard": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/alert/standard/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/alert/standard/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "availability": {
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/availability/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "back": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": true,
+          "source": "default/back/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "lg-pointer": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/back/lg-pointer/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/back/lg-pointer/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": true,
+          "source": "default/back/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "backward": {
+      "fast": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/fast/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/fast/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "long": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/long/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/long/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "short": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/short/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/short/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "skip": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/skip/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/skip/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "skip-interval": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/skip-interval/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/backward/skip-interval/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "cast-google": {
+      "connected": {
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/cast-google/connected/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "connecting-1": {
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/cast-google/connecting-1/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "connecting-2": {
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/cast-google/connecting-2/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "connecting-3": {
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/cast-google/connecting-3/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "disconnected": {
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/cast-google/disconnected/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "categories": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/categories/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/categories/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "channels": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/channels/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/channels/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "check": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/check/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/check/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "chevron": {
+      "down": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/chevron/down/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/chevron/down/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "left": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/chevron/left/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/chevron/left/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "next": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/chevron/right/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/chevron/right/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "previous": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/chevron/left/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/chevron/left/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "right": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/chevron/right/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/chevron/right/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "up": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/chevron/up/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/chevron/up/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "connection": {
+      "speed": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/connection/speed.svg"
+        },
+        "version": "3.0"
+      },
+      "wired": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/connection/wired.svg"
+        },
+        "version": "3.0"
+      },
+      "wireless": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/connection/wireless.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "copy": {
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/copy/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "device": {
+      "console": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/console/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/console/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "desktop": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/desktop/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/desktop/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "phone": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/phone/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/phone/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "tablet": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/tablet/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/tablet/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "tv": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/tv/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/device/tv/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "dismiss": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/dismiss/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/dismiss/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "download": {
+      "action": {
+        "complete": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/download/action/complete/regular.svg"
+          },
+          "version": "3.0"
+        },
+        "expired": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/download/action/expired/regular.svg"
+          },
+          "version": "3.0"
+        },
+        "failed": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/download/action/failed/regular.svg"
+          },
+          "version": "3.0"
+        },
+        "icon": {
+          "active": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/download/action/icon/active.svg"
+            },
+            "version": "3.0"
+          },
+          "inactive": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/download/action/icon/inactive.svg"
+            },
+            "version": "3.0"
+          }
+        },
+        "start": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/download/action/start/regular.svg"
+          },
+          "version": "3.0"
+        },
+        "track": {
+          "active": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/download/action/track/active.svg"
+            },
+            "version": "3.0"
+          },
+          "inactive": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/download/action/track/inactive.svg"
+            },
+            "version": "3.0"
+          }
+        }
+      },
+      "nav": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/download/nav/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/download/nav/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "edit": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/edit/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/edit/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "error": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/error/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/error/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "external-link": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": true,
+          "source": "default/external-link/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": true,
+          "source": "default/external-link/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "extra": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/extra/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/extra/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "food": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/food/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/food/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "forward": {
+      "fast": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/fast/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/fast/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "long": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/long/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/long/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "short": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/short/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/short/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "skip": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/skip/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/skip/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "skip-interval": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/skip-interval/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/forward/skip-interval/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "fullscreen": {
+      "enter": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/fullscreen/enter/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/fullscreen/enter/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "exit": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/fullscreen/exit/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/fullscreen/exit/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "home": {
+      "nav": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/home/nav/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/home/nav/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "home-design": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/home-design/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/home-design/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "info": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/info/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/info/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "key": {
+      "backspace": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/key/backspace/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/key/backspace/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "character-pagination": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/character-pagination/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/character-pagination/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "clear": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/clear/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/clear/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "hide-keyboard": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/hide-keyboard/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/hide-keyboard/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "next": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/key/next/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/key/next/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "previous": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/key/previous/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/key/previous/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "shift": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/shift/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/shift/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "shift-lock": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/shift-lock/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/shift-lock/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "space-single": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/space-single/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/space-single/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "space-triple": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/space-triple/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/key/space-triple/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "kids-and-family": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/kids-and-family/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/kids-and-family/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "language": {
+      "display": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/language/display/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/language/display/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "menu": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/language/menu/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": true,
+            "source": "default/language/menu/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "leaderboard": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/leaderboard/emphasis.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "lifestyle": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/lifestyle/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/lifestyle/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "live": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/live/emphasis.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "lock": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/lock/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/lock/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "locked-access": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/locked-access/emphasis.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "medal-event": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/medal-event/emphasis.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "menu": {
+      "nav": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/menu/nav/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/menu/nav/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "minus": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/minus/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/minus/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "more-episodes": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/more-episodes/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/more-episodes/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "more-options": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/more-options/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/more-options/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "movies": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/movies/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/movies/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "multiview": {
+      "1-up": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/multiview/1-up/regular.svg"
+        },
+        "version": "3.0"
+      },
+      "2-up": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/multiview/2-up/regular.svg"
+        },
+        "version": "3.0"
+      },
+      "2-up-side": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/multiview/2-up-side/regular.svg"
+        },
+        "version": "3.0"
+      },
+      "3-up": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/multiview/3-up/regular.svg"
+        },
+        "version": "3.0"
+      },
+      "3-up-side": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/multiview/3-up-side/regular.svg"
+        },
+        "version": "3.0"
+      },
+      "4-up": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/multiview/4-up/regular.svg"
+        },
+        "version": "3.0"
+      },
+      "4-up-side": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/multiview/4-up-side/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "my-list": {
+      "add": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/my-list/add/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/my-list/add/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "in-list": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/my-list/in-list/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/my-list/in-list/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "my-stuff": {
+      "nav": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/my-stuff/nav/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/my-stuff/nav/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "now-playing": {
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/now-playing/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "paranormal": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/paranormal/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/paranormal/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "pause": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/pause/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/pause/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "placeholder": {
+      "type": "icon",
+      "value": {
+        "autoMirror": false,
+        "source": "dplus/placeholder/regular.svg"
+      },
+      "version": "3.0"
+    },
+    "play": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/play/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/play/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "plus": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/plus/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/plus/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "press-hold": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/press-hold/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/press-hold/regular.svg"
+        },
+        "version": "3.0"
+      },
+      "roku": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/press-hold/roku/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/press-hold/roku/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "rate": {
+      "dislike": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/rate/dislike/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/rate/dislike/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "like": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/rate/like/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/rate/like/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "love": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/rate/love/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/rate/love/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "relationships": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/relationships/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/relationships/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "resend": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/resend/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/resend/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "restart": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/restart/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/restart/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "science-nature": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/science-nature/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/science-nature/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "search": {
+      "input": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/search/input/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/search/input/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "nav": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/search/nav/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/search/nav/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "series": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/series/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/series/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "settings": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/settings/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/settings/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "share": {
+      "android": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/share/android/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/share/android/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "ios": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/share/ios/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/share/ios/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "sports": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/sports/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/sports/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "sports-schedule": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/sports-schedule/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/sports-schedule/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "subscribe": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/subscribe/emphasis.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "swap": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/swap/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/swap/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "trailer": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/trailer/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/trailer/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "travel": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/travel/emphasis.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "true-crime": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/true-crime/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/true-crime/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "visibility": {
+      "hide": {
+        "input": {
+          "emphasis": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/visibility/hide/input/emphasis.svg"
+            },
+            "version": "3.0"
+          },
+          "regular": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/visibility/hide/input/regular.svg"
+            },
+            "version": "3.0"
+          }
+        }
+      },
+      "show": {
+        "input": {
+          "emphasis": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/visibility/show/input/emphasis.svg"
+            },
+            "version": "3.0"
+          },
+          "regular": {
+            "type": "icon",
+            "value": {
+              "autoMirror": false,
+              "source": "default/visibility/show/input/regular.svg"
+            },
+            "version": "3.0"
+          }
+        }
+      }
+    },
+    "voice-input": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/voice-input/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/voice-input/regular.svg"
+        },
+        "version": "3.0"
+      }
+    },
+    "volume": {
+      "high": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/volume/high/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/volume/high/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "low": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/volume/low/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/volume/low/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "mid": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/volume/mid/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/volume/mid/regular.svg"
+          },
+          "version": "3.0"
+        }
+      },
+      "muted": {
+        "emphasis": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/volume/muted/emphasis.svg"
+          },
+          "version": "3.0"
+        },
+        "regular": {
+          "type": "icon",
+          "value": {
+            "autoMirror": false,
+            "source": "default/volume/muted/regular.svg"
+          },
+          "version": "3.0"
+        }
+      }
+    },
+    "whats-new": {
+      "emphasis": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/whats-new/emphasis.svg"
+        },
+        "version": "3.0"
+      },
+      "regular": {
+        "type": "icon",
+        "value": {
+          "autoMirror": false,
+          "source": "default/whats-new/regular.svg"
+        },
+        "version": "3.0"
+      }
+    }
+  }
+}

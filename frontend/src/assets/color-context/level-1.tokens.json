@@ -1,0 +1,3679 @@
+{
+  "color-context": {
+    "basic": {
+      "action": {
+        "link": {
+          "text": {
+            "base": {
+              "comment": "For links only.",
+              "type": "color",
+              "value": "rgb(46, 63, 77)",
+              "version": "3.0"
+            },
+            "hover": {
+              "comment": "For links only.",
+              "type": "color",
+              "value": "rgb(79, 105, 132)",
+              "version": "3.0"
+            },
+            "press": {
+              "comment": "For links only.",
+              "type": "color",
+              "value": "rgb(80, 143, 195)",
+              "version": "3.0"
+            }
+          }
+        },
+        "neutral": {
+          "border": {
+            "high": {
+              "comment": "Often used in hover states.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Often used in the standard state.",
+              "type": "color",
+              "value": "rgb(15, 15, 15)",
+              "version": "3.0"
+            },
+            "selected": {
+              "comment": "For selected use only.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.5)",
+              "version": "3.0"
+            }
+          },
+          "fill": {
+            "high": {
+              "comment": "Neutral action high is used for hover states on a secondary and tertiary interactions.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.06)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Neutral Low is most commonly used for press states on secondary and tertiary interactions.",
+              "type": "color",
+              "value": "rgba(15, 15, 15, 0.04)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Neutral Mid is often used as the standard fill for secondary and tertiary interactions actions. It may also be used as a hover state on secondary and tertiary actions.",
+              "type": "color",
+              "value": "rgba(15, 15, 15, 0.08)",
+              "version": "3.0"
+            },
+            "selected": {
+              "comment": "For use as the selected state on secondary and tertiary interactions.",
+              "type": "color",
+              "value": "rgba(189, 189, 189, 0.75)",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "high": {
+              "comment": "Neutral action text should always be paired with the neutral action fills. High is often used as a hover or standard state.",
+              "type": "color",
+              "value": "{color-context.basic.general.text.high}",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Neutral action text should always be paired with the neutral action fills. Mid is often used as a standard state.",
+              "type": "color",
+              "value": "{color-context.basic.general.text.mid}",
+              "version": "3.0"
+            }
+          }
+        },
+        "primary": {
+          "fill": {
+            "high": {
+              "comment": "Primary high is used for hover states on a primary or secondary action.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Primary Low is most commonly used for press states.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.8)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Primary Mid is often used as the standard fill for primary actions. It may also be used as a hover state on secondary and tertiary actions.",
+              "type": "color",
+              "value": "rgb(15, 15, 15)",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "comment": "Primary action text should always be paired with the primary action fills.",
+            "type": "color",
+            "value": "rgb(255, 255, 255)",
+            "version": "3.0"
+          }
+        },
+        "secondary": {
+          "fill": {
+            "high": {
+              "comment": "Secondary action high is used for hover states on a secondary and tertiary action.",
+              "type": "color",
+              "value": "rgba(189, 189, 189, 0.75)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Secondary Low is most commonly used for press states on secondary and tertiary actions.",
+              "type": "color",
+              "value": "rgba(163, 163, 163, 0.45)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Secondary Mid is often used as the standard fill for secondary actions. It may also be used as a hover state on secondary and tertiary actions.",
+              "type": "color",
+              "value": "rgba(163, 163, 163, 0.75)",
+              "version": "3.0"
+            },
+            "selected": {
+              "comment": "For use as the selected state on secondary actions.",
+              "type": "color",
+              "value": "rgba(189, 189, 189, 0.75)",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "comment": "Secondary action text should always be paired with secondary action fills.",
+            "type": "color",
+            "value": "{color-context.basic.general.text.high}",
+            "version": "3.0"
+          }
+        }
+      },
+      "card": {
+        "border": {
+          "high": {
+            "comment": "Often used in hover states.",
+            "type": "color",
+            "value": "rgb(0, 0, 0)",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Often used in the pressed state.",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.5)",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Often used in the standard state.",
+            "type": "color",
+            "value": "rgba(15, 15, 15, 0.8)",
+            "version": "3.0"
+          },
+          "selected": {
+            "comment": "For selected use only.",
+            "type": "color",
+            "value": "rgb(15, 15, 15)",
+            "version": "3.0"
+          }
+        },
+        "neutral": {
+          "fill": {
+            "high": {
+              "comment": "Hover color for cards using the neutral palette.",
+              "type": "color",
+              "value": "{color-context.basic.action.neutral.fill.high}",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Pressed color for cards using the neutral palette.",
+              "type": "color",
+              "value": "{color-context.basic.action.neutral.fill.low}",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Standard color for cards using the neutral palette.",
+              "type": "color",
+              "value": "{color-context.basic.action.neutral.fill.mid}",
+              "version": "3.0"
+            }
+          }
+        },
+        "primary": {
+          "fill": {
+            "high": {
+              "comment": "Hover color for primary cards.",
+              "type": "color",
+              "value": "rgba(15, 15, 15, 0.08)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Pressed color for primary cards.",
+              "type": "color",
+              "value": "rgba(15, 15, 15, 0.04)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Standard color for primary cards.",
+              "type": "color",
+              "value": "rgba(188, 188, 188, 0.7)",
+              "version": "3.0"
+            }
+          }
+        }
+      },
+      "general": {
+        "border": {
+          "low": {
+            "comment": "Secondary border color.",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.8)",
+            "version": "3.0"
+          },
+          "lowest": {
+            "comment": "Secondary border color.",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.3)",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Standard border color.",
+            "type": "color",
+            "value": "rgb(15, 15, 15)",
+            "version": "3.0"
+          }
+        },
+        "text": {
+          "high": {
+            "comment": "Standard and hover text color.",
+            "type": "color",
+            "value": "rgb(0, 0, 0)",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Tertiary text color.",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.65)",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Standard and secondary text color.",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.8)",
+            "version": "3.0"
+          }
+        },
+        "transparent": {
+          "comment": "100% transparent",
+          "type": "color",
+          "value": "rgba(255, 255, 255, 0)",
+          "version": "3.0"
+        }
+      },
+      "indicator": {
+        "ad": {
+          "fill": {
+            "comment": "For use in ad badges only.",
+            "type": "color",
+            "value": "rgb(250, 255, 17)",
+            "version": "3.0"
+          },
+          "text": {
+            "comment": "This text is paired with Ad fill.",
+            "type": "color",
+            "value": "rgb(255, 255, 255)",
+            "version": "3.0"
+          }
+        },
+        "commerce": {
+          "primary": {
+            "fill": {
+              "comment": "Emphasizes priority commerce messaging. Use sparingly.",
+              "type": "color",
+              "value": "rgb(113, 184, 242)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with commerce indicators that have a primary fill.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "comment": "Emphasizes secondary commerce message. Use sparingly.",
+              "type": "color",
+              "value": "rgb(19, 19, 21)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with commerce indicators that have a secondary fill.",
+              "type": "color",
+              "value": "rgb(113, 184, 242)",
+              "version": "3.0"
+            }
+          },
+          "tertiary": {
+            "fill": {
+              "comment": "Emphasizes tertiary commerce message. Use sparingly.",
+              "type": "color",
+              "value": "rgb(57, 64, 74)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with commerce indicators that have a tertiary fill.",
+              "type": "color",
+              "value": "rgb(216, 217, 219)",
+              "version": "3.0"
+            }
+          }
+        },
+        "live": {
+          "fill": {
+            "comment": "Used to indicate an item currently in a “Live” status.",
+            "type": "color",
+            "value": "rgb(186, 35, 108)",
+            "version": "3.0"
+          },
+          "text": {
+            "comment": "This text is paired with Live fill.",
+            "type": "color",
+            "value": "rgb(0, 0, 0)",
+            "version": "3.0"
+          }
+        },
+        "neutral": {
+          "border": {
+            "high": {
+              "comment": "Higher emphasis border color.",
+              "type": "color",
+              "value": "rgb(112, 112, 112)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Lower emphasis border color.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.06)",
+              "version": "3.0"
+            }
+          },
+          "fill": {
+            "low": {
+              "comment": "Draws attention with a moderate amount of intensity.",
+              "type": "color",
+              "value": "rgba(255, 255, 255, 0.7)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Draws attention with a moderate amount of intensity.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.06)",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "comment": "Indicator neutral text pairs with indicator neutral fills.",
+            "type": "color",
+            "value": "rgb(0, 0, 0)",
+            "version": "3.0"
+          }
+        },
+        "player": {
+          "fill": {
+            "comment": "Primary color for badges and indicators.",
+            "type": "color",
+            "value": "rgb(0, 0, 0)",
+            "version": "3.0"
+          },
+          "text": {
+            "comment": "This text is paired with indicator primary fill.",
+            "type": "color",
+            "value": "rgb(255, 255, 255)",
+            "version": "3.0"
+          }
+        },
+        "primary": {
+          "fill": {
+            "comment": "Primary color for badges and indicators.",
+            "type": "color",
+            "value": "rgb(0, 0, 0)",
+            "version": "3.0"
+          },
+          "text": {
+            "comment": "This text is paired with indicator primary fill.",
+            "type": "color",
+            "value": "rgb(255, 255, 255)",
+            "version": "3.0"
+          }
+        },
+        "secondary": {
+          "fill": {
+            "comment": "Central color for badging.",
+            "type": "color",
+            "value": "rgb(46, 63, 77)",
+            "version": "3.0"
+          },
+          "text": {
+            "low": {
+              "comment": "This text is paired with indicator secondary fill when the text not as prominent.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.8)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "This text is paired with indicator secondary fill.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          }
+        },
+        "sport": {
+          "fill": {
+            "comment": "Used as the highlighted score background on alert message",
+            "type": "color",
+            "value": "rgb(140, 255, 63)",
+            "version": "3.0"
+          },
+          "text": {
+            "comment": "This text is paired with sport fill",
+            "type": "color",
+            "value": "rgb(0, 0, 0)",
+            "version": "3.0"
+          }
+        }
+      },
+      "input": {
+        "neutral": {
+          "border": {
+            "low": {
+              "type": "color",
+              "value": "rgb(140, 140, 140)",
+              "version": "3.0"
+            },
+            "unselected": {
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.5)",
+              "version": "3.0"
+            }
+          },
+          "fill": {
+            "high": {
+              "type": "color",
+              "value": "rgba(255, 255, 255, 0.3)",
+              "version": "3.0"
+            },
+            "low": {
+              "type": "color",
+              "value": "rgba(74, 74, 74, 0.6)",
+              "version": "3.0"
+            },
+            "mid": {
+              "type": "color",
+              "value": "rgba(255, 255, 255, 0.05)",
+              "version": "3.0"
+            }
+          },
+          "indicator": {
+            "type": "color",
+            "value": "rgb(255, 255, 255)",
+            "version": "3.0"
+          },
+          "text": {
+            "high": {
+              "type": "color",
+              "value": "{color-context.basic.general.text.high}",
+              "version": "3.0"
+            },
+            "low": {
+              "type": "color",
+              "value": "{color-context.basic.general.text.low}",
+              "version": "3.0"
+            }
+          }
+        },
+        "primary": {
+          "border": {
+            "selected": {
+              "comment": "Form elements selected status.",
+              "type": "color",
+              "value": "rgb(80, 143, 195)",
+              "version": "3.0"
+            }
+          },
+          "fill": {
+            "high": {
+              "type": "color",
+              "value": "rgba(255, 255, 255, 0.8)",
+              "version": "3.0"
+            }
+          },
+          "option": {
+            "fill": {
+              "selected": {
+                "comment": "Form elements selected status.",
+                "type": "color",
+                "value": "rgb(80, 143, 195)",
+                "version": "3.0"
+              }
+            },
+            "indicator": {
+              "comment": "Form element icons and indicators, used directly on primary input fills (radio, checkbox)",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "high": {
+              "type": "color",
+              "value": "{color-context.basic.general.text.high}",
+              "version": "3.0"
+            },
+            "low": {
+              "type": "color",
+              "value": "{color-context.basic.general.text.low}",
+              "version": "3.0"
+            }
+          }
+        },
+        "spotlight": {
+          "type": "color",
+          "value": "rgba(0, 0, 0, 0.06)",
+          "version": "3.0"
+        }
+      },
+      "scrim": {
+        "low": {
+          "type": "color",
+          "value": "rgba(255, 255, 255, 0.4)",
+          "version": "3.0"
+        },
+        "mid": {
+          "type": "color",
+          "value": "rgba(255, 255, 255, 0.7)",
+          "version": "3.0"
+        }
+      },
+      "surface": {
+        "border": {
+          "high": {
+            "experimental": true,
+            "type": "color",
+            "value": "rgb(188, 188, 188)",
+            "version": "3.0"
+          },
+          "mid": {
+            "experimental": true,
+            "type": "color",
+            "value": "rgb(188, 188, 188)",
+            "version": "3.0"
+          }
+        },
+        "high": {
+          "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, high would be to top layer.",
+          "type": "color",
+          "value": "rgb(204, 204, 204)",
+          "version": "3.0"
+        },
+        "low": {
+          "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, would be to top bottom.",
+          "type": "color",
+          "value": "rgb(255, 255, 255)",
+          "version": "3.0"
+        },
+        "mid": {
+          "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, mid would be a middle layer.",
+          "type": "color",
+          "value": "rgb(221, 221, 221)",
+          "version": "3.0"
+        },
+        "opacity": {
+          "low": {
+            "experimental": true,
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.9)",
+            "version": "3.0"
+          }
+        }
+      },
+      "tile": {
+        "fill": {
+          "focus": {
+            "comment": "Focus color for CTV tiles that have a background color and focus ring.",
+            "type": "color",
+            "value": "rgb(204, 204, 204)",
+            "version": "3.0"
+          },
+          "high": {
+            "comment": "Used for hover states on tiles that have a background.",
+            "type": "color",
+            "value": "rgba(163, 163, 163, 0.75)",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Pressed color for tiles that have a background.",
+            "type": "color",
+            "value": "rgba(188, 188, 188, 0.7)",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Standard color for tiles that have a background.",
+            "type": "color",
+            "value": "rgba(188, 188, 188, 0.88)",
+            "version": "3.0"
+          }
+        },
+        "neutral": {
+          "border": {
+            "low": {
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.5)",
+              "version": "3.0"
+            }
+          },
+          "fill": {
+            "high": {
+              "type": "color",
+              "value": "{color-context.basic.tile.fill.high}",
+              "version": "3.0"
+            },
+            "low": {
+              "type": "color",
+              "value": "{color-context.basic.tile.fill.low}",
+              "version": "3.0"
+            },
+            "mid": {
+              "type": "color",
+              "value": "{color-context.basic.tile.fill.mid}",
+              "version": "3.0"
+            }
+          }
+        }
+      },
+      "utility": {
+        "commerce": {
+          "accent": {
+            "text": {
+              "comment": "Used for inline notification text and icons.",
+              "type": "color",
+              "value": "rgb(14, 42, 64)",
+              "version": "3.0"
+            }
+          }
+        },
+        "error": {
+          "border": {
+            "low": {
+              "comment": "Error state border,",
+              "type": "color",
+              "value": "rgb(185, 34, 88)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Error state border.",
+              "type": "color",
+              "value": "rgb(185, 34, 88)",
+              "version": "3.0"
+            }
+          },
+          "fill": {
+            "comment": "Background fill for error messages.",
+            "type": "color",
+            "value": "rgba(255, 76, 76, 0.15)",
+            "version": "3.0"
+          },
+          "text": {
+            "link": {
+              "base": {
+                "comment": "Error state link.",
+                "type": "color",
+                "value": "rgb(128, 198, 255)",
+                "version": "3.0"
+              },
+              "hover": {
+                "comment": "Error state link.",
+                "type": "color",
+                "value": "rgb(113, 184, 242)",
+                "version": "3.0"
+              }
+            },
+            "mid": {
+              "comment": "Error state text and icons.",
+              "type": "color",
+              "value": "rgb(185, 34, 88)",
+              "version": "3.0"
+            }
+          }
+        },
+        "focus": {
+          "border": {
+            "inner": {
+              "comment": "For CTV focus states and keyboard focus rings.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            },
+            "outer": {
+              "comment": "For CTV focus states and keyboard focus rings.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "ctv": {
+            "fill": {
+              "focus": {
+                "comment": "📺 For CTV focus state",
+                "type": "color",
+                "value": "rgb(245, 245, 247)",
+                "version": "3.0"
+              },
+              "press": {
+                "comment": "📺 For CTV focus press state.",
+                "type": "color",
+                "value": "rgba(245, 245, 247, 0.8)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "📺 Text used on CTV focus and press states.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          }
+        },
+        "info": {
+          "border": {
+            "low": {
+              "comment": "Used for inline notifications borders.",
+              "type": "color",
+              "value": "rgb(113, 184, 242)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Used for inline notifications borders.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "fill": {
+            "comment": "Used for inline notification background fill.",
+            "type": "color",
+            "value": "rgba(79, 105, 132, 0.15)",
+            "version": "3.0"
+          },
+          "text": {
+            "link": {
+              "base": {
+                "comment": "Info link text. Pairs with info fill.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.mid}",
+                "version": "3.0"
+              },
+              "hover": {
+                "comment": "Info link text. Pairs with info fill.",
+                "type": "color",
+                "value": "rgb(46, 63, 77)",
+                "version": "3.0"
+              }
+            },
+            "mid": {
+              "comment": "Used for inline notification text and icons.",
+              "type": "color",
+              "value": "{color-context.basic.general.text.high}",
+              "version": "3.0"
+            }
+          }
+        },
+        "progress": {
+          "fill": {
+            "high": {
+              "comment": "Used for progress track",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Used for progress track",
+              "type": "color",
+              "value": "rgba(74, 74, 74, 0.5)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Used for pagination inactive state",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.4)",
+              "version": "3.0"
+            }
+          }
+        },
+        "skeleton": {
+          "fill": {
+            "high": {
+              "comment": "Skeleton state when in hover and focus.",
+              "type": "color",
+              "value": "rgb(232, 232, 232)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Skeleton press state.",
+              "type": "color",
+              "value": "rgba(25, 25, 25, 0.8)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Standard skeleton state fill.",
+              "type": "color",
+              "value": "rgba(65, 65, 65, 0.6)",
+              "version": "3.0"
+            }
+          }
+        }
+      }
+    },
+    "brand": {
+      "dplus": {
+        "action": {
+          "link": {
+            "text": {
+              "base": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(39, 137, 255)",
+                "version": "3.0"
+              },
+              "hover": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(166, 206, 255)",
+                "version": "3.0"
+              },
+              "press": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(93, 152, 223)",
+                "version": "3.0"
+              }
+            }
+          },
+          "neutral": {
+            "border": {
+              "high": {
+                "comment": "Often used in hover states.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Often used in the standard state.",
+                "type": "color",
+                "value": "rgb(15, 15, 15)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For selected use only.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.3)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "comment": "Neutral action high is used for hover states on a secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.06)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Neutral Low is most commonly used for press states on secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(15, 15, 15, 0.04)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Neutral Mid is often used as the standard fill for secondary and tertiary interactions actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(15, 15, 15, 0.1)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For use as the selected state on secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(56, 62, 71, 0.06)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "high": {
+                "comment": "Neutral action text should always be paired with the neutral action fills. High is often used as a hover or standard state.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Neutral action text should always be paired with the neutral action fills. Mid is often used as a standard state.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "fill": {
+              "high": {
+                "comment": "Primary high is used for hover states on a primary or secondary action.",
+                "type": "color",
+                "value": "rgb(33, 117, 217)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Primary Low is most commonly used for press states.",
+                "type": "color",
+                "value": "rgba(33, 117, 217, 0.8)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Primary Mid is often used as the standard fill for primary actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgb(25, 104, 199)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Primary action text should always be paired with the primary action fills.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "high": {
+                "comment": "Secondary action high is used for hover states on a secondary and tertiary action.",
+                "type": "color",
+                "value": "rgba(93, 152, 223, 0.5)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Secondary Low is most commonly used for press states on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(93, 152, 223, 0.11)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Secondary Mid is often used as the standard fill for secondary actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(93, 152, 223, 0.38)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For use as the selected state on secondary actions.",
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.65)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Secondary action text should always be paired with secondary action fills.",
+              "type": "color",
+              "value": "{color-context.basic.general.text.high}",
+              "version": "3.0"
+            }
+          }
+        },
+        "card": {
+          "border": {
+            "high": {
+              "comment": "Often used in hover states.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Often used in the pressed state.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.3)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Often used in the standard state.",
+              "type": "color",
+              "value": "rgba(15, 15, 15, 0.8)",
+              "version": "3.0"
+            },
+            "selected": {
+              "comment": "For selected use only.",
+              "type": "color",
+              "value": "rgb(15, 15, 15)",
+              "version": "3.0"
+            }
+          },
+          "neutral": {
+            "fill": {
+              "high": {
+                "comment": "Hover color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.dplus.action.neutral.fill.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Pressed color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.dplus.action.neutral.fill.low}",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.dplus.action.neutral.fill.mid}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "fill": {
+              "high": {
+                "comment": "Hover color for primary cards.",
+                "type": "color",
+                "value": "rgba(70, 96, 134, 0.6)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Pressed color for primary cards.",
+                "type": "color",
+                "value": "rgba(58, 61, 74, 0.4)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard color for primary cards.",
+                "type": "color",
+                "value": "rgba(58, 61, 74, 0.6)",
+                "version": "3.0"
+              }
+            }
+          }
+        },
+        "general": {
+          "border": {
+            "low": {
+              "comment": "Secondary border color.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.5)",
+              "version": "3.0"
+            },
+            "lowest": {
+              "comment": "Secondary border color.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.2)",
+              "version": "3.0"
+            }
+          }
+        },
+        "indicator": {
+          "ad": {
+            "fill": {
+              "comment": "For use in ad badges only.",
+              "type": "color",
+              "value": "rgb(224, 187, 18)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with Ad fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "commerce": {
+            "primary": {
+              "fill": {
+                "comment": "Emphasizes priority commerce messaging. Use sparingly.",
+                "type": "color",
+                "value": "rgb(25, 104, 199)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a primary fill.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            },
+            "secondary": {
+              "fill": {
+                "comment": "Emphasizes secondary commerce message. Use sparingly.",
+                "type": "color",
+                "value": "rgb(2, 20, 43)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a secondary fill.",
+                "type": "color",
+                "value": "rgb(77, 158, 255)",
+                "version": "3.0"
+              }
+            },
+            "tertiary": {
+              "fill": {
+                "comment": "Emphasizes tertiary commerce message. Use sparingly.",
+                "type": "color",
+                "value": "rgb(84, 90, 98)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a tertiary fill.",
+                "type": "color",
+                "value": "rgb(216, 217, 219)",
+                "version": "3.0"
+              }
+            }
+          },
+          "live": {
+            "fill": {
+              "comment": "Used to indicate an item currently in a “Live” status.",
+              "type": "color",
+              "value": "rgb(219, 0, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with Live fill.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "neutral": {
+            "border": {
+              "high": {
+                "comment": "Higher emphasis border color.",
+                "type": "color",
+                "value": "rgb(112, 112, 112)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Lower emphasis border color.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.06)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "low": {
+                "comment": "Draws attention with a moderate amount of intensity.",
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.7)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Draws attention with a moderate amount of intensity.",
+                "type": "color",
+                "value": "rgba(39, 137, 255, 0.2)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Indicator neutral text pairs with indicator neutral fills.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "player": {
+            "fill": {
+              "comment": "Primary color for badges and indicators.",
+              "type": "color",
+              "value": "rgb(243, 242, 242)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with indicator primary fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "primary": {
+            "fill": {
+              "comment": "Primary color for badges and indicators.",
+              "type": "color",
+              "value": "rgb(243, 242, 242)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with indicator primary fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "comment": "Central color for badging.",
+              "type": "color",
+              "value": "rgb(58, 61, 74)",
+              "version": "3.0"
+            },
+            "text": {
+              "low": {
+                "comment": "This text is paired with indicator secondary fill when the text not as prominent.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.8)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "This text is paired with indicator secondary fill.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            }
+          },
+          "sport": {
+            "fill": {
+              "comment": "Used as the highlighted score background on alert message",
+              "type": "color",
+              "value": "rgb(57, 174, 100)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with sport fill",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          }
+        },
+        "input": {
+          "neutral": {
+            "border": {
+              "low": {
+                "type": "color",
+                "value": "rgb(112, 112, 112)",
+                "version": "3.0"
+              },
+              "unselected": {
+                "type": "color",
+                "value": "{color-context.basic.input.neutral.border.unselected}",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "{color-context.basic.input.neutral.fill.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "{color-context.basic.input.neutral.fill.low}",
+                "version": "3.0"
+              },
+              "mid": {
+                "type": "color",
+                "value": "{color-context.basic.input.neutral.fill.mid}",
+                "version": "3.0"
+              }
+            },
+            "indicator": {
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            },
+            "text": {
+              "high": {
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "{color-context.basic.general.text.low}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "border": {
+              "selected": {
+                "type": "color",
+                "value": "rgb(25, 104, 199)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "rgb(238, 240, 255)",
+                "version": "3.0"
+              }
+            },
+            "option": {
+              "fill": {
+                "selected": {
+                  "type": "color",
+                  "value": "rgb(25, 104, 199)",
+                  "version": "3.0"
+                }
+              },
+              "indicator": {
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "high": {
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "{color-context.basic.general.text.low}",
+                "version": "3.0"
+              }
+            }
+          },
+          "spotlight": {
+            "type": "color",
+            "value": "{color-context.basic.input.spotlight}",
+            "version": "3.0"
+          }
+        },
+        "tile": {
+          "fill": {
+            "focus": {
+              "comment": "Focus color for CTV tiles that have a background color and focus ring.",
+              "type": "color",
+              "value": "rgba(2, 6, 33, 0.7)",
+              "version": "3.0"
+            },
+            "high": {
+              "comment": "Used for hover states on tiles that have a background.",
+              "type": "color",
+              "value": "rgba(93, 152, 223, 0.35)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Pressed color for tiles that have a background.",
+              "type": "color",
+              "value": "rgba(17, 24, 39, 0.88)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Standard color for tiles that have a background.",
+              "type": "color",
+              "value": "rgba(23, 26, 39, 0.88)",
+              "version": "3.0"
+            }
+          }
+        },
+        "utility": {
+          "commerce": {
+            "accent": {
+              "text": {
+                "comment": "Used for inline notification text and icons.",
+                "type": "color",
+                "value": "rgb(17, 56, 64)",
+                "version": "3.0"
+              }
+            }
+          },
+          "error": {
+            "border": {
+              "low": {
+                "comment": "Error state border,",
+                "type": "color",
+                "value": "rgb(189, 37, 10)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Error state border.",
+                "type": "color",
+                "value": "rgb(189, 37, 10)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "comment": "Background fill for error messages.",
+              "type": "color",
+              "value": "rgba(56, 62, 71, 0.06)",
+              "version": "3.0"
+            },
+            "text": {
+              "link": {
+                "base": {
+                  "comment": "Error state link.",
+                  "type": "color",
+                  "value": "rgb(0, 0, 0)",
+                  "version": "3.0"
+                },
+                "hover": {
+                  "comment": "Error state link.",
+                  "type": "color",
+                  "value": "rgb(0, 0, 0)",
+                  "version": "3.0"
+                }
+              },
+              "mid": {
+                "comment": "Error state text and icons.",
+                "type": "color",
+                "value": "rgb(189, 37, 10)",
+                "version": "3.0"
+              }
+            }
+          },
+          "focus": {
+            "border": {
+              "inner": {
+                "comment": "For CTV focus states and keyboard focus rings.",
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              },
+              "outer": {
+                "comment": "For CTV focus states and keyboard focus rings.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            },
+            "ctv": {
+              "fill": {
+                "focus": {
+                  "comment": "📺 For CTV focus state",
+                  "type": "color",
+                  "value": "rgb(255, 255, 255)",
+                  "version": "3.0"
+                },
+                "press": {
+                  "comment": "📺 For CTV focus press state.",
+                  "type": "color",
+                  "value": "rgb(221, 221, 221)",
+                  "version": "3.0"
+                }
+              },
+              "text": {
+                "comment": "📺 Text used on CTV focus and press states.",
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              }
+            }
+          },
+          "info": {
+            "border": {
+              "low": {
+                "comment": "Used for inline notifications borders.",
+                "type": "color",
+                "value": "rgba(70, 96, 134, 0.7)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Used for inline notifications borders.",
+                "type": "color",
+                "value": "rgba(70, 96, 134, 0.7)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "comment": "Used for inline notification background fill.",
+              "type": "color",
+              "value": "rgba(56, 62, 71, 0.06)",
+              "version": "3.0"
+            },
+            "text": {
+              "link": {
+                "base": {
+                  "comment": "Info link text. Pairs with info fill.",
+                  "type": "color",
+                  "value": "{color-context.basic.general.text.mid}",
+                  "version": "3.0"
+                },
+                "hover": {
+                  "comment": "Info link text. Pairs with info fill.",
+                  "type": "color",
+                  "value": "rgb(0, 0, 0)",
+                  "version": "3.0"
+                }
+              },
+              "mid": {
+                "comment": "Used for inline notification text and icons.",
+                "type": "color",
+                "value": "rgba(70, 96, 134, 0.7)",
+                "version": "3.0"
+              }
+            }
+          },
+          "progress": {
+            "fill": {
+              "high": {
+                "comment": "Used for progress track",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Used for progress track",
+                "type": "color",
+                "value": "rgba(58, 61, 74, 0.6)",
+                "version": "3.0"
+              }
+            }
+          },
+          "skeleton": {
+            "fill": {
+              "high": {
+                "comment": "Skeleton state when in hover and focus.",
+                "type": "color",
+                "value": "rgba(17, 24, 39, 0.88)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Skeleton press state.",
+                "type": "color",
+                "value": "rgba(14, 14, 22, 0.06)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard skeleton state fill.",
+                "type": "color",
+                "value": "rgba(23, 26, 39, 0.8)",
+                "version": "3.0"
+              }
+            }
+          }
+        }
+      },
+      "max": {
+        "action": {
+          "link": {
+            "text": {
+              "base": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(128, 198, 255)",
+                "version": "3.0"
+              },
+              "hover": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(36, 98, 152)",
+                "version": "3.0"
+              },
+              "press": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(125, 192, 247)",
+                "version": "3.0"
+              }
+            }
+          },
+          "neutral": {
+            "border": {
+              "high": {
+                "comment": "Often used in hover states.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Often used in the standard state.",
+                "type": "color",
+                "value": "rgb(15, 15, 15)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For selected use only.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.5)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "comment": "Neutral action high is used for hover states on a secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.06)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Neutral Low is most commonly used for press states on secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(15, 15, 15, 0.04)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Neutral Mid is often used as the standard fill for secondary and tertiary interactions actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(15, 15, 15, 0.08)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For use as the selected state on secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(189, 189, 189, 0.75)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "high": {
+                "comment": "Neutral action text should always be paired with the neutral action fills. High is often used as a hover or standard state.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Neutral action text should always be paired with the neutral action fills. Mid is often used as a standard state.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.mid}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "fill": {
+              "high": {
+                "comment": "Primary high is used for hover states on a primary or secondary action.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Primary Low is most commonly used for press states.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.8)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Primary Mid is often used as the standard fill for primary actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgb(15, 15, 15)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Primary action text should always be paired with the primary action fills.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "high": {
+                "comment": "Secondary action high is used for hover states on a secondary and tertiary action.",
+                "type": "color",
+                "value": "rgba(189, 189, 189, 0.75)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Secondary Low is most commonly used for press states on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(163, 163, 163, 0.45)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Secondary Mid is often used as the standard fill for secondary actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(220, 220, 220, 0.75)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For use as the selected state on secondary actions.",
+                "type": "color",
+                "value": "rgba(189, 189, 189, 0.75)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Secondary action text should always be paired with secondary action fills.",
+              "type": "color",
+              "value": "{color-context.basic.general.text.high}",
+              "version": "3.0"
+            }
+          }
+        },
+        "card": {
+          "border": {
+            "high": {
+              "comment": "Often used in hover states.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Often used in the pressed state.",
+              "type": "color",
+              "value": "rgba(0, 0, 0, 0.5)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Often used in the standard state.",
+              "type": "color",
+              "value": "rgba(15, 15, 15, 0.8)",
+              "version": "3.0"
+            },
+            "selected": {
+              "comment": "For selected use only.",
+              "type": "color",
+              "value": "rgb(15, 15, 15)",
+              "version": "3.0"
+            }
+          },
+          "neutral": {
+            "fill": {
+              "high": {
+                "comment": "Hover color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.max.action.neutral.fill.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Pressed color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.max.action.neutral.fill.low}",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.max.action.neutral.fill.mid}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "fill": {
+              "high": {
+                "comment": "Hover color for primary cards.",
+                "type": "color",
+                "value": "rgba(15, 15, 15, 0.08)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Pressed color for primary cards.",
+                "type": "color",
+                "value": "rgba(15, 15, 15, 0.04)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard color for primary cards.",
+                "type": "color",
+                "value": "rgba(236, 236, 236, 0.7)",
+                "version": "3.0"
+              }
+            }
+          }
+        },
+        "indicator": {
+          "ad": {
+            "fill": {
+              "comment": "For use in ad badges only.",
+              "type": "color",
+              "value": "rgb(250, 255, 17)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with Ad fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "commerce": {
+            "primary": {
+              "fill": {
+                "comment": "Emphasizes priority commerce messaging. Use sparingly.",
+                "type": "color",
+                "value": "rgb(113, 184, 242)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a primary fill.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            },
+            "secondary": {
+              "fill": {
+                "comment": "Emphasizes secondary commerce message. Use sparingly.",
+                "type": "color",
+                "value": "rgb(38, 42, 48)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a secondary fill.",
+                "type": "color",
+                "value": "rgb(79, 118, 149)",
+                "version": "3.0"
+              }
+            },
+            "tertiary": {
+              "fill": {
+                "comment": "Emphasizes tertiary commerce message. Use sparingly.",
+                "type": "color",
+                "value": "rgb(57, 64, 74)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a tertiary fill.",
+                "type": "color",
+                "value": "rgb(216, 217, 219)",
+                "version": "3.0"
+              }
+            }
+          },
+          "live": {
+            "fill": {
+              "comment": "Used to indicate an item currently in a “Live” status.",
+              "type": "color",
+              "value": "rgb(186, 35, 108)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with Live fill.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "neutral": {
+            "border": {
+              "high": {
+                "comment": "Higher emphasis border color.",
+                "type": "color",
+                "value": "rgb(112, 112, 112)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Lower emphasis border color.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.06)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "low": {
+                "comment": "Draws attention with a moderate amount of intensity.",
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.7)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Draws attention with a moderate amount of intensity.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.06)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Indicator neutral text pairs with indicator neutral fills.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "player": {
+            "fill": {
+              "comment": "Primary color for badges and indicators.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with indicator primary fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "primary": {
+            "fill": {
+              "comment": "Primary color for badges and indicators.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with indicator primary fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "comment": "Central color for badging.",
+              "type": "color",
+              "value": "rgb(46, 63, 77)",
+              "version": "3.0"
+            },
+            "text": {
+              "low": {
+                "comment": "This text is paired with indicator secondary fill when the text not as prominent.",
+                "type": "color",
+                "value": "rgba(216, 217, 219, 0.8)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "This text is paired with indicator secondary fill.",
+                "type": "color",
+                "value": "rgb(216, 217, 219)",
+                "version": "3.0"
+              }
+            }
+          },
+          "sport": {
+            "fill": {
+              "comment": "Used as the highlighted score background on alert message",
+              "type": "color",
+              "value": "rgb(140, 255, 63)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with sport fill",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          }
+        },
+        "input": {
+          "neutral": {
+            "border": {
+              "low": {
+                "type": "color",
+                "value": "rgb(140, 140, 140)",
+                "version": "3.0"
+              },
+              "unselected": {
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.5)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "{color-context.basic.input.neutral.fill.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "rgba(102, 102, 102, 0.5)",
+                "version": "3.0"
+              },
+              "mid": {
+                "type": "color",
+                "value": "{color-context.basic.input.neutral.fill.mid}",
+                "version": "3.0"
+              }
+            },
+            "indicator": {
+              "type": "color",
+              "value": "{color-context.basic.input.neutral.indicator}",
+              "version": "3.0"
+            },
+            "text": {
+              "high": {
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "{color-context.basic.general.text.low}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "border": {
+              "selected": {
+                "type": "color",
+                "value": "rgb(80, 143, 195)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.8)",
+                "version": "3.0"
+              }
+            },
+            "option": {
+              "fill": {
+                "selected": {
+                  "type": "color",
+                  "value": "rgb(80, 143, 195)",
+                  "version": "3.0"
+                }
+              },
+              "indicator": {
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "high": {
+                "type": "color",
+                "value": "{color-context.basic.input.primary.text.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "{color-context.basic.input.primary.text.low}",
+                "version": "3.0"
+              }
+            }
+          },
+          "spotlight": {
+            "type": "color",
+            "value": "{color-context.basic.input.spotlight}",
+            "version": "3.0"
+          }
+        },
+        "tile": {
+          "fill": {
+            "focus": {
+              "comment": "Focus color for CTV tiles that have a background color and focus ring.",
+              "type": "color",
+              "value": "rgb(248, 248, 248)",
+              "version": "3.0"
+            },
+            "high": {
+              "comment": "Used for hover states on tiles that have a background.",
+              "type": "color",
+              "value": "rgba(220, 220, 220, 0.75)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Pressed color for tiles that have a background.",
+              "type": "color",
+              "value": "rgba(236, 236, 236, 0.7)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Standard color for tiles that have a background.",
+              "type": "color",
+              "value": "rgba(236, 236, 236, 0.88)",
+              "version": "3.0"
+            }
+          }
+        },
+        "utility": {
+          "commerce": {
+            "accent": {
+              "text": {
+                "comment": "Used for inline notification text and icons.",
+                "type": "color",
+                "value": "rgb(14, 42, 64)",
+                "version": "3.0"
+              }
+            }
+          },
+          "error": {
+            "border": {
+              "low": {
+                "comment": "Error state border,",
+                "type": "color",
+                "value": "rgb(185, 34, 88)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Error state border.",
+                "type": "color",
+                "value": "rgb(185, 34, 88)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "comment": "Background fill for error messages.",
+              "type": "color",
+              "value": "rgba(255, 76, 76, 0.15)",
+              "version": "3.0"
+            },
+            "text": {
+              "link": {
+                "base": {
+                  "comment": "Error state link.",
+                  "type": "color",
+                  "value": "rgb(128, 198, 255)",
+                  "version": "3.0"
+                },
+                "hover": {
+                  "comment": "Error state link.",
+                  "type": "color",
+                  "value": "rgb(113, 184, 242)",
+                  "version": "3.0"
+                }
+              },
+              "mid": {
+                "comment": "Error state text and icons.",
+                "type": "color",
+                "value": "rgb(185, 34, 88)",
+                "version": "3.0"
+              }
+            }
+          },
+          "focus": {
+            "border": {
+              "inner": {
+                "comment": "For CTV focus states and keyboard focus rings.",
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              },
+              "outer": {
+                "comment": "For CTV focus states and keyboard focus rings.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            },
+            "ctv": {
+              "fill": {
+                "focus": {
+                  "comment": "📺 For CTV focus state",
+                  "type": "color",
+                  "value": "rgb(245, 245, 247)",
+                  "version": "3.0"
+                },
+                "press": {
+                  "comment": "📺 For CTV focus press state.",
+                  "type": "color",
+                  "value": "rgba(245, 245, 247, 0.8)",
+                  "version": "3.0"
+                }
+              },
+              "text": {
+                "comment": "📺 Text used on CTV focus and press states.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            }
+          },
+          "info": {
+            "border": {
+              "low": {
+                "comment": "Used for inline notifications borders.",
+                "type": "color",
+                "value": "rgb(46, 63, 77)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Used for inline notifications borders.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "comment": "Used for inline notification background fill.",
+              "type": "color",
+              "value": "rgba(79, 105, 132, 0.15)",
+              "version": "3.0"
+            },
+            "text": {
+              "link": {
+                "base": {
+                  "comment": "Info link text. Pairs with info fill.",
+                  "type": "color",
+                  "value": "{color-context.basic.general.text.mid}",
+                  "version": "3.0"
+                },
+                "hover": {
+                  "comment": "Info link text. Pairs with info fill.",
+                  "type": "color",
+                  "value": "rgb(46, 63, 77)",
+                  "version": "3.0"
+                }
+              },
+              "mid": {
+                "comment": "Used for inline notification text and icons.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              }
+            }
+          },
+          "progress": {
+            "fill": {
+              "high": {
+                "comment": "Used for progress track",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Used for progress track",
+                "type": "color",
+                "value": "rgba(74, 74, 74, 0.5)",
+                "version": "3.0"
+              }
+            }
+          },
+          "skeleton": {
+            "fill": {
+              "high": {
+                "comment": "Skeleton state when in hover and focus.",
+                "type": "color",
+                "value": "rgb(232, 232, 232)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Skeleton press state.",
+                "type": "color",
+                "value": "rgb(223, 223, 223)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard skeleton state fill.",
+                "type": "color",
+                "value": "rgba(232, 232, 232, 0.6)",
+                "version": "3.0"
+              }
+            }
+          }
+        }
+      },
+      "stress": {
+        "action": {
+          "link": {
+            "text": {
+              "base": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(237, 166, 244)",
+                "version": "3.0"
+              },
+              "hover": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(195, 169, 228)",
+                "version": "3.0"
+              },
+              "press": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(116, 32, 222)",
+                "version": "3.0"
+              }
+            }
+          },
+          "neutral": {
+            "border": {
+              "high": {
+                "comment": "Often used in hover states.",
+                "type": "color",
+                "value": "rgb(255, 219, 193)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Often used in the standard state.",
+                "type": "color",
+                "value": "rgb(255, 170, 108)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For selected use only.",
+                "type": "color",
+                "value": "rgb(152, 45, 6)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "comment": "Neutral action high is used for hover states on a secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(180, 0, 0, 0.4)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Neutral Low is most commonly used for press states on secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(96, 51, 153, 0.4)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Neutral Mid is often used as the standard fill for secondary and tertiary interactions actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(96, 51, 153, 0.7)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For use as the selected state on secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(255, 107, 0, 0.2)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "high": {
+                "comment": "Neutral action text should always be paired with the neutral action fills. High is often used as a hover or standard state.",
+                "type": "color",
+                "value": "{color-context.brand.stress.action.link.text.hover}",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Neutral action text should always be paired with the neutral action fills. Mid is often used as a standard state.",
+                "type": "color",
+                "value": "{color-context.brand.stress.action.link.text.base}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "fill": {
+              "high": {
+                "comment": "Primary high is used for hover states on a primary or secondary action.",
+                "type": "color",
+                "value": "rgb(195, 169, 228)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Primary Low is most commonly used for press states.",
+                "type": "color",
+                "value": "rgba(195, 169, 228, 0.4)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Primary Mid is often used as the standard fill for primary actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgb(237, 166, 244)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Primary action text should always be paired with the primary action fills.",
+              "type": "color",
+              "value": "rgb(152, 45, 6)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "high": {
+                "comment": "Secondary action high is used for hover states on a secondary and tertiary action.",
+                "type": "color",
+                "value": "rgb(13, 171, 29)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Secondary Low is most commonly used for press states on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(170, 227, 245, 0.4)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Secondary Mid is often used as the standard fill for secondary actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(176, 247, 183, 0.4)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For use as the selected state on secondary actions.",
+                "type": "color",
+                "value": "rgb(156, 20, 168)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Secondary action text should always be paired with secondary action fills.",
+              "type": "color",
+              "value": "rgb(13, 133, 171)",
+              "version": "3.0"
+            }
+          }
+        },
+        "card": {
+          "border": {
+            "high": {
+              "comment": "Often used in hover states.",
+              "type": "color",
+              "value": "rgb(255, 219, 193)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Often used in the pressed state.",
+              "type": "color",
+              "value": "rgba(255, 107, 0, 0.2)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Often used in the standard state.",
+              "type": "color",
+              "value": "rgb(255, 170, 108)",
+              "version": "3.0"
+            },
+            "selected": {
+              "comment": "For selected use only.",
+              "type": "color",
+              "value": "rgb(237, 166, 244)",
+              "version": "3.0"
+            }
+          },
+          "neutral": {
+            "fill": {
+              "high": {
+                "comment": "Hover color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.stress.action.neutral.fill.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Pressed color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.stress.action.neutral.fill.low}",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard color for cards using the neutral palette.",
+                "type": "color",
+                "value": "{color-context.brand.stress.action.neutral.fill.mid}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "fill": {
+              "high": {
+                "comment": "Hover color for primary cards.",
+                "type": "color",
+                "value": "rgb(13, 171, 29)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Pressed color for primary cards.",
+                "type": "color",
+                "value": "rgba(146, 132, 0, 0.4)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard color for primary cards.",
+                "type": "color",
+                "value": "rgb(13, 171, 29)",
+                "version": "3.0"
+              }
+            }
+          }
+        },
+        "general": {
+          "border": {
+            "low": {
+              "comment": "Secondary border color.",
+              "type": "color",
+              "value": "rgb(152, 45, 6)",
+              "version": "3.0"
+            },
+            "lowest": {
+              "comment": "Secondary border color.",
+              "type": "color",
+              "value": "rgb(211, 51, 0)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Standard border color.",
+              "type": "color",
+              "value": "rgb(255, 170, 108)",
+              "version": "3.0"
+            }
+          },
+          "text": {
+            "high": {
+              "comment": "Standard and hover text color.",
+              "type": "color",
+              "value": "rgb(255, 181, 128)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Tertiary text color.",
+              "type": "color",
+              "value": "rgba(255, 181, 128, 0.7)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Standard and secondary text color.",
+              "type": "color",
+              "value": "rgba(255, 181, 128, 0.8)",
+              "version": "3.0"
+            }
+          },
+          "transparent": {
+            "comment": "100% transparent",
+            "type": "color",
+            "value": "rgba(255, 107, 0, 0.15)",
+            "version": "3.0"
+          }
+        },
+        "indicator": {
+          "ad": {
+            "fill": {
+              "comment": "For use in ad badges only.",
+              "type": "color",
+              "value": "rgb(246, 202, 234)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with Ad fill.",
+              "type": "color",
+              "value": "rgb(13, 133, 171)",
+              "version": "3.0"
+            }
+          },
+          "commerce": {
+            "primary": {
+              "fill": {
+                "comment": "Emphasizes priority commerce messaging. Use sparingly.",
+                "type": "color",
+                "value": "rgb(250, 193, 216)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a primary fill.",
+                "type": "color",
+                "value": "rgb(229, 73, 8)",
+                "version": "3.0"
+              }
+            },
+            "secondary": {
+              "fill": {
+                "comment": "Emphasizes secondary commerce message. Use sparingly.",
+                "type": "color",
+                "value": "rgb(229, 73, 8)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a secondary fill.",
+                "type": "color",
+                "value": "rgb(249, 137, 90)",
+                "version": "3.0"
+              }
+            },
+            "tertiary": {
+              "fill": {
+                "comment": "Emphasizes tertiary commerce message. Use sparingly.",
+                "type": "color",
+                "value": "rgb(192, 140, 53)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a tertiary fill.",
+                "type": "color",
+                "value": "rgb(237, 191, 115)",
+                "version": "3.0"
+              }
+            }
+          },
+          "live": {
+            "fill": {
+              "comment": "Used to indicate an item currently in a “Live” status.",
+              "type": "color",
+              "value": "rgb(174, 247, 234)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with Live fill.",
+              "type": "color",
+              "value": "rgb(255, 181, 128)",
+              "version": "3.0"
+            }
+          },
+          "neutral": {
+            "border": {
+              "high": {
+                "comment": "Higher emphasis border color.",
+                "type": "color",
+                "value": "rgba(237, 166, 244, 0.4)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Lower emphasis border color.",
+                "type": "color",
+                "value": "rgba(156, 20, 168, 0.4)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "low": {
+                "comment": "Draws attention with a moderate amount of intensity.",
+                "type": "color",
+                "value": "rgba(195, 169, 228, 0.4)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Draws attention with a moderate amount of intensity.",
+                "type": "color",
+                "value": "rgba(156, 20, 168, 0.4)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Indicator neutral text pairs with indicator neutral fills.",
+              "type": "color",
+              "value": "rgb(255, 181, 128)",
+              "version": "3.0"
+            }
+          },
+          "player": {
+            "fill": {
+              "comment": "Primary color for badges and indicators.",
+              "type": "color",
+              "value": "rgb(146, 132, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with indicator primary fill.",
+              "type": "color",
+              "value": "rgb(13, 133, 171)",
+              "version": "3.0"
+            }
+          },
+          "primary": {
+            "fill": {
+              "comment": "Primary color for badges and indicators.",
+              "type": "color",
+              "value": "rgb(146, 132, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with indicator primary fill.",
+              "type": "color",
+              "value": "rgb(13, 133, 171)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "comment": "Central color for badging.",
+              "type": "color",
+              "value": "rgb(13, 171, 29)",
+              "version": "3.0"
+            },
+            "text": {
+              "low": {
+                "comment": "This text is paired with indicator secondary fill when the text not as prominent.",
+                "type": "color",
+                "value": "rgba(255, 181, 128, 0.8)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "This text is paired with indicator secondary fill.",
+                "type": "color",
+                "value": "rgb(255, 181, 128)",
+                "version": "3.0"
+              }
+            }
+          },
+          "sport": {
+            "fill": {
+              "comment": "Used as the highlighted score background on alert message",
+              "type": "color",
+              "value": "rgb(243, 228, 255)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with sport fill",
+              "type": "color",
+              "value": "rgb(13, 171, 29)",
+              "version": "3.0"
+            }
+          }
+        },
+        "input": {
+          "neutral": {
+            "border": {
+              "low": {
+                "type": "color",
+                "value": "rgb(13, 133, 171)",
+                "version": "3.0"
+              },
+              "unselected": {
+                "type": "color",
+                "value": "rgb(255, 219, 193)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "rgb(13, 133, 171)",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "rgba(170, 227, 245, 0.4)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard empty state of a text field.",
+                "type": "color",
+                "value": "rgb(162, 19, 77)",
+                "version": "3.0"
+              }
+            },
+            "indicator": {
+              "type": "color",
+              "value": "rgb(176, 247, 183)",
+              "version": "3.0"
+            },
+            "text": {
+              "high": {
+                "type": "color",
+                "value": "rgb(250, 244, 190)",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "rgba(255, 181, 128, 0.7)",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "border": {
+              "selected": {
+                "type": "color",
+                "value": "rgb(195, 169, 228)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "rgb(195, 169, 228)",
+                "version": "3.0"
+              }
+            },
+            "option": {
+              "fill": {
+                "selected": {
+                  "type": "color",
+                  "value": "rgb(176, 247, 183)",
+                  "version": "3.0"
+                }
+              },
+              "indicator": {
+                "type": "color",
+                "value": "rgb(13, 133, 171)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "high": {
+                "type": "color",
+                "value": "rgb(176, 247, 183)",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "rgb(243, 228, 255)",
+                "version": "3.0"
+              }
+            }
+          },
+          "spotlight": {
+            "type": "color",
+            "value": "rgba(156, 20, 168, 0.4)",
+            "version": "3.0"
+          }
+        },
+        "scrim": {
+          "low": {
+            "type": "color",
+            "value": "rgba(96, 51, 153, 0.4)",
+            "version": "3.0"
+          },
+          "mid": {
+            "type": "color",
+            "value": "rgba(96, 51, 153, 0.7)",
+            "version": "3.0"
+          }
+        },
+        "surface": {
+          "border": {
+            "high": {
+              "experimental": true,
+              "type": "color",
+              "value": "rgb(195, 169, 228)",
+              "version": "3.0"
+            },
+            "mid": {
+              "experimental": true,
+              "type": "color",
+              "value": "rgba(13, 171, 29, 0.4)",
+              "version": "3.0"
+            }
+          },
+          "high": {
+            "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, high would be to top layer.",
+            "type": "color",
+            "value": "rgb(152, 45, 6)",
+            "version": "3.0"
+          },
+          "low": {
+            "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, would be to top bottom.",
+            "type": "color",
+            "value": "rgb(152, 45, 6)",
+            "version": "3.0"
+          },
+          "mid": {
+            "comment": "Surfaces are solid colors. When picking your surface, think of it similar to a tiered cake, mid would be a middle layer.",
+            "type": "color",
+            "value": "rgb(152, 45, 6)",
+            "version": "3.0"
+          },
+          "opacity": {
+            "low": {
+              "experimental": true,
+              "type": "color",
+              "value": "rgba(152, 45, 6, 0.9)",
+              "version": "3.0"
+            }
+          }
+        },
+        "tile": {
+          "fill": {
+            "focus": {
+              "comment": "Focus color for CTV tiles that have a background color and focus ring.",
+              "type": "color",
+              "value": "rgb(13, 171, 29)",
+              "version": "3.0"
+            },
+            "high": {
+              "comment": "Used for hover states on tiles that have a background.",
+              "type": "color",
+              "value": "rgb(146, 132, 0)",
+              "version": "3.0"
+            },
+            "low": {
+              "comment": "Pressed color for tiles that have a background.",
+              "type": "color",
+              "value": "rgb(237, 166, 244)",
+              "version": "3.0"
+            },
+            "mid": {
+              "comment": "Standard color for tiles that have a background.",
+              "type": "color",
+              "value": "rgba(180, 86, 0, 0.4)",
+              "version": "3.0"
+            }
+          },
+          "neutral": {
+            "border": {
+              "low": {
+                "type": "color",
+                "value": "rgb(250, 193, 216)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "rgb(13, 171, 29)",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "{color-context.brand.stress.action.neutral.fill.low}",
+                "version": "3.0"
+              },
+              "mid": {
+                "type": "color",
+                "value": "rgb(176, 247, 183)",
+                "version": "3.0"
+              }
+            }
+          }
+        },
+        "utility": {
+          "commerce": {
+            "accent": {
+              "text": {
+                "comment": "Used for inline notification text and icons.",
+                "type": "color",
+                "value": "rgb(176, 247, 183)",
+                "version": "3.0"
+              }
+            }
+          },
+          "error": {
+            "border": {
+              "low": {
+                "comment": "Error state border,",
+                "type": "color",
+                "value": "rgb(255, 107, 0)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Error state border.",
+                "type": "color",
+                "value": "rgb(255, 107, 0)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "comment": "Background fill for error messages.",
+              "type": "color",
+              "value": "rgba(255, 107, 0, 0.2)",
+              "version": "3.0"
+            },
+            "text": {
+              "link": {
+                "base": {
+                  "comment": "Error state link.",
+                  "type": "color",
+                  "value": "rgb(13, 171, 29)",
+                  "version": "3.0"
+                },
+                "hover": {
+                  "comment": "Error state link.",
+                  "type": "color",
+                  "value": "rgb(13, 171, 29)",
+                  "version": "3.0"
+                }
+              },
+              "mid": {
+                "comment": "Error state text and icons.",
+                "type": "color",
+                "value": "rgb(255, 107, 0)",
+                "version": "3.0"
+              }
+            }
+          },
+          "focus": {
+            "border": {
+              "inner": {
+                "comment": "For CTV focus states and keyboard focus rings.",
+                "type": "color",
+                "value": "rgb(152, 45, 6)",
+                "version": "3.0"
+              },
+              "outer": {
+                "comment": "For CTV focus states and keyboard focus rings.",
+                "type": "color",
+                "value": "rgb(255, 107, 0)",
+                "version": "3.0"
+              }
+            },
+            "ctv": {
+              "fill": {
+                "focus": {
+                  "comment": "📺 For CTV focus state",
+                  "type": "color",
+                  "value": "rgb(195, 169, 228)",
+                  "version": "3.0"
+                },
+                "press": {
+                  "comment": "📺 For CTV focus press state.",
+                  "type": "color",
+                  "value": "rgba(195, 169, 228, 0.4)",
+                  "version": "3.0"
+                }
+              },
+              "text": {
+                "comment": "📺 Text used on CTV focus and press states.",
+                "type": "color",
+                "value": "rgb(116, 32, 222)",
+                "version": "3.0"
+              }
+            }
+          },
+          "info": {
+            "border": {
+              "low": {
+                "comment": "Used for inline notifications borders.",
+                "type": "color",
+                "value": "rgb(84, 241, 100)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Used for inline notifications borders.",
+                "type": "color",
+                "value": "rgb(84, 241, 100)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "comment": "Used for inline notification background fill.",
+              "type": "color",
+              "value": "rgba(146, 132, 0, 0.4)",
+              "version": "3.0"
+            },
+            "text": {
+              "link": {
+                "base": {
+                  "comment": "Info link text. Pairs with info fill.",
+                  "type": "color",
+                  "value": "{color-context.brand.stress.general.text.mid}",
+                  "version": "3.0"
+                },
+                "hover": {
+                  "comment": "Info link text. Pairs with info fill.",
+                  "type": "color",
+                  "value": "rgb(156, 20, 168)",
+                  "version": "3.0"
+                }
+              },
+              "mid": {
+                "comment": "Used for inline notification text and icons.",
+                "type": "color",
+                "value": "rgb(84, 241, 100)",
+                "version": "3.0"
+              }
+            }
+          },
+          "progress": {
+            "fill": {
+              "high": {
+                "comment": "Used for progress track",
+                "type": "color",
+                "value": "rgb(255, 107, 0)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Used for progress track",
+                "type": "color",
+                "value": "rgb(152, 45, 6)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Used for pagination inactive state",
+                "type": "color",
+                "value": "rgb(255, 170, 108)",
+                "version": "3.0"
+              }
+            }
+          },
+          "skeleton": {
+            "fill": {
+              "high": {
+                "comment": "Skeleton state when in hover and focus.",
+                "type": "color",
+                "value": "rgb(176, 247, 183)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Skeleton press state.",
+                "type": "color",
+                "value": "rgba(13, 171, 29, 0.4)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard skeleton state fill.",
+                "type": "color",
+                "value": "rgba(176, 247, 183, 0.4)",
+                "version": "3.0"
+              }
+            }
+          }
+        }
+      },
+      "tntsports": {
+        "action": {
+          "link": {
+            "text": {
+              "base": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(0, 157, 212)",
+                "version": "3.0"
+              },
+              "hover": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(36, 98, 152)",
+                "version": "3.0"
+              },
+              "press": {
+                "comment": "For links only.",
+                "type": "color",
+                "value": "rgb(125, 192, 247)",
+                "version": "3.0"
+              }
+            }
+          },
+          "neutral": {
+            "border": {
+              "high": {
+                "comment": "Often used in hover states.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Often used in the standard state.",
+                "type": "color",
+                "value": "rgb(15, 15, 15)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For selected use only.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.5)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "comment": "Neutral action high is used for hover states on a secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.06)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Neutral Low is most commonly used for press states on secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(15, 15, 15, 0.04)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Neutral Mid is often used as the standard fill for secondary and tertiary interactions actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(15, 15, 15, 0.08)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For use as the selected state on secondary and tertiary interactions.",
+                "type": "color",
+                "value": "rgba(189, 189, 189, 0.75)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "high": {
+                "comment": "Neutral action text should always be paired with the neutral action fills. High is often used as a hover or standard state.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Neutral action text should always be paired with the neutral action fills. Mid is often used as a standard state.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.mid}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "fill": {
+              "high": {
+                "comment": "Primary high is used for hover states on a primary or secondary action.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Primary Low is most commonly used for press states.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.8)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Primary Mid is often used as the standard fill for primary actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgb(15, 15, 15)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Primary action text should always be paired with the primary action fills.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "high": {
+                "comment": "Secondary action high is used for hover states on a secondary and tertiary action.",
+                "type": "color",
+                "value": "rgba(189, 189, 189, 0.75)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Secondary Low is most commonly used for press states on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(163, 163, 163, 0.45)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Secondary Mid is often used as the standard fill for secondary actions. It may also be used as a hover state on secondary and tertiary actions.",
+                "type": "color",
+                "value": "rgba(220, 220, 220, 0.75)",
+                "version": "3.0"
+              },
+              "selected": {
+                "comment": "For use as the selected state on secondary actions.",
+                "type": "color",
+                "value": "rgba(189, 189, 189, 0.75)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Secondary action text should always be paired with secondary action fills.",
+              "type": "color",
+              "value": "{color-context.basic.general.text.high}",
+              "version": "3.0"
+            }
+          }
+        },
+        "indicator": {
+          "ad": {
+            "fill": {
+              "comment": "For use in ad badges only.",
+              "type": "color",
+              "value": "rgb(250, 255, 17)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with Ad fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "commerce": {
+            "primary": {
+              "fill": {
+                "comment": "Emphasizes priority commerce messaging. Use sparingly.",
+                "type": "color",
+                "value": "rgb(212, 55, 0)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a primary fill.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            },
+            "secondary": {
+              "fill": {
+                "comment": "Emphasizes secondary commerce message. Use sparingly.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a secondary fill.",
+                "type": "color",
+                "value": "rgb(212, 55, 0)",
+                "version": "3.0"
+              }
+            },
+            "tertiary": {
+              "fill": {
+                "comment": "Emphasizes tertiary commerce message. Use sparingly.",
+                "type": "color",
+                "value": "rgba(126, 136, 147, 0.5)",
+                "version": "3.0"
+              },
+              "text": {
+                "comment": "This text is paired with commerce indicators that have a tertiary fill.",
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              }
+            }
+          },
+          "live": {
+            "fill": {
+              "comment": "Used to indicate an item currently in a “Live” status.",
+              "type": "color",
+              "value": "rgb(212, 55, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with Live fill.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "neutral": {
+            "border": {
+              "high": {
+                "comment": "Higher emphasis border color.",
+                "type": "color",
+                "value": "rgb(112, 112, 112)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Lower emphasis border color.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.06)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "low": {
+                "comment": "Draws attention with a moderate amount of intensity.",
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.7)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Draws attention with a moderate amount of intensity.",
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.06)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "comment": "Indicator neutral text pairs with indicator neutral fills.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          },
+          "player": {
+            "fill": {
+              "comment": "Primary color for badges and indicators.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with indicator primary fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "primary": {
+            "fill": {
+              "comment": "Primary color for badges and indicators.",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with indicator primary fill.",
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            }
+          },
+          "secondary": {
+            "fill": {
+              "comment": "Central color for badging.",
+              "type": "color",
+              "value": "rgb(78, 80, 91)",
+              "version": "3.0"
+            },
+            "text": {
+              "low": {
+                "comment": "This text is paired with indicator secondary fill when the text not as prominent.",
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.8)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "This text is paired with indicator secondary fill.",
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              }
+            }
+          },
+          "sport": {
+            "fill": {
+              "comment": "Used as the highlighted score background on alert message",
+              "type": "color",
+              "value": "rgb(212, 55, 0)",
+              "version": "3.0"
+            },
+            "text": {
+              "comment": "This text is paired with sport fill",
+              "type": "color",
+              "value": "rgb(0, 0, 0)",
+              "version": "3.0"
+            }
+          }
+        },
+        "input": {
+          "neutral": {
+            "border": {
+              "low": {
+                "type": "color",
+                "value": "rgb(140, 140, 140)",
+                "version": "3.0"
+              },
+              "unselected": {
+                "type": "color",
+                "value": "rgba(0, 0, 0, 0.5)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.3)",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "rgba(74, 74, 74, 0.6)",
+                "version": "3.0"
+              },
+              "mid": {
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.05)",
+                "version": "3.0"
+              }
+            },
+            "indicator": {
+              "type": "color",
+              "value": "rgb(255, 255, 255)",
+              "version": "3.0"
+            },
+            "text": {
+              "high": {
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "{color-context.basic.general.text.low}",
+                "version": "3.0"
+              }
+            }
+          },
+          "primary": {
+            "border": {
+              "selected": {
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "high": {
+                "type": "color",
+                "value": "rgba(255, 255, 255, 0.8)",
+                "version": "3.0"
+              }
+            },
+            "option": {
+              "fill": {
+                "selected": {
+                  "type": "color",
+                  "value": "rgb(0, 150, 204)",
+                  "version": "3.0"
+                }
+              },
+              "indicator": {
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              }
+            },
+            "text": {
+              "high": {
+                "type": "color",
+                "value": "{color-context.basic.input.primary.text.high}",
+                "version": "3.0"
+              },
+              "low": {
+                "type": "color",
+                "value": "{color-context.basic.input.primary.text.low}",
+                "version": "3.0"
+              }
+            }
+          },
+          "spotlight": {
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.06)",
+            "version": "3.0"
+          }
+        },
+        "utility": {
+          "commerce": {
+            "accent": {
+              "text": {
+                "comment": "Used for inline notification text and icons.",
+                "type": "color",
+                "value": "rgb(255, 105, 51)",
+                "version": "3.0"
+              }
+            }
+          },
+          "error": {
+            "border": {
+              "low": {
+                "comment": "Error state border,",
+                "type": "color",
+                "value": "rgb(185, 34, 88)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Error state border.",
+                "type": "color",
+                "value": "rgb(185, 34, 88)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "comment": "Background fill for error messages.",
+              "type": "color",
+              "value": "rgba(255, 76, 76, 0.15)",
+              "version": "3.0"
+            },
+            "text": {
+              "link": {
+                "base": {
+                  "comment": "Error state link.",
+                  "type": "color",
+                  "value": "rgb(128, 198, 255)",
+                  "version": "3.0"
+                },
+                "hover": {
+                  "comment": "Error state link.",
+                  "type": "color",
+                  "value": "rgb(113, 184, 242)",
+                  "version": "3.0"
+                }
+              },
+              "mid": {
+                "comment": "Error state text and icons.",
+                "type": "color",
+                "value": "rgb(185, 34, 88)",
+                "version": "3.0"
+              }
+            }
+          },
+          "focus": {
+            "border": {
+              "inner": {
+                "comment": "For CTV focus states and keyboard focus rings.",
+                "type": "color",
+                "value": "rgb(255, 255, 255)",
+                "version": "3.0"
+              },
+              "outer": {
+                "comment": "For CTV focus states and keyboard focus rings.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            },
+            "ctv": {
+              "fill": {
+                "focus": {
+                  "comment": "📺 For CTV focus state",
+                  "type": "color",
+                  "value": "rgb(255, 255, 255)",
+                  "version": "3.0"
+                },
+                "press": {
+                  "comment": "📺 For CTV focus press state.",
+                  "type": "color",
+                  "value": "rgba(255, 255, 255, 0.8)",
+                  "version": "3.0"
+                }
+              },
+              "text": {
+                "comment": "📺 Text used on CTV focus and press states.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            }
+          },
+          "info": {
+            "border": {
+              "low": {
+                "comment": "Used for inline notifications borders.",
+                "type": "color",
+                "value": "rgba(78, 80, 91, 0.85)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Used for inline notifications borders.",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              }
+            },
+            "fill": {
+              "comment": "Used for inline notification background fill.",
+              "type": "color",
+              "value": "rgb(78, 80, 91)",
+              "version": "3.0"
+            },
+            "text": {
+              "link": {
+                "base": {
+                  "comment": "Info link text. Pairs with info fill.",
+                  "type": "color",
+                  "value": "{color-context.basic.general.text.mid}",
+                  "version": "3.0"
+                },
+                "hover": {
+                  "comment": "Info link text. Pairs with info fill.",
+                  "type": "color",
+                  "value": "rgb(126, 136, 147)",
+                  "version": "3.0"
+                }
+              },
+              "mid": {
+                "comment": "Used for inline notification text and icons.",
+                "type": "color",
+                "value": "{color-context.basic.general.text.high}",
+                "version": "3.0"
+              }
+            }
+          },
+          "progress": {
+            "fill": {
+              "high": {
+                "comment": "Used for progress track",
+                "type": "color",
+                "value": "rgb(0, 0, 0)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Used for progress track",
+                "type": "color",
+                "value": "rgba(74, 74, 74, 0.5)",
+                "version": "3.0"
+              }
+            }
+          },
+          "skeleton": {
+            "fill": {
+              "high": {
+                "comment": "Skeleton state when in hover and focus.",
+                "type": "color",
+                "value": "rgb(232, 232, 232)",
+                "version": "3.0"
+              },
+              "low": {
+                "comment": "Skeleton press state.",
+                "type": "color",
+                "value": "rgba(25, 25, 25, 0.8)",
+                "version": "3.0"
+              },
+              "mid": {
+                "comment": "Standard skeleton state fill.",
+                "type": "color",
+                "value": "rgba(65, 65, 65, 0.6)",
+                "version": "3.0"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

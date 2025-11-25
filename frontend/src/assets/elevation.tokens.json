@@ -1,0 +1,135 @@
+{
+  "elevation": {
+    "indicator": {
+      "shadow-right": {
+        "comment": "Used for progress bar to provide contrast with the background",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.indicator.right.color}",
+          "offsetX": "{style.elevation.indicator.right.x}",
+          "offsetY": "{style.elevation.indicator.right.y}",
+          "radius": "{style.elevation.indicator.right.blur}",
+          "spread": "{style.elevation.indicator.right.spread}"
+        },
+        "version": "3.0"
+      },
+      "shadow-sm": {
+        "comment": "Used on small indicators, such as badges.",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.indicator.sm.color}",
+          "offsetX": "{style.elevation.indicator.sm.x}",
+          "offsetY": "{style.elevation.indicator.sm.y}",
+          "radius": "{style.elevation.indicator.sm.blur}",
+          "spread": "{style.elevation.indicator.sm.spread}"
+        },
+        "version": "3.0"
+      },
+      "shadow-xs": {
+        "comment": "Used on extra small indicators, such as pagination dots",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.indicator.xs.color}",
+          "offsetX": "{style.elevation.indicator.xs.x}",
+          "offsetY": "{style.elevation.indicator.xs.y}",
+          "radius": "{style.elevation.indicator.xs.blur}",
+          "spread": "{style.elevation.indicator.xs.spread}"
+        },
+        "version": "3.0"
+      }
+    },
+    "showcase": {
+      "shadow": {
+        "comment": "Used to create a depth layer between the video hero and the showcase tile slider/background.",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.showcase.layer-1.color}",
+          "offsetX": "{style.elevation.showcase.layer-1.x}",
+          "offsetY": "{style.elevation.showcase.layer-1.y}",
+          "radius": "{style.elevation.showcase.layer-1.blur}",
+          "spread": 0
+        },
+        "version": "3.0"
+      }
+    },
+    "surface": {
+      "glow": {
+        "comment": "Used for background glow under any surface.",
+        "experimental": true,
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.color.glow}",
+          "offsetX": "{style.elevation.surface.high.x}",
+          "offsetY": "{style.elevation.indicator.sm.y}",
+          "radius": "{style.elevation.surface.mid.blur}",
+          "spread": "{style.elevation.surface.low.spread}"
+        },
+        "version": "3.0"
+      },
+      "shadow-high": {
+        "comment": "Used for shadow on high-elevation surfaces, far from the base layer. A scrim is often used along with this shadow.",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.surface.high.color}",
+          "offsetX": "{style.elevation.surface.high.x}",
+          "offsetY": "{style.elevation.surface.high.y}",
+          "radius": "{style.elevation.surface.high.blur}",
+          "spread": "{style.elevation.surface.high.spread}"
+        },
+        "version": "3.0"
+      },
+      "shadow-low": {
+        "comment": "Used for shadow on low-elevation surfaces, close to the next layer.",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.surface.low.color}",
+          "offsetX": "{style.elevation.surface.low.x}",
+          "offsetY": "{style.elevation.surface.low.y}",
+          "radius": "{style.elevation.surface.low.blur}",
+          "spread": "{style.elevation.surface.low.spread}"
+        },
+        "version": "3.0"
+      },
+      "shadow-mid": {
+        "comment": "Used for shadow on mid-elevation surfaces, a slightly further distance away from the base layer.",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.surface.mid.color}",
+          "offsetX": "{style.elevation.surface.mid.x}",
+          "offsetY": "{style.elevation.surface.mid.y}",
+          "radius": "{style.elevation.surface.mid.blur}",
+          "spread": "{style.elevation.surface.mid.spread}"
+        },
+        "version": "3.0"
+      }
+    },
+    "text": {
+      "shadow-text": {
+        "comment": "Used for shadow to enhance text and icons, typically for protection rather than to indicate elevation.",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.color.text.offset-light}",
+          "offsetX": 0,
+          "offsetY": -1,
+          "radius": 12,
+          "spread": 0
+        },
+        "version": "3.0"
+      }
+    },
+    "tile": {
+      "shadow-emphasis": {
+        "comment": "Top 10",
+        "type": "shadow",
+        "value": {
+          "color": "{style.elevation.tile.emphasis.color}",
+          "offsetX": "{style.elevation.tile.emphasis.x}",
+          "offsetY": "{style.elevation.tile.emphasis.y}",
+          "radius": "{style.elevation.tile.emphasis.blur}",
+          "spread": "{style.elevation.tile.emphasis.spread}"
+        },
+        "version": "3.0"
+      }
+    }
+  }
+}
