@@ -31,7 +31,9 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",  # Vite dev server
         "http://localhost:3000",  # Alternative React port
+        "https://*.vercel.app",   # Vercel deployments
     ],
+    allow_origin_regex=r"https://.*\.vercel\.app",  # Allow all Vercel domains
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
