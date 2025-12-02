@@ -1,5 +1,7 @@
 # Deployment Guide
 
+**Last Updated**: December 2025
+
 ## Frontend (Vercel)
 
 1. Go to [vercel.com](https://vercel.com) and sign in with GitHub
