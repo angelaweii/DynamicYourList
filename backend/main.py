@@ -10,6 +10,7 @@ from typing import List, Optional
 from datetime import datetime
 import uvicorn
 import logging
+import os
 
 from tokens import DesignTokens
 from ml_service import RecommendationEngine
@@ -43,7 +44,9 @@ app.add_middleware(
 tokens = DesignTokens(brand='max')
 
 # Initialize ML recommendation engine
-ml_engine = RecommendationEngine(ff1000_base_url="http://localhost:8080")
+# Use environment variable for FF1000 service URL (defaults to localhost for dev)
+FF1000_BASE_URL = os.getenv("FF1000_BASE_URL", "http://localhost:8080")
+ml_engine = RecommendationEngine(ff1000_base_url=FF1000_BASE_URL)
 
 # Models
 class ListItem(BaseModel):

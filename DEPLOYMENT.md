@@ -28,9 +28,36 @@
    - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `uvicorn main:app --host 0.0.0.0 --port $PORT`
    - **Instance Type**: Free
-5. Click "Create Web Service"
-6. Wait for deployment (first build takes ~5 minutes)
-7. Copy your backend URL (e.g., `https://dynamicmylist-backend.onrender.com`)
+5. **Environment Variables**: Leave empty for now (add FF1000_BASE_URL later)
+6. Click "Create Web Service"
+7. Wait for deployment (first build takes ~5 minutes)
+8. Copy your backend URL (e.g., `https://dynamicmylist-backend.onrender.com`)
+
+## ML Service - FF1000 (Render) - Optional
+
+For real ML-powered recommendations with poster images:
+
+1. Go to [render.com](https://render.com) dashboard
+2. Click "New +" → "Web Service"
+3. Select your `DynamicMyList` repository
+4. Configure:
+   - **Name**: `dynamicyourlist-ff1000`
+   - **Root Directory**: `backend/FF1000`
+   - **Runtime**: Python 3
+   - **Build Command**: `pip install --no-cache-dir -r requirements.txt`
+   - **Start Command**: `gunicorn -b 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 60 server.api:app`
+   - **Instance Type**: Free
+5. **Environment Variables**:
+   - **Key**: `PYTHONPATH`
+   - **Value**: `/opt/render/project/src`
+6. Click "Create Web Service"
+7. Wait for deployment (first build takes 5-10 minutes, loads ML models)
+8. Copy your FF1000 URL (e.g., `https://dynamicyourlist-ff1000.onrender.com`)
+9. Go back to your **main backend** service → Environment tab
+10. Add environment variable:
+    - **Key**: `FF1000_BASE_URL`
+    - **Value**: `https://dynamicyourlist-ff1000.onrender.com`
+11. Save (this will redeploy the backend)
 
 ## Update Frontend with Backend URL
 
