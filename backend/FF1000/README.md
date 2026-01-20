@@ -1,108 +1,71 @@
-# FF1000
-
-TODO
-
-## How to start the server
-
-```
-docker build -t recs-pretrained . && docker run --rm recs-pretrained
-```
-
-## How it works
-
-We load the embeddings - with those we enable three pieces of personality:
- - Recommended for you (with variance explained by embeddings)
- - Not for me (with the variance explained also by embeddings)
- - Similarity (based entirely on the cosine distance between embeddings)
-
-# Pretrained Recommender Service - API Usage Guide
-
-This service exposes three recommendation models:
-
-- `nfm`
-- `rfy`
-- `similarity`
-
-Each model is accessible through a simple JSON-based HTTP API.
-The server listens on **port 8080** by default.
-
+---
+title: FF1000 Recommendation Service
+emoji: 🎬
+colorFrom: purple
+colorTo: blue
+sdk: docker
+app_port: 7860
 ---
 
-# 🔮 Predict Endpoint Usage
+# FF1000 - ML Recommendation Service
 
-This section describes how to call the `POST /predict/<model_name>` endpoint to
-obtain predictions from the pretrained models.
+A pretrained recommendation service for content discovery, providing similarity-based and personalized recommendations.
 
----
+## API Endpoints
 
-## Endpoint
+### Health Check
+```
+GET /health
+```
+Returns `{"status": "ok"}` when the service is running.
 
+### Predict Endpoint
 ```
 POST /predict/<model_name>
 Content-Type: application/json
 ```
 
-**Path parameter:**
-- `<model_name>` - one of:
-  - `nfm`
-  - `rfy`
-  - `similarity`
+**Available models:**
+- `similarity` - Find similar content based on embeddings
+- `rfy` - "Recommended for you" personalized recommendations  
+- `nfm` - "Not for me" content filtering
 
-**Request body format:**
-
+**Request body:**
 ```json
 {
-  "items": [
-    "item_id_1",
-    "item_id_2"
+  "items": ["item_id_1", "item_id_2"]
+}
+```
+
+**Response:**
+```json
+{
+  "model": "similarity",
+  "predictions": [
+    {
+      "item_ids": ["..."],
+      "titles": ["..."],
+      "scores": [0.95, 0.87, ...],
+      "posters": ["https://...", ...],
+      "premiere_years": [2023, 2022, ...]
+    }
   ]
 }
 ```
 
-**Response body format:**
-
-```json
-{
-  "model": "rfy",
-  "predictions": [...]
-}
-```
-
-**Example request (not for me):**
+## Example Usage
 
 ```bash
-curl -s -X POST http://localhost:8080/predict/nfm \
+curl -X POST https://YOUR-SPACE.hf.space/predict/similarity \
   -H "Content-Type: application/json" \
-  -d '{
-        "items": [
-          "ab553cdc-e15d-4597-b65f-bec9201fd2dd"
-        ]
-      }'
+  -d '{"items": ["ab553cdc-e15d-4597-b65f-bec9201fd2dd"]}'
 ```
 
-**Example request (recommended for me):**
+## Architecture
 
-```bash
-curl -s -X POST http://localhost:8080/predict/rfy \
-  -H "Content-Type: application/json" \
-  -d '{
-        "items": [
-          "ab553cdc-e15d-4597-b65f-bec9201fd2dd"
-        ]
-      }'
-```
+The service loads pre-computed embeddings and serves three recommendation models:
+- **Similarity**: Cosine distance between content embeddings
+- **RFY**: Variance-explained recommendations for personalization
+- **NFM**: Negative preference modeling
 
-**Example request (similar):**
-
-This does take a list of items but the expected calling pattern typically is to
-just pass 1.
-
-```bash
-curl -s -X POST http://localhost:8080/predict/similarity \
-  -H "Content-Type: application/json" \
-  -d '{
-        "items": [
-          "ab553cdc-e15d-4597-b65f-bec9201fd2dd"
-        ]
-      }'
-```
+Built with Flask and scikit-learn.
