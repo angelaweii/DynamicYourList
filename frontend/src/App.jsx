@@ -553,6 +553,9 @@ function App() {
     );
   };
 
+  // Toggle to show/hide the 16:9 horizontal rail (set to true to show it again)
+  const showHorizontalRail = false;
+
   return (
     <ThemeProvider brand="max">
       <div style={{ 
@@ -560,17 +563,19 @@ function App() {
         background: '#040A0A',
         overflow: 'visible'
       }}>
-        <Rail title="Your List">
-          {tilesRail1.map((tile, index) => 
-            renderTileWithBanner(tile, index, 1, TileWithMetadata, {
-              isDragging: draggedIndexRail1 === index,
-              onDragStart: handleDragStartRail1(index),
-              onDragEnd: handleDragEndRail1,
-              onDragOver: handleDragOverRail1(index),
-              onDrop: handleDropRail1(index)
-            })
-          )}
-        </Rail>
+        {showHorizontalRail && (
+          <Rail title="Your List">
+            {tilesRail1.map((tile, index) => 
+              renderTileWithBanner(tile, index, 1, TileWithMetadata, {
+                isDragging: draggedIndexRail1 === index,
+                onDragStart: handleDragStartRail1(index),
+                onDragEnd: handleDragEndRail1,
+                onDragOver: handleDragOverRail1(index),
+                onDrop: handleDropRail1(index)
+              })
+            )}
+          </Rail>
+        )}
         
         <Rail title="Your List">
           {tilesRail2.map((tile, index) => 
