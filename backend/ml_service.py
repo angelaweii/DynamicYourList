@@ -165,19 +165,16 @@ class RecommendationEngine:
         limit: int = 1
     ) -> Optional[Dict]:
         """
-        Get a different recommendation using the RFY model
+        Get a different recommendation using the similarity model (optimized - single API call).
         
-        Supports progressive diversity: the higher the diversity_level, the wider
-        the range of recommendations (less similarity filtering).
+        Uses the "tail" of similarity results - items that are related but not too similar.
+        This provides faster response (~50% faster) while maintaining relevance.
         
         Args:
             current_title: The current title to replace
             current_item_id: Optional item ID if known
             diversity_level: How diverse the recommendation should be (1-10+)
-                            1-2: Filter top 20 similar items (conservative)
-                            3-4: Filter top 15 similar items (good diversity)
-                            5-6: Filter top 10 similar items (more variety)
-                            7+: Filter top 5 similar items (maximum variety)
+                            Higher values skip more top-similar items for greater variety
             exclude_item_ids: Item IDs to exclude from recommendations
             exclude_titles: Titles to exclude from recommendations
             limit: Number of recommendations to return (typically 1 for replacement)
@@ -197,86 +194,72 @@ class RecommendationEngine:
             logger.warning(f"No item_id provided for '{current_title}', using fallback")
             return self._fallback_something_else(current_title)
         
-        # "Something Else" should feel DIFFERENT from the start
-        # Strategy: Filter top similar + pick from middle of RFY results
-        # Sweet spot: Filter enough for variety, but not so much we run out
-        similar_item_ids = set()
-        
-        # Always filter similarity - "Something Else" means DIFFERENT!
-        # Level 1-2: Filter top 5 similar items (good starting point)
-        # Level 3-4: Filter top 5 similar items (consistent diversity)
-        # Level 5-6: Filter top 3 similar items (more variety)
-        # Level 7+: Filter top 2 similar items (maximum variety)
-        if diversity_level <= 2:
-            similarity_limit = 5   # Good starting point
-        elif diversity_level <= 4:
-            similarity_limit = 5   # Consistent diversity
-        elif diversity_level <= 6:
-            similarity_limit = 3   # More variety
-        else:
-            similarity_limit = 2    # Maximum variety
-        
+        # OPTIMIZED: Single API call to similarity model
+        # Request enough items to have a good pool after filtering
+        # Results are ordered by similarity (most similar first)
         try:
-            similarity_results = self._call_predict("similarity", [current_item_id], limit=similarity_limit)
-            if similarity_results:
-                similar_item_ids = {r["item_id"] for r in similarity_results}
-                logger.info(f"Diversity level {diversity_level}: Filtering out top {len(similar_item_ids)} similar items")
+            recommendations = self._call_predict("similarity", [current_item_id], limit=100)
         except Exception as e:
-            logger.warning(f"Could not get similarity results for filtering: {e}")
+            logger.error(f"Failed to get similarity results: {e}")
+            return self._fallback_something_else(current_title)
         
-        # Use RFY model to get diverse recommendations (request more for better variety)
-        recommendations = self._call_predict("rfy", [current_item_id], limit=200)
+        if not recommendations:
+            return self._fallback_something_else(current_title)
         
-        if recommendations:
-            # Convert exclude lists to sets for faster lookup
-            exclude_item_ids_set = set(exclude_item_ids)
-            exclude_titles_lower = {t.lower() for t in exclude_titles}
-            
-            # Filter out:
-            # 1. Non-valid titles (ASL, trailers, collections, etc.)
-            # 2. Items that would appear in "More Like This" results (based on diversity)
-            # 3. Items explicitly excluded by the frontend
-            filtered = [
-                r for r in recommendations 
-                if (self._is_valid_title(r["title"]) and 
-                    r["item_id"] not in similar_item_ids and
-                    r["item_id"] not in exclude_item_ids_set and
-                    r["title"].lower() not in exclude_titles_lower)
-            ]
-            
-            logger.info(f"After filtering: {len(filtered)} recommendations from {len(recommendations)}")
-            
-            if not filtered:
-                logger.warning("No sufficiently different recommendations found after filtering")
-                return self._fallback_something_else(current_title)
-            
-            # Pick from MIDDLE of recommendations for "Something Else" to feel different
-            # Skip the very top (too similar) but stay in quality range
-            if diversity_level <= 2:
-                # Level 1-2: Pick from positions 10-45 (skip top 10, get different content)
-                start_idx = min(10, len(filtered) - 1)
-                end_idx = min(45, len(filtered))
-            elif diversity_level <= 4:
-                # Level 3-4: Pick from positions 20-65 (more variety)
-                start_idx = min(20, len(filtered) - 1)
-                end_idx = min(65, len(filtered))
-            else:
-                # Level 5+: Pick from positions 30-90 (maximum variety)
-                start_idx = min(30, len(filtered) - 1)
-                end_idx = min(90, len(filtered))
-            
-            if end_idx > start_idx:
-                choice = random.choice(filtered[start_idx:end_idx])
-            elif len(filtered) > 0:
-                # Fallback: pick from whatever we have
-                choice = random.choice(filtered[:min(50, len(filtered))])
-            else:
-                choice = None
-            
-            logger.info(f"Selected '{choice['title']}' as 'Something Else' for '{current_title}'")
-            return choice
+        # Convert exclude lists to sets for faster lookup
+        exclude_item_ids_set = set(exclude_item_ids)
+        exclude_titles_lower = {t.lower() for t in exclude_titles}
         
-        return self._fallback_something_else(current_title)
+        # Filter out invalid titles and explicitly excluded items
+        filtered = [
+            r for r in recommendations 
+            if (self._is_valid_title(r["title"]) and 
+                r["item_id"] != current_item_id and
+                r["item_id"] not in exclude_item_ids_set and
+                r["title"].lower() not in exclude_titles_lower)
+        ]
+        
+        logger.info(f"After filtering: {len(filtered)} recommendations from {len(recommendations)}")
+        
+        if not filtered:
+            logger.warning("No valid recommendations found after filtering")
+            return self._fallback_something_else(current_title)
+        
+        # Determine how many top items to skip based on diversity level
+        # Higher diversity = skip more similar items = more "different" results
+        # Level 1-2: Skip top 8, pick from 8-40 (somewhat different)
+        # Level 3-4: Skip top 15, pick from 15-50 (more different)
+        # Level 5-6: Skip top 25, pick from 25-60 (quite different)
+        # Level 7+: Skip top 35, pick from 35-70 (very different)
+        if diversity_level <= 2:
+            skip_top = 8
+            pick_range_end = 40
+        elif diversity_level <= 4:
+            skip_top = 15
+            pick_range_end = 50
+        elif diversity_level <= 6:
+            skip_top = 25
+            pick_range_end = 60
+        else:
+            skip_top = 35
+            pick_range_end = 70
+        
+        # Adjust indices to available results
+        start_idx = min(skip_top, len(filtered) - 1)
+        end_idx = min(pick_range_end, len(filtered))
+        
+        # Pick randomly from the "different but related" range
+        if end_idx > start_idx:
+            choice = random.choice(filtered[start_idx:end_idx])
+        elif len(filtered) > 0:
+            # Fallback: pick from whatever we have (skip at least top 3 if possible)
+            fallback_start = min(3, len(filtered) - 1)
+            choice = random.choice(filtered[fallback_start:])
+        else:
+            return self._fallback_something_else(current_title)
+        
+        logger.info(f"Selected '{choice['title']}' as 'Something Else' for '{current_title}' (diversity: {diversity_level}, range: {start_idx}-{end_idx})")
+        return choice
     
     def _fallback_more_like_this(self, seed_title: str, limit: int = 2) -> List[Dict]:
         """Fallback when ML service is unavailable"""
