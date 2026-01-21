@@ -239,8 +239,8 @@ const KebabMenuGradient = styled.div`
 
 const KebabButton = styled.button`
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 8px;
+  right: 6px;
   width: 24px;
   height: 24px;
   background: transparent;

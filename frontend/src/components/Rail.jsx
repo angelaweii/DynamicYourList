@@ -53,27 +53,15 @@ const RailTitle = styled.h2`
   letter-spacing: 0;
   color: #FFFFFF;
   
-  /* Rail title (heading.xs / list section heading) - design system step-1 values */
-  /* BP-01, BP-02 (0-599px): Small scale - step-1 = 12.8px / 16px */
+  /* Rail title (heading.xs) - capped at 16px max */
+  /* BP-01, BP-02 (0-599px): 12.8px / 16px */
   font-size: 12.8px;
   line-height: 16px;
   
-  /* BP-03, BP-04 (600-1099px): Small scale - step-1 = 12.8px / 16px */
+  /* BP-03+ (600px+): max 16px / 20px */
   @media (min-width: 600px) {
-    font-size: 12.8px;
-    line-height: 16px;
-  }
-  
-  /* BP-05, BP-06 (1100-1799px): Medium scale - step-1 = 16.667px / 20.833px */
-  @media (min-width: 1100px) {
-    font-size: 16.667px;
-    line-height: 20.833px;
-  }
-  
-  /* BP-07 (1800px+): Large scale - step-1 = 26.667px / 33.333px */
-  @media (min-width: 1800px) {
-    font-size: 26.667px;
-    line-height: 33.333px;
+    font-size: 16px;
+    line-height: 20px;
   }
   
   /* Responsive margins matching page margins per breakpoint */
