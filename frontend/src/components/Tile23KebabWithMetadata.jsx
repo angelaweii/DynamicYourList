@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Tile } from './Tile';
+import { Tile23Kebab } from './Tile23Kebab';
 
 const TileContainer = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const TileContainer = styled.div`
   transition: opacity var(--motion-duration-10, 100ms) var(--motion-easing-ease-out, cubic-bezier(0, 0, 0.34, 1));
   
   /* Match the responsive tile width to enable text truncation */
-  /* Same calculations as Tile component for 16:9 tiles */
+  /* Same calculations as Tile23Kebab component for 2:3 tiles */
   --col-width: calc((100vw - 2 * 20px - 11 * 10px) / 12);
   width: calc(var(--col-width) * 6 + 5 * 10px);
   
@@ -21,22 +21,22 @@ const TileContainer = styled.div`
   
   @media (min-width: 600px) {
     --col-width: calc((100vw - 2 * 24px - 11 * 8px) / 12);
-    width: calc(var(--col-width) * 4 + 3 * 8px);
+    width: calc(var(--col-width) * 3 + 2 * 8px);
   }
   
   @media (min-width: 800px) {
     --col-width: calc((100vw - 2 * 36px - 11 * 12px) / 12);
-    width: calc(var(--col-width) * 3 + 2 * 12px);
+    width: calc(var(--col-width) * 2 + 1 * 12px);
   }
   
   @media (min-width: 1100px) {
     --col-width: calc((100vw - 2 * 48px - 11 * 16px) / 12);
-    width: calc(var(--col-width) * 3 + 2 * 16px);
+    width: calc(var(--col-width) * 2 + 1 * 16px);
   }
   
   @media (min-width: 1400px) {
     --col-width: calc((100vw - 2 * 60px - 11 * 20px) / 12);
-    width: calc(var(--col-width) * 3 + 2 * 20px);
+    width: calc(var(--col-width) * 2 + 1 * 20px);
   }
   
   @media (min-width: 1800px) {
@@ -131,7 +131,7 @@ const TileTitle = styled.h3`
     line-height: 20px;
   }
   
-  /* Title (heading.sm) - BP-05, BP-06 (1100-1799px): Medium scale - step 0 = 20px -> use 16px anchor */
+  /* Title (heading.sm) - BP-05, BP-06 (1100-1799px): Medium scale - step 0 = 16px anchor */
   @media (min-width: 1100px) {
     font-size: 16px;
     line-height: 20px;
@@ -193,8 +193,8 @@ const MetadataContainer = styled.div`
 `;
 
 /**
- * TileWithMetadata Component
- * 16:9 tile with title and subtitle metadata below
+ * Tile23KebabWithMetadata Component
+ * 2:3 tile with kebab menu and title/subtitle metadata below
  * 
  * @param {Object} props
  * @param {string} props.image - Optional image URL for tile background
@@ -208,7 +208,8 @@ const MetadataContainer = styled.div`
  * @param {boolean} props.draggable - Enable drag and drop
  * @param {boolean} props.isDragging - Currently being dragged
  * @param {Function} props.onClick - Click handler for tile
- * @param {Function} props.onDismiss - Dismiss/close button handler
+ * @param {Function} props.onRemove - Remove action handler (from kebab menu)
+ * @param {Function} props.onMoreInfo - More Info action handler (from kebab menu)
  * @param {Function} props.onMoreLikeThis - More Like This action handler
  * @param {Function} props.onSomethingElse - Something Else action handler
  * @param {Function} props.onDragStart - Drag start handler
@@ -216,7 +217,7 @@ const MetadataContainer = styled.div`
  * @param {Function} props.onDragOver - Drag over handler
  * @param {Function} props.onDrop - Drop handler
  */
-export function TileWithMetadata({
+export function Tile23KebabWithMetadata({
   image,
   title,
   subtitle,
@@ -228,7 +229,8 @@ export function TileWithMetadata({
   draggable = false,
   isDragging = false,
   onClick,
-  onDismiss,
+  onRemove,
+  onMoreInfo,
   onMoreLikeThis,
   onSomethingElse,
   onDragStart,
@@ -251,13 +253,14 @@ export function TileWithMetadata({
       onDrop={onDrop}
       {...props}
     >
-      <Tile
+      <Tile23Kebab
         image={image}
         selected={selected}
         isReplacement={isReplacement}
         isDragging={isDragging}
         onClick={onClick}
-        onDismiss={onDismiss}
+        onRemove={onRemove}
+        onMoreInfo={onMoreInfo}
         onMoreLikeThis={onMoreLikeThis}
         onSomethingElse={onSomethingElse}
       />
@@ -269,5 +272,5 @@ export function TileWithMetadata({
   );
 }
 
-export default TileWithMetadata;
+export default Tile23KebabWithMetadata;
 

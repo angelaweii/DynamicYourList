@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 
 /**
- * Tile Component - HBO Max Design System Implementation
- * Medium size with 16:9 aspect ratio
- * Uses exact design tokens for styling and animation
+ * Tile23Kebab Component - HBO Max Design System Implementation
+ * Standard size with 2:3 aspect ratio (portrait)
+ * Features kebab menu (three dots) with context dropdown instead of X dismiss button
  */
 const StyledTile = styled.div`
   position: relative;
   cursor: pointer;
   
-  /* Responsive tile sizing based on 12-column grid system per design system diagram */
-  /* 2x3 STANDARD tile (medium 16:9) - column-based width calculation */
+  /* Responsive tile sizing based on 12-column grid system per design system */
+  /* 2x3 STANDARD tile (2:3 portrait) - column-based width calculation */
   /* Formula: ((viewport - 2*margin - 11*gutter) / 12) * columns + (columns - 1) * gutter */
   
   /* BP-01 (0-439px): 6 columns (2 tiles per row), margin: 20px, gutter: 10px */
@@ -24,28 +24,28 @@ const StyledTile = styled.div`
     width: calc(var(--col-width) * 4 + 3 * 10px);
   }
   
-  /* BP-03 (600-799px): 4 columns (3 tiles per row), margin: 24px, gutter: 8px */
+  /* BP-03 (600-799px): 3 columns (4 tiles per row), margin: 24px, gutter: 8px */
   @media (min-width: 600px) {
     --col-width: calc((100vw - 2 * 24px - 11 * 8px) / 12);
-    width: calc(var(--col-width) * 4 + 3 * 8px);
+    width: calc(var(--col-width) * 3 + 2 * 8px);
   }
   
-  /* BP-04 (800-1099px): 3 columns (4 tiles per row), margin: 36px, gutter: 12px */
+  /* BP-04 (800-1099px): 2 columns (6 tiles per row), margin: 36px, gutter: 12px */
   @media (min-width: 800px) {
     --col-width: calc((100vw - 2 * 36px - 11 * 12px) / 12);
-    width: calc(var(--col-width) * 3 + 2 * 12px);
+    width: calc(var(--col-width) * 2 + 1 * 12px);
   }
   
-  /* BP-05 (1100-1399px): 3 columns (4 tiles per row), margin: 48px, gutter: 16px */
+  /* BP-05 (1100-1399px): 2 columns (6 tiles per row), margin: 48px, gutter: 16px */
   @media (min-width: 1100px) {
     --col-width: calc((100vw - 2 * 48px - 11 * 16px) / 12);
-    width: calc(var(--col-width) * 3 + 2 * 16px);
+    width: calc(var(--col-width) * 2 + 1 * 16px);
   }
   
-  /* BP-06 (1400-1799px): 3 columns (4 tiles per row), margin: 60px, gutter: 20px */
+  /* BP-06 (1400-1799px): 2 columns (6 tiles per row), margin: 60px, gutter: 20px */
   @media (min-width: 1400px) {
     --col-width: calc((100vw - 2 * 60px - 11 * 20px) / 12);
-    width: calc(var(--col-width) * 3 + 2 * 20px);
+    width: calc(var(--col-width) * 2 + 1 * 20px);
   }
   
   /* BP-07 (1800px+): 2 columns (6 tiles per row), margin: 60px, gutter: 20px */
@@ -64,19 +64,10 @@ const StyledTile = styled.div`
   border: none;
   outline: none;
   
-  /* No transition on outline - white border appears immediately on hover */
-  
   /* Hover state - rounded corners and dual focus ring */
   &:hover,
   &.hover-state {
-    /* Slightly rounded corners per design system */
     border-radius: var(--border-corner-general-sm, 2px);
-    
-    /* Dual focus ring per design system:
-       - Inner ring: 2px black (extends to 2px from edge)
-       - Outer ring: white (extends to 4.5px from edge, so 2.5px wide)
-       Total outer extent: 4.5px
-    */
     box-shadow: 
       0 0 0 2px rgb(0, 0, 0),
       0 0 0 4.5px rgb(255, 255, 255);
@@ -85,7 +76,6 @@ const StyledTile = styled.div`
   /* Active/press state */
   &:active {
     border-radius: var(--border-corner-general-sm, 2px);
-    
     box-shadow: 
       0 0 0 2px rgb(0, 0, 0),
       0 0 0 4.5px rgb(255, 255, 255);
@@ -95,7 +85,6 @@ const StyledTile = styled.div`
   &:focus {
     border-radius: var(--border-corner-general-sm, 2px);
     outline: none;
-    
     box-shadow: 
       0 0 0 2px rgb(0, 0, 0),
       0 0 0 4.5px rgb(255, 255, 255);
@@ -104,7 +93,6 @@ const StyledTile = styled.div`
   /* Selected state */
   ${props => props.selected && `
     border-radius: var(--border-corner-general-sm, 2px);
-    
     box-shadow: 
       0 0 0 2px rgb(0, 0, 0),
       0 0 0 4.5px rgb(255, 255, 255);
@@ -114,9 +102,9 @@ const StyledTile = styled.div`
 const TileImageContainer = styled.div`
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9; /* 16:9 aspect ratio for image */
+  aspect-ratio: 2 / 3; /* 2:3 aspect ratio for portrait tile */
   overflow: hidden;
-  border-radius: inherit; /* Inherit border radius from parent tile */
+  border-radius: inherit;
 `;
 
 const TileImage = styled.div`
@@ -124,9 +112,7 @@ const TileImage = styled.div`
   height: 100%;
   background-image: ${props => {
     if (props.image) return `url(${props.image})`;
-    // Different gradient for replacement tiles
     if (props.$isReplacement) return 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)';
-    // Default gradient
     return 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
   }};
   background-size: cover;
@@ -144,15 +130,13 @@ const TileOverlay = styled.div`
   bottom: 0;
   background: transparent;
   z-index: 1;
-  /* Motion: duration 20 (200ms), easing ease-out */
   transition: background var(--motion-duration-20, 200ms) var(--motion-easing-ease-out, cubic-bezier(0, 0, 0.34, 1));
   pointer-events: none;
   
-  /* Show scrim_low overlay on hover */
   ${StyledTile}:hover &,
   ${StyledTile}.hover-state &,
   ${StyledTile}:active & {
-    background: rgba(0, 0, 0, 0.4); /* scrim_low from design system */
+    background: rgba(0, 0, 0, 0.4);
   }
 `;
 
@@ -162,8 +146,6 @@ const BottomProtectionGradient = styled.div`
   left: 0;
   right: 0;
   height: 50%;
-  /* Design system tile.action protection gradient: linear gradient from bottom to top */
-  /* From base.50 (50% black) at bottom to base.0 (transparent) at 50% height */
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 0%,
@@ -174,7 +156,6 @@ const BottomProtectionGradient = styled.div`
   opacity: 0;
   transition: opacity var(--motion-duration-10, 100ms) var(--motion-easing-ease-out, cubic-bezier(0, 0, 0.34, 1));
   
-  /* Show gradient on hover to provide contrast for bottom actions */
   ${StyledTile}:hover &,
   ${StyledTile}.hover-state &,
   ${StyledTile}:active & {
@@ -249,7 +230,6 @@ const KebabMenuGradient = styled.div`
   opacity: 0;
   transition: opacity var(--motion-duration-10, 100ms) var(--motion-easing-ease-out, cubic-bezier(0, 0, 0.34, 1));
   
-  /* Show gradient on hover along with the x icon */
   ${StyledTile}:hover &,
   ${StyledTile}.hover-state &,
   ${StyledTile}:active & {
@@ -257,7 +237,7 @@ const KebabMenuGradient = styled.div`
   }
 `;
 
-const DismissButton = styled.button`
+const KebabButton = styled.button`
   position: absolute;
   top: 12px;
   right: 12px;
@@ -267,7 +247,7 @@ const DismissButton = styled.button`
   border: none;
   padding: 0;
   cursor: pointer;
-  z-index: 3;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,28 +272,141 @@ const DismissButton = styled.button`
   }
 `;
 
+/* Context Menu - Design System Compliant */
+const ContextMenuOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+`;
+
+const ContextMenu = styled.div`
+  position: absolute;
+  top: 44px;
+  right: 8px;
+  /* Fixed width - constant across all breakpoints, wide enough for longest text */
+  width: 240px;
+  background: var(--color-surface-high, #262626);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow: hidden;
+  padding: 8px 0;
+  animation: contextMenuFadeIn 150ms var(--motion-easing-ease-out, cubic-bezier(0, 0, 0.34, 1));
+  
+  @keyframes contextMenuFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+`;
+
+const ContextMenuItem = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  /* Fixed padding - constant across all breakpoints */
+  padding: 14px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Handset Sans UI', sans-serif;
+  font-weight: 400;
+  /* Fixed font size - constant across all breakpoints */
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: var(--color-general-text-high, #FFFFFF);
+  text-align: left;
+  white-space: nowrap;
+  transition: background var(--motion-duration-10, 100ms) var(--motion-easing-ease-out, cubic-bezier(0, 0, 0.34, 1));
+  
+  &:hover {
+    background: var(--color-action-neutral-fill-high, rgba(255, 255, 255, 0.12));
+  }
+  
+  &:active {
+    background: var(--color-action-neutral-fill-low, rgba(255, 255, 255, 0.06));
+  }
+  
+  img {
+    /* Fixed icon size - constant across all breakpoints */
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    opacity: 0.9;
+  }
+`;
+
 /**
- * Tile Component
+ * Tile23Kebab Component - 2:3 Portrait Tile with Kebab Menu
  * 
  * @param {Object} props
  * @param {string} props.image - Optional image URL for tile background
  * @param {boolean} props.selected - Show selected state
  * @param {boolean} props.isReplacement - Show replacement gradient color
  * @param {Function} props.onClick - Click handler
- * @param {Function} props.onDismiss - Dismiss/close button handler
+ * @param {Function} props.onRemove - Remove action handler (same as dismiss)
+ * @param {Function} props.onMoreInfo - More Info action handler
  * @param {Function} props.onMoreLikeThis - More Like This action handler
  * @param {Function} props.onSomethingElse - Something Else action handler
  */
-export function Tile({ 
+export function Tile23Kebab({ 
   image,
   selected = false,
   isReplacement = false,
   onClick,
-  onDismiss,
+  onRemove,
+  onMoreInfo,
   onMoreLikeThis,
   onSomethingElse,
   ...props 
 }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen]);
+
+  const handleKebabClick = (e) => {
+    e.stopPropagation();
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleRemove = (e) => {
+    e.stopPropagation();
+    setMenuOpen(false);
+    onRemove && onRemove(e);
+  };
+
+  const handleMoreInfo = (e) => {
+    e.stopPropagation();
+    setMenuOpen(false);
+    onMoreInfo && onMoreInfo(e);
+  };
+
   return (
     <StyledTile 
       selected={selected}
@@ -325,12 +418,30 @@ export function Tile({
         <TileOverlay className="tile-overlay" />
         <KebabMenuGradient />
         <BottomProtectionGradient />
-        <DismissButton onClick={(e) => {
-          e.stopPropagation();
-          onDismiss && onDismiss(e);
-        }}>
-          <img src="/icons/dismiss/regular.svg" alt="Dismiss" />
-        </DismissButton>
+        
+        <KebabButton 
+          onClick={handleKebabClick}
+          aria-label="More options"
+          aria-expanded={menuOpen}
+        >
+          <img src="/icons/more-options/regular.svg" alt="More options" />
+        </KebabButton>
+        
+        {menuOpen && (
+          <>
+            <ContextMenuOverlay onClick={() => setMenuOpen(false)} />
+            <ContextMenu ref={menuRef}>
+              <ContextMenuItem onClick={handleRemove}>
+                <img src="/icons/dismiss/regular.svg" alt="" />
+                <span>Remove from Your List</span>
+              </ContextMenuItem>
+              <ContextMenuItem onClick={handleMoreInfo}>
+                <img src="/icons/info/regular.svg" alt="" />
+                <span>More Info</span>
+              </ContextMenuItem>
+            </ContextMenu>
+          </>
+        )}
         
         <HoverActionsContainer>
           <ActionButton onClick={(e) => {
@@ -354,6 +465,5 @@ export function Tile({
   );
 }
 
-export default Tile;
-
+export default Tile23Kebab;
 

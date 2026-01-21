@@ -44,6 +44,9 @@ const TileContainer = styled.div`
     width: calc(var(--col-width) * 2 + 1 * 20px);
   }
   
+  /* Cap tile size on large screens to prevent oversized tiles */
+  max-width: 264px;
+  
   /* Premium slide reveal animation for new tiles emerging from seed tile */
   @keyframes elasticReveal {
     0% {

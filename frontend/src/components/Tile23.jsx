@@ -54,6 +54,9 @@ const StyledTile = styled.div`
     width: calc(var(--col-width) * 2 + 1 * 20px);
   }
   
+  /* Cap tile size on large screens to prevent oversized tiles */
+  max-width: 264px;
+  
   /* Square corners per design system - tiles have 0px border radius */
   border-radius: var(--border-corner-component-tile-standard, 0);
   

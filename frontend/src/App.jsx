@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from './theme/ThemeProvider';
-import { TileWithMetadata, Tile23WithMetadata, Rail, RemovalBanner } from './components';
+import { TileWithMetadata, Tile23WithMetadata, Tile23KebabWithMetadata, Rail, RemovalBanner } from './components';
 import api from './services/api';
 import './theme/fonts.css';
 
@@ -17,6 +17,20 @@ function App() {
     { id: 8, item_id: 'a939d96b-7ffb-4481-96f6-472838d104ca', title: 'Peacemaker', year: '2022', poster: 'https://images.cdn.prd.api.discomax.com/9_Jge/4QNKP7jtS0GEK3gYw.jpeg?w=200&f=png' },
     { id: 9, item_id: 'e90f1b95-4825-4f3d-bbe2-4cbc82dc7229', title: 'Looney Tunes Cartoons', year: '2020', poster: 'https://images.cdn.prd.api.discomax.com/uNQEg/tITc8il9w9ZOSNNFQ.jpeg?w=200&f=png' },
     { id: 10, item_id: 'a8484031-f244-4661-9fb7-0932bd1ba872', title: 'Succession', year: '2018', poster: 'https://images.cdn.prd.api.discomax.com/5NN29/_RzEWKbKrv09PLvng.jpeg?w=200&f=png' },
+  ]);
+
+  // Real titles from FF1000 dataset - kebab rail (2:3 tiles with kebab menu)
+  const [tilesKebabRail, setTilesKebabRail] = useState([
+    { id: 201, item_id: '4f6b4985-2dc9-4ab6-ac79-d60f0860b0ac', title: 'Game of Thrones', year: '2011', poster: 'https://images.cdn.prd.api.discomax.com/_tZfK/YmddU-Vwhc4FLvbNg.jpeg?w=200&f=png' },
+    { id: 202, item_id: '4f662560-7f52-4ad5-ae9b-f4b6517e4f39', title: 'Sex and the City', year: '2008', poster: 'https://images.cdn.prd.api.discomax.com/wwG99/R_ooaZQ-mvR6Vq2JA.jpeg?w=200&f=png' },
+    { id: 203, item_id: '05eee581-3112-4515-b17f-219ff6265ef8', title: 'A Minecraft Movie', year: '2025', poster: 'https://images.cdn.prd.api.discomax.com/2aAZy/VyWuFLYOz2ntadhLg.jpeg?w=200&f=png' },
+    { id: 204, item_id: '609d8b4c-f0a6-4a5d-b9d3-bb0f2e207efb', title: 'The Rehearsal', year: '2022', poster: 'https://images.cdn.prd.api.discomax.com/FdA1W/er1XNZjfVkChU7ICw.jpeg?w=200&f=png' },
+    { id: 205, item_id: '3deab668-d0a4-4a8d-9bc8-0952a0ad836e', title: 'Spirited Away', year: '2001', poster: 'https://images.cdn.prd.api.discomax.com/HIueU/w2IjBl4KO-qzyKdSg.jpeg?w=200&f=png' },
+    { id: 206, item_id: '4ffd33c9-e0d6-4cd6-bd13-34c266c79be0', title: 'Euphoria', year: '2019', poster: 'https://images.cdn.prd.api.discomax.com/tAti-/UBGd0lcnG_31c_-Tg.jpeg?w=200&f=png' },
+    { id: 207, item_id: '6c39354a-c52d-46d7-982c-b5d196988189', title: 'IT: Welcome To Derry', year: '2025', poster: 'https://images.cdn.prd.api.discomax.com/YVh7g/EhWIeZsx1iN7oCUqQ.jpeg?w=200&f=png' },
+    { id: 208, item_id: 'a939d96b-7ffb-4481-96f6-472838d104ca', title: 'Peacemaker', year: '2022', poster: 'https://images.cdn.prd.api.discomax.com/9_Jge/4QNKP7jtS0GEK3gYw.jpeg?w=200&f=png' },
+    { id: 209, item_id: 'e90f1b95-4825-4f3d-bbe2-4cbc82dc7229', title: 'Looney Tunes Cartoons', year: '2020', poster: 'https://images.cdn.prd.api.discomax.com/uNQEg/tITc8il9w9ZOSNNFQ.jpeg?w=200&f=png' },
+    { id: 210, item_id: 'a8484031-f244-4661-9fb7-0932bd1ba872', title: 'Succession', year: '2018', poster: 'https://images.cdn.prd.api.discomax.com/5NN29/_RzEWKbKrv09PLvng.jpeg?w=200&f=png' },
   ]);
 
   // Real titles from FF1000 dataset - second rail (2:3 tiles)
@@ -36,16 +50,21 @@ function App() {
   // Drag and drop state for Rail 1
   const [draggedIndexRail1, setDraggedIndexRail1] = useState(null);
 
+  // Drag and drop state for Kebab Rail
+  const [draggedIndexKebabRail, setDraggedIndexKebabRail] = useState(null);
+
   // Drag and drop state for Rail 2
   const [draggedIndexRail2, setDraggedIndexRail2] = useState(null);
 
   // Removed/replaced tiles state for showing banners
   // Each entry: { railId, id, title, index, tile, action: 'removed'|'replaced' }
   const [removedTilesRail1, setRemovedTilesRail1] = useState([]);
+  const [removedTilesKebabRail, setRemovedTilesKebabRail] = useState([]);
   const [removedTilesRail2, setRemovedTilesRail2] = useState([]);
 
   // Track dismissed/replaced item IDs to prevent them from surfacing again
   const [dismissedItemIdsRail1, setDismissedItemIdsRail1] = useState(new Set());
+  const [dismissedItemIdsKebabRail, setDismissedItemIdsKebabRail] = useState(new Set());
   const [dismissedItemIdsRail2, setDismissedItemIdsRail2] = useState(new Set());
 
   // Drag and drop handlers for Rail 1
@@ -77,6 +96,38 @@ function App() {
   };
 
   const handleDropRail1 = (index) => (e) => {
+    e.preventDefault();
+  };
+
+  // Drag and drop handlers for Kebab Rail
+  const handleDragStartKebabRail = (index) => (e) => {
+    setDraggedIndexKebabRail(index);
+    e.dataTransfer.effectAllowed = 'move';
+  };
+
+  const handleDragEndKebabRail = () => {
+    setDraggedIndexKebabRail(null);
+  };
+
+  const handleDragOverKebabRail = (index) => (e) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    
+    if (draggedIndexKebabRail === null || draggedIndexKebabRail === index) return;
+    
+    // Reorder tiles
+    setTilesKebabRail(prevTiles => {
+      const newTiles = [...prevTiles];
+      const draggedTile = newTiles[draggedIndexKebabRail];
+      newTiles.splice(draggedIndexKebabRail, 1);
+      newTiles.splice(index, 0, draggedTile);
+      return newTiles;
+    });
+    
+    setDraggedIndexKebabRail(index);
+  };
+
+  const handleDropKebabRail = (index) => (e) => {
     e.preventDefault();
   };
 
@@ -115,9 +166,9 @@ function App() {
   const handleMoreLikeThis = async (railId, id) => {
     console.log(`More Like This clicked on tile ${id} in rail ${railId}`);
     
-    const setTiles = railId === 1 ? setTilesRail1 : setTilesRail2;
-    const tiles = railId === 1 ? tilesRail1 : tilesRail2;
-    const dismissedItemIds = railId === 1 ? dismissedItemIdsRail1 : dismissedItemIdsRail2;
+    const setTiles = railId === 1 ? setTilesRail1 : railId === 'kebab' ? setTilesKebabRail : setTilesRail2;
+    const tiles = railId === 1 ? tilesRail1 : railId === 'kebab' ? tilesKebabRail : tilesRail2;
+    const dismissedItemIds = railId === 1 ? dismissedItemIdsRail1 : railId === 'kebab' ? dismissedItemIdsKebabRail : dismissedItemIdsRail2;
     
     // Find the seed tile
     const seedTile = tiles.find(tile => tile.id === id);
@@ -208,11 +259,11 @@ function App() {
   const handleSomethingElse = async (railId, id) => {
     console.log(`Something Else clicked on tile ${id} in rail ${railId}`);
     
-    const tiles = railId === 1 ? tilesRail1 : tilesRail2;
-    const setTiles = railId === 1 ? setTilesRail1 : setTilesRail2;
-    const setRemovedTiles = railId === 1 ? setRemovedTilesRail1 : setRemovedTilesRail2;
-    const dismissedItemIds = railId === 1 ? dismissedItemIdsRail1 : dismissedItemIdsRail2;
-    const setDismissedItemIds = railId === 1 ? setDismissedItemIdsRail1 : setDismissedItemIdsRail2;
+    const tiles = railId === 1 ? tilesRail1 : railId === 'kebab' ? tilesKebabRail : tilesRail2;
+    const setTiles = railId === 1 ? setTilesRail1 : railId === 'kebab' ? setTilesKebabRail : setTilesRail2;
+    const setRemovedTiles = railId === 1 ? setRemovedTilesRail1 : railId === 'kebab' ? setRemovedTilesKebabRail : setRemovedTilesRail2;
+    const dismissedItemIds = railId === 1 ? dismissedItemIdsRail1 : railId === 'kebab' ? dismissedItemIdsKebabRail : dismissedItemIdsRail2;
+    const setDismissedItemIds = railId === 1 ? setDismissedItemIdsRail1 : railId === 'kebab' ? setDismissedItemIdsKebabRail : setDismissedItemIdsRail2;
     
     // Find the tile index
     const tileIndex = tiles.findIndex(tile => tile.id === id);
@@ -413,10 +464,10 @@ function App() {
   const handleDismiss = (railId, id) => {
     console.log(`Dismiss clicked on tile ${id} in rail ${railId}`);
     
-    const tiles = railId === 1 ? tilesRail1 : tilesRail2;
-    const setTiles = railId === 1 ? setTilesRail1 : setTilesRail2;
-    const setRemovedTiles = railId === 1 ? setRemovedTilesRail1 : setRemovedTilesRail2;
-    const setDismissedItemIds = railId === 1 ? setDismissedItemIdsRail1 : setDismissedItemIdsRail2;
+    const tiles = railId === 1 ? tilesRail1 : railId === 'kebab' ? tilesKebabRail : tilesRail2;
+    const setTiles = railId === 1 ? setTilesRail1 : railId === 'kebab' ? setTilesKebabRail : setTilesRail2;
+    const setRemovedTiles = railId === 1 ? setRemovedTilesRail1 : railId === 'kebab' ? setRemovedTilesKebabRail : setRemovedTilesRail2;
+    const setDismissedItemIds = railId === 1 ? setDismissedItemIdsRail1 : railId === 'kebab' ? setDismissedItemIdsKebabRail : setDismissedItemIdsRail2;
     
     // Find the tile to remove
     const tileIndex = tiles.findIndex(tile => tile.id === id);
@@ -452,9 +503,9 @@ function App() {
   const handleUndo = (railId, removedTileData) => {
     console.log(`Undo clicked for tile ${removedTileData.id} in rail ${railId}`);
     
-    const setTiles = railId === 1 ? setTilesRail1 : setTilesRail2;
-    const setRemovedTiles = railId === 1 ? setRemovedTilesRail1 : setRemovedTilesRail2;
-    const setDismissedItemIds = railId === 1 ? setDismissedItemIdsRail1 : setDismissedItemIdsRail2;
+    const setTiles = railId === 1 ? setTilesRail1 : railId === 'kebab' ? setTilesKebabRail : setTilesRail2;
+    const setRemovedTiles = railId === 1 ? setRemovedTilesRail1 : railId === 'kebab' ? setRemovedTilesKebabRail : setRemovedTilesRail2;
+    const setDismissedItemIds = railId === 1 ? setDismissedItemIdsRail1 : railId === 'kebab' ? setDismissedItemIdsKebabRail : setDismissedItemIdsRail2;
     
     // Remove the restored tile's item_id from dismissed list
     if (removedTileData.tile?.item_id) {
@@ -500,15 +551,23 @@ function App() {
   };
 
   const handleBannerDismiss = (railId, id) => {
-    const setRemovedTiles = railId === 1 ? setRemovedTilesRail1 : setRemovedTilesRail2;
+    const setRemovedTiles = railId === 1 ? setRemovedTilesRail1 : railId === 'kebab' ? setRemovedTilesKebabRail : setRemovedTilesRail2;
     
     // Remove from removed tiles list when banner auto-dismisses
     setRemovedTiles(prev => prev.filter(t => t.id !== id));
   };
 
+  // Handler for "More Info" action - navigates to detail page
+  const handleMoreInfo = (railId, tile) => {
+    console.log(`More Info clicked for tile: ${tile.title} (${tile.item_id})`);
+    // Navigate to detail page - for now, open in new tab with item info
+    const detailUrl = `https://play.max.com/show/${tile.item_id || tile.id}`;
+    window.open(detailUrl, '_blank');
+  };
+
   // Helper to render a tile with potential banner overlay
   const renderTileWithBanner = (tile, index, railId, TileComponent, handlers) => {
-    const removedTiles = railId === 1 ? removedTilesRail1 : removedTilesRail2;
+    const removedTiles = railId === 1 ? removedTilesRail1 : railId === 'kebab' ? removedTilesKebabRail : removedTilesRail2;
     // Find banner by matching tile ID (for replaced tiles) or by index (for removed tiles)
     const banner = removedTiles.find(rt => rt.id === tile.id || rt.index === index);
     
@@ -576,6 +635,49 @@ function App() {
             )}
           </Rail>
         )}
+        
+        <Rail title="Your List">
+          {tilesKebabRail.map((tile, index) => (
+            <div key={tile.id} style={{ position: 'relative' }}>
+              <Tile23KebabWithMetadata
+                image={tile.poster}
+                title={tile.title}
+                subtitle={tile.year}
+                isNew={tile.isNew}
+                isReplacement={tile.isReplacement}
+                isRestored={tile.isRestored}
+                animationDelay={tile.animationDelay}
+                draggable={true}
+                isDragging={draggedIndexKebabRail === index}
+                onDragStart={handleDragStartKebabRail(index)}
+                onDragEnd={handleDragEndKebabRail}
+                onDragOver={handleDragOverKebabRail(index)}
+                onDrop={handleDropKebabRail(index)}
+                onMoreLikeThis={() => handleMoreLikeThis('kebab', tile.id)}
+                onSomethingElse={() => handleSomethingElse('kebab', tile.id)}
+                onRemove={() => handleDismiss('kebab', tile.id)}
+                onMoreInfo={() => handleMoreInfo('kebab', tile)}
+              />
+              {removedTilesKebabRail.find(rt => rt.id === tile.id || rt.index === index) && (
+                <div style={{
+                  position: 'absolute',
+                  top: 'var(--space-vertical-near-sm, 4px)',
+                  left: 'var(--space-horizontal-near-sm, 4px)',
+                  right: 'var(--space-horizontal-near-sm, 4px)',
+                  zIndex: 10,
+                  pointerEvents: 'auto'
+                }}>
+                  <RemovalBanner
+                    title={removedTilesKebabRail.find(rt => rt.id === tile.id || rt.index === index)?.title}
+                    action={removedTilesKebabRail.find(rt => rt.id === tile.id || rt.index === index)?.action}
+                    onUndo={() => handleUndo('kebab', removedTilesKebabRail.find(rt => rt.id === tile.id || rt.index === index))}
+                    onDismiss={() => handleBannerDismiss('kebab', removedTilesKebabRail.find(rt => rt.id === tile.id || rt.index === index)?.id)}
+                  />
+                </div>
+              )}
+            </div>
+          ))}
+        </Rail>
         
         <Rail title="Your List">
           {tilesRail2.map((tile, index) => 
