@@ -159,22 +159,21 @@ class RecommendationEngine:
         self, 
         current_title: str, 
         current_item_id: Optional[str] = None, 
-        diversity_level: int = 1,
+        diversity_level: int = 1,  # Kept for API compatibility, but ignored
         exclude_item_ids: Optional[List[str]] = None,
         exclude_titles: Optional[List[str]] = None,
         limit: int = 1
     ) -> Optional[Dict]:
         """
-        Get a different recommendation using the similarity model (optimized - single API call).
+        Get a DIFFERENT recommendation - prioritizes LEAST similar items first.
         
-        Uses the "tail" of similarity results - items that are related but not too similar.
-        This provides faster response (~50% faster) while maintaining relevance.
+        Uses "least similar first" strategy: tries the tail of similarity results first,
+        then progressively falls back to more similar items only if needed.
         
         Args:
             current_title: The current title to replace
             current_item_id: Optional item ID if known
-            diversity_level: How diverse the recommendation should be (1-10+)
-                            Higher values skip more top-similar items for greater variety
+            diversity_level: (ignored) Kept for API compatibility
             exclude_item_ids: Item IDs to exclude from recommendations
             exclude_titles: Titles to exclude from recommendations
             limit: Number of recommendations to return (typically 1 for replacement)
@@ -194,9 +193,7 @@ class RecommendationEngine:
             logger.warning(f"No item_id provided for '{current_title}', using fallback")
             return self._fallback_something_else(current_title)
         
-        # OPTIMIZED: Single API call to similarity model
-        # Request enough items to have a good pool after filtering
-        # Results are ordered by similarity (most similar first)
+        # Single API call to similarity model - results ordered most similar first
         try:
             recommendations = self._call_predict("similarity", [current_item_id], limit=100)
         except Exception as e:
@@ -219,47 +216,41 @@ class RecommendationEngine:
                 r["title"].lower() not in exclude_titles_lower)
         ]
         
-        logger.info(f"After filtering: {len(filtered)} recommendations from {len(recommendations)}")
+        logger.info(f"After filtering: {len(filtered)} valid items from {len(recommendations)}")
         
         if not filtered:
             logger.warning("No valid recommendations found after filtering")
             return self._fallback_something_else(current_title)
         
-        # Determine how many top items to skip based on diversity level
-        # Higher diversity = skip more similar items = more "different" results
-        # Level 1-2: Skip top 8, pick from 8-40 (somewhat different)
-        # Level 3-4: Skip top 15, pick from 15-50 (more different)
-        # Level 5-6: Skip top 25, pick from 25-60 (quite different)
-        # Level 7+: Skip top 35, pick from 35-70 (very different)
-        if diversity_level <= 2:
-            skip_top = 8
-            pick_range_end = 40
-        elif diversity_level <= 4:
-            skip_top = 15
-            pick_range_end = 50
-        elif diversity_level <= 6:
-            skip_top = 25
-            pick_range_end = 60
-        else:
-            skip_top = 35
-            pick_range_end = 70
+        # "LEAST SIMILAR FIRST" strategy
+        # Try progressively more similar ranges until we find a valid pick
+        # This ensures "Something Else" feels genuinely DIFFERENT
+        ranges_to_try = [
+            (60, 100),  # Least similar - try first
+            (40, 60),   # Still quite different
+            (20, 40),   # Moderately different  
+            (5, 20),    # Getting similar
+            (0, 5),     # Last resort before hardcoded fallback
+        ]
         
-        # Adjust indices to available results
-        start_idx = min(skip_top, len(filtered) - 1)
-        end_idx = min(pick_range_end, len(filtered))
+        for start, end in ranges_to_try:
+            # Adjust to actual available items
+            if len(filtered) <= start:
+                continue  # Not enough items for this range
+                
+            actual_start = start
+            actual_end = min(end, len(filtered))
+            
+            if actual_end > actual_start:
+                candidates = filtered[actual_start:actual_end]
+                if candidates:
+                    choice = random.choice(candidates)
+                    logger.info(f"Selected '{choice['title']}' as 'Something Else' for '{current_title}' (range: {actual_start}-{actual_end}, least-similar-first)")
+                    return choice
         
-        # Pick randomly from the "different but related" range
-        if end_idx > start_idx:
-            choice = random.choice(filtered[start_idx:end_idx])
-        elif len(filtered) > 0:
-            # Fallback: pick from whatever we have (skip at least top 3 if possible)
-            fallback_start = min(3, len(filtered) - 1)
-            choice = random.choice(filtered[fallback_start:])
-        else:
-            return self._fallback_something_else(current_title)
-        
-        logger.info(f"Selected '{choice['title']}' as 'Something Else' for '{current_title}' (diversity: {diversity_level}, range: {start_idx}-{end_idx})")
-        return choice
+        # Absolute last resort: hardcoded fallback (no poster)
+        logger.warning(f"No valid items in any range for '{current_title}', using hardcoded fallback")
+        return self._fallback_something_else(current_title)
     
     def _fallback_more_like_this(self, seed_title: str, limit: int = 2) -> List[Dict]:
         """Fallback when ML service is unavailable"""
