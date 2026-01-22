@@ -475,6 +475,10 @@ function App() {
     
     if (!tileToRemove) return;
     
+    // Check if this is the last tile - banner should appear on the new last tile (to the left)
+    const isLastTile = tileIndex === tiles.length - 1;
+    const bannerIndex = isLastTile && tileIndex > 0 ? tileIndex - 1 : tileIndex;
+    
     // Add dismissed tile to dismissed list to prevent it from surfacing again
     if (tileToRemove.item_id) {
       setDismissedItemIds(prev => new Set([...prev, tileToRemove.item_id]));
@@ -491,14 +495,14 @@ function App() {
     setTimeout(() => {
       // Store the removed tile info for showing banner
       setRemovedTiles(prev => {
-        // Filter out any previous banners at this tile index
-        const filteredBanners = prev.filter(banner => banner.index !== tileIndex);
+        // Filter out any previous banners at this banner index
+        const filteredBanners = prev.filter(banner => banner.index !== bannerIndex);
         
         // Add the new banner for the most recent action
         return [...filteredBanners, {
           id: tileToRemove.id,
           title: tileToRemove.title,
-          index: tileIndex,
+          index: bannerIndex, // Use bannerIndex for last tile special case
           tile: tileToRemove, // Store full tile data for undo
           action: 'removed'
         }];
@@ -506,7 +510,7 @@ function App() {
       
       // Remove the tile from the array
       setTiles(prevTiles => prevTiles.filter(tile => tile.id !== id));
-    }, 200); // Match animation duration
+    }, 300); // Match collapse animation duration
   };
 
   const handleUndo = (railId, removedTileData) => {
@@ -526,12 +530,26 @@ function App() {
     }
     
     if (removedTileData.action === 'removed') {
-      // Restore the tile at its original position (insert back)
+      // Restore the tile at its original position (insert back with animation)
+      const restoredTile = {
+        ...removedTileData.tile,
+        isRestored: true
+      };
+      
       setTiles(prevTiles => {
         const newTiles = [...prevTiles];
-        newTiles.splice(removedTileData.index, 0, removedTileData.tile);
+        newTiles.splice(removedTileData.index, 0, restoredTile);
         return newTiles;
       });
+      
+      // Remove the isRestored flag after animation completes
+      setTimeout(() => {
+        setTiles(prevTiles => 
+          prevTiles.map(tile => 
+            tile.id === restoredTile.id ? { ...tile, isRestored: false } : tile
+          )
+        );
+      }, 300);
     } else if (removedTileData.action === 'replaced') {
       // Replace the new tile back with the original tile (with subtle restore animation)
       const restoredTile = {
@@ -552,7 +570,7 @@ function App() {
             tile.id === restoredTile.id ? { ...tile, isRestored: false } : tile
           )
         );
-      }, 400);
+      }, 300);
     }
     
     // Remove from removed tiles list
@@ -605,8 +623,8 @@ function App() {
           <div style={{
             position: 'absolute',
             top: 'var(--space-vertical-near-sm, 4px)',
-            left: 'var(--space-horizontal-near-sm, 4px)',
-            right: 'var(--space-horizontal-near-sm, 4px)',
+            left: 'var(--space-horizontal-near-md, 8px)',
+            right: 'var(--space-horizontal-near-md, 8px)',
             zIndex: 10,
             pointerEvents: 'auto'
           }}>
@@ -673,8 +691,8 @@ function App() {
                 <div style={{
                   position: 'absolute',
                   top: 'var(--space-vertical-near-sm, 4px)',
-                  left: 'var(--space-horizontal-near-sm, 4px)',
-                  right: 'var(--space-horizontal-near-sm, 4px)',
+                  left: 'var(--space-horizontal-near-md, 8px)',
+                  right: 'var(--space-horizontal-near-md, 8px)',
                   zIndex: 10,
                   pointerEvents: 'auto'
                 }}>

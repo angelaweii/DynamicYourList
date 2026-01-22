@@ -75,36 +75,39 @@ const TileContainer = styled.div`
     }
   }
   
-  /* Very subtle animation for restored tiles (undo replacement) */
+  /* Expand + restore animation for undo (reverse of shrinkRemove) */
   @keyframes subtleRestore {
     0% {
-      opacity: 0.85;
+      opacity: 0;
+      transform: scale(0.5);
+      max-width: 0;
     }
     100% {
       opacity: 1;
+      transform: scale(1);
+      max-width: 264px; /* Must match tile's natural max-width to avoid snap */
     }
   }
   
-  /* Quick shrink animation for tile removal */
+  /* Shrink + collapse animation for tile removal (collapses space so siblings slide) */
   @keyframes shrinkRemove {
     0% {
       opacity: 1;
       transform: scale(1);
-    }
-    80% {
-      opacity: 0.3;
-      transform: scale(0.75);
+      max-width: 264px; /* Must match tile's natural max-width */
     }
     100% {
       opacity: 0;
-      transform: scale(0.75);
+      transform: scale(0.5);
+      max-width: 0;
     }
   }
   
   ${props => props.$isRemoving && `
-    animation: shrinkRemove 200ms var(--motion-easing-ease-in, cubic-bezier(0.66, 0, 1, 1));
+    animation: shrinkRemove 300ms cubic-bezier(0.4, 0, 0.2, 1);
     animation-fill-mode: forwards;
     pointer-events: none;
+    overflow: hidden;
   `}
   
   ${props => props.$isNew && `
@@ -119,8 +122,9 @@ const TileContainer = styled.div`
   `}
   
   ${props => props.$isRestored && `
-    animation: subtleRestore var(--motion-duration-40, 400ms) var(--motion-easing-ease-out, cubic-bezier(0, 0, 0.34, 1));
+    animation: subtleRestore 300ms cubic-bezier(0.4, 0, 0.2, 1);
     animation-fill-mode: both;
+    overflow: hidden;
   `}
 `;
 

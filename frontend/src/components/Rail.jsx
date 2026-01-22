@@ -124,56 +124,86 @@ const RailScrollContainer = styled.div`
   padding-bottom: 6px;
   
   /* Responsive padding matching page margins per breakpoint */
-  /* BP-01 (0-439px): margin 20px, gutter 10px */
+  /* Note: gap removed - using margins on tiles for smooth shift animation */
+  /* BP-01 (0-439px): margin 20px */
   padding-left: 20px;
   padding-right: 20px;
-  gap: 10px;
   
-  /* BP-02 (440-599px): margin 20px, gutter 10px */
+  /* BP-02 (440-599px): margin 20px */
   @media (min-width: 440px) {
     padding-left: 20px;
     padding-right: 20px;
-    gap: 10px;
   }
   
-  /* BP-03 (600-799px): margin 24px, gutter 8px */
+  /* BP-03 (600-799px): margin 24px */
   @media (min-width: 600px) {
     padding-left: 24px;
     padding-right: 24px;
-    gap: 8px;
   }
   
-  /* BP-04 (800-1099px): margin 36px, gutter 12px */
+  /* BP-04 (800-1099px): margin 36px */
   @media (min-width: 800px) {
     padding-left: 36px;
     padding-right: 36px;
-    gap: 12px;
   }
   
-  /* BP-05 (1100-1399px): margin 48px, gutter 16px */
+  /* BP-05 (1100-1399px): margin 48px */
   @media (min-width: 1100px) {
     padding-left: 48px;
     padding-right: 48px;
-    gap: 16px;
   }
   
-  /* BP-06 (1400-1799px): margin 60px, gutter 20px */
+  /* BP-06 (1400-1799px): margin 60px */
   @media (min-width: 1400px) {
     padding-left: 60px;
     padding-right: 60px;
-    gap: 20px;
   }
   
-  /* BP-07 (1800px+): margin 60px, gutter 20px */
+  /* BP-07 (1800px+): margin 60px */
   @media (min-width: 1800px) {
     padding-left: 60px;
     padding-right: 60px;
-    gap: 20px;
   }
 `;
 
 const TileWrapper = styled.div`
   flex-shrink: 0;
+  /* Smooth slide animation - dramatic slow-down at end */
+  transition: transform 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Responsive gutter spacing (for banner positioning) */
+  /* BP-01 (0-439px): gutter 10px */
+  margin-right: 10px;
+  
+  /* BP-02 (440-599px): gutter 10px */
+  @media (min-width: 440px) {
+    margin-right: 10px;
+  }
+  
+  /* BP-03 (600-799px): gutter 8px */
+  @media (min-width: 600px) {
+    margin-right: 8px;
+  }
+  
+  /* BP-04 (800-1099px): gutter 12px */
+  @media (min-width: 800px) {
+    margin-right: 12px;
+  }
+  
+  /* BP-05 (1100-1399px): gutter 16px */
+  @media (min-width: 1100px) {
+    margin-right: 16px;
+  }
+  
+  /* BP-06 (1400-1799px): gutter 20px */
+  @media (min-width: 1400px) {
+    margin-right: 20px;
+  }
+  
+  /* BP-07 (1800px+): gutter 20px */
+  @media (min-width: 1800px) {
+    margin-right: 20px;
+  }
 `;
 
 /**
