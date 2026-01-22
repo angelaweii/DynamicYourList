@@ -193,11 +193,12 @@ class RecommendationEngine:
             logger.warning(f"No item_id provided for '{current_title}', using fallback")
             return self._fallback_something_else(current_title)
         
-        # Single API call to similarity model - results ordered most similar first
+        # Use NFM (Not For Me) model - results ordered by "most different" first
+        # NFM inverts the signal, so top results are maximally different from seed
         try:
-            recommendations = self._call_predict("similarity", [current_item_id], limit=130)
+            recommendations = self._call_predict("nfm", [current_item_id], limit=130)
         except Exception as e:
-            logger.error(f"Failed to get similarity results: {e}")
+            logger.error(f"Failed to get NFM results: {e}")
             return self._fallback_something_else(current_title)
         
         if not recommendations:
@@ -216,21 +217,22 @@ class RecommendationEngine:
                 r["title"].lower() not in exclude_titles_lower)
         ]
         
-        logger.info(f"After filtering: {len(filtered)} valid items from {len(recommendations)}")
+        logger.info(f"After filtering: {len(filtered)} valid items from {len(recommendations)} (NFM model)")
         
         if not filtered:
             logger.warning("No valid recommendations found after filtering")
             return self._fallback_something_else(current_title)
         
-        # "LEAST SIMILAR FIRST" strategy
-        # Try progressively more similar ranges until we find a valid pick
-        # This ensures "Something Else" feels genuinely DIFFERENT
+        # NFM "MIDDLE RANGE" strategy
+        # NFM top results = most extremely different (opposite of seed)
+        # We want MODERATELY different, so pick from the middle range
+        # This gives variety without being jarring/random
         ranges_to_try = [
-            (110, 130),  # Least similar - try first
-            (80, 110),   # Still quite different
-            (50, 80),    # Moderately different  
-            (20, 50),    # Getting similar
-            (0, 20),     # Last resort before hardcoded fallback
+            (40, 80),   # Moderately different - sweet spot, try first
+            (20, 40),   # A bit more different
+            (80, 110),  # Getting closer to seed
+            (10, 20),   # Quite different
+            (0, 10),    # Most extreme different (last resort)
         ]
         
         for start, end in ranges_to_try:
@@ -245,7 +247,7 @@ class RecommendationEngine:
                 candidates = filtered[actual_start:actual_end]
                 if candidates:
                     choice = random.choice(candidates)
-                    logger.info(f"Selected '{choice['title']}' as 'Something Else' for '{current_title}' (range: {actual_start}-{actual_end}, least-similar-first)")
+                    logger.info(f"Selected '{choice['title']}' as 'Something Else' for '{current_title}' (NFM range: {actual_start}-{actual_end})")
                     return choice
         
         # Absolute last resort: hardcoded fallback (no poster)
