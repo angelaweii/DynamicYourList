@@ -551,10 +551,10 @@ function App() {
         );
       }, 300);
     } else if (removedTileData.action === 'replaced') {
-      // Replace the new tile back with the original tile (with subtle restore animation)
+      // Replace the new tile back with the original tile (with same crossfade animation as Something Else)
       const restoredTile = {
         ...removedTileData.tile,
-        isRestored: true
+        isReplacement: true // Use same animation as Something Else
       };
       
       setTiles(prevTiles => {
@@ -563,14 +563,7 @@ function App() {
         return newTiles;
       });
       
-      // Remove the isRestored flag after animation completes
-      setTimeout(() => {
-        setTiles(prevTiles => 
-          prevTiles.map(tile => 
-            tile.id === restoredTile.id ? { ...tile, isRestored: false } : tile
-          )
-        );
-      }, 300);
+      // Note: isReplacement flag stays on to maintain visual consistency
     }
     
     // Remove from removed tiles list

@@ -67,7 +67,7 @@ const TileContainer = styled.div`
     }
     50% {
       opacity: 0.5;
-      transform: scale(0.75);
+      transform: scale(0.85);
     }
     100% {
       opacity: 1;
