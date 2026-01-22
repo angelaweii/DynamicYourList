@@ -85,6 +85,24 @@ const TileContainer = styled.div`
     }
   }
   
+  /* Quick shrink animation for tile removal */
+  @keyframes shrinkRemove {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+  }
+  
+  ${props => props.$isRemoving && `
+    animation: shrinkRemove 200ms var(--motion-easing-ease-in, cubic-bezier(0.66, 0, 1, 1));
+    animation-fill-mode: forwards;
+    pointer-events: none;
+  `}
+  
   ${props => props.$isNew && `
     animation: elasticReveal var(--motion-duration-40, 400ms) var(--motion-easing-ease-in-out, cubic-bezier(0.66, 0, 0.34, 1));
     animation-delay: ${props.$animationDelay || '0ms'};
@@ -204,6 +222,7 @@ const MetadataContainer = styled.div`
  * @param {boolean} props.isNew - Trigger slide-in animation for newly added tiles
  * @param {boolean} props.isReplacement - Trigger cross-dissolve animation for replaced tiles
  * @param {boolean} props.isRestored - Trigger subtle animation for restored tiles (undo)
+ * @param {boolean} props.isRemoving - Trigger shrink animation before removal
  * @param {string} props.animationDelay - Delay before animation starts
  * @param {boolean} props.draggable - Enable drag and drop
  * @param {boolean} props.isDragging - Currently being dragged
@@ -224,6 +243,7 @@ export function Tile23WithMetadata({
   isNew = false,
   isReplacement = false,
   isRestored = false,
+  isRemoving = false,
   animationDelay = '0ms',
   draggable = false,
   isDragging = false,
@@ -242,6 +262,7 @@ export function Tile23WithMetadata({
       $isNew={isNew}
       $isReplacement={isReplacement}
       $isRestored={isRestored}
+      $isRemoving={isRemoving}
       $animationDelay={animationDelay}
       $isDragging={isDragging}
       draggable={draggable}

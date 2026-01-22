@@ -480,24 +480,33 @@ function App() {
       setDismissedItemIds(prev => new Set([...prev, tileToRemove.item_id]));
     }
     
-    // Store the removed tile info for showing banner
-    // Remove any existing banner at this index to ensure only the most recent action shows
-    setRemovedTiles(prev => {
-      // Filter out any previous banners at this tile index
-      const filteredBanners = prev.filter(banner => banner.index !== tileIndex);
-      
-      // Add the new banner for the most recent action
-      return [...filteredBanners, {
-        id: tileToRemove.id,
-        title: tileToRemove.title,
-        index: tileIndex,
-        tile: tileToRemove, // Store full tile data for undo
-        action: 'removed'
-      }];
-    });
+    // Step 1: Start shrink animation
+    setTiles(prevTiles => 
+      prevTiles.map(tile => 
+        tile.id === id ? { ...tile, isRemoving: true } : tile
+      )
+    );
     
-    // Remove the tile from the array
-    setTiles(prevTiles => prevTiles.filter(tile => tile.id !== id));
+    // Step 2: After animation completes (200ms), remove tile and show banner
+    setTimeout(() => {
+      // Store the removed tile info for showing banner
+      setRemovedTiles(prev => {
+        // Filter out any previous banners at this tile index
+        const filteredBanners = prev.filter(banner => banner.index !== tileIndex);
+        
+        // Add the new banner for the most recent action
+        return [...filteredBanners, {
+          id: tileToRemove.id,
+          title: tileToRemove.title,
+          index: tileIndex,
+          tile: tileToRemove, // Store full tile data for undo
+          action: 'removed'
+        }];
+      });
+      
+      // Remove the tile from the array
+      setTiles(prevTiles => prevTiles.filter(tile => tile.id !== id));
+    }, 200); // Match animation duration
   };
 
   const handleUndo = (railId, removedTileData) => {
@@ -580,6 +589,7 @@ function App() {
           isNew={tile.isNew}
           isReplacement={tile.isReplacement}
           isRestored={tile.isRestored}
+          isRemoving={tile.isRemoving}
           animationDelay={tile.animationDelay}
           draggable={true}
           isDragging={handlers.isDragging}
