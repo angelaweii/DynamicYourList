@@ -51,7 +51,7 @@ const TileContainer = styled.div`
   @keyframes elasticReveal {
     0% {
       opacity: 0;
-      transform: translateX(-40px) scale(0.7);
+      transform: translateX(-40px) scale(0.45);
     }
     100% {
       opacity: 1;
@@ -67,7 +67,7 @@ const TileContainer = styled.div`
     }
     50% {
       opacity: 0.2;
-      transform: scale(0.7);
+      transform: scale(0.6);
     }
     100% {
       opacity: 1;
