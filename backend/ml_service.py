@@ -195,7 +195,7 @@ class RecommendationEngine:
         
         # Single API call to similarity model - results ordered most similar first
         try:
-            recommendations = self._call_predict("similarity", [current_item_id], limit=100)
+            recommendations = self._call_predict("similarity", [current_item_id], limit=130)
         except Exception as e:
             logger.error(f"Failed to get similarity results: {e}")
             return self._fallback_something_else(current_title)
@@ -226,11 +226,11 @@ class RecommendationEngine:
         # Try progressively more similar ranges until we find a valid pick
         # This ensures "Something Else" feels genuinely DIFFERENT
         ranges_to_try = [
-            (60, 100),  # Least similar - try first
-            (40, 60),   # Still quite different
-            (20, 40),   # Moderately different  
-            (5, 20),    # Getting similar
-            (0, 5),     # Last resort before hardcoded fallback
+            (80, 130),  # Least similar - try first
+            (50, 80),   # Still quite different
+            (25, 50),   # Moderately different  
+            (8, 25),    # Getting similar
+            (0, 8),     # Last resort before hardcoded fallback
         ]
         
         for start, end in ranges_to_try:
