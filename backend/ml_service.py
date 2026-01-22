@@ -226,11 +226,11 @@ class RecommendationEngine:
         # Try progressively more similar ranges until we find a valid pick
         # This ensures "Something Else" feels genuinely DIFFERENT
         ranges_to_try = [
-            (80, 130),  # Least similar - try first
-            (50, 80),   # Still quite different
-            (25, 50),   # Moderately different  
-            (8, 25),    # Getting similar
-            (0, 8),     # Last resort before hardcoded fallback
+            (110, 130),  # Least similar - try first
+            (80, 110),   # Still quite different
+            (50, 80),    # Moderately different  
+            (20, 50),    # Getting similar
+            (0, 20),     # Last resort before hardcoded fallback
         ]
         
         for start, end in ranges_to_try:
