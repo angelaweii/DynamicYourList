@@ -47,11 +47,11 @@ const TileContainer = styled.div`
   /* Cap tile size on large screens to prevent oversized tiles */
   max-width: 264px;
   
-  /* Premium slide reveal animation for new tiles emerging from seed tile */
+  /* Premium slide reveal animation for new tiles emerging from seed tile (More Like This) */
   @keyframes elasticReveal {
     0% {
       opacity: 0;
-      transform: translateX(-40px) scale(0.95);
+      transform: translateX(-40px) scale(0.8);
     }
     100% {
       opacity: 1;
@@ -59,15 +59,15 @@ const TileContainer = styled.div`
     }
   }
   
-  /* Cross-dissolve animation for tile replacement - embodies refresh/swap */
+  /* Cross-dissolve animation for tile replacement (Something Else) - dramatic shrink/grow */
   @keyframes replaceCrossfade {
     0% {
       opacity: 1;
       transform: scale(1);
     }
     50% {
-      opacity: 0.3;
-      transform: scale(0.97);
+      opacity: 0.2;
+      transform: scale(0.85);
     }
     100% {
       opacity: 1;
