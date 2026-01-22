@@ -51,7 +51,7 @@ const TileContainer = styled.div`
   @keyframes elasticReveal {
     0% {
       opacity: 0;
-      transform: translateX(-40px) scale(0.45);
+      transform: translateX(-40px) scale(0.7);
     }
     100% {
       opacity: 1;
@@ -59,15 +59,15 @@ const TileContainer = styled.div`
     }
   }
   
-  /* Cross-dissolve animation for tile replacement (Something Else) - dramatic shrink/grow */
+  /* Cross-dissolve animation for tile replacement (Something Else) */
   @keyframes replaceCrossfade {
     0% {
       opacity: 1;
       transform: scale(1);
     }
     50% {
-      opacity: 0.2;
-      transform: scale(0.6);
+      opacity: 0.5;
+      transform: scale(0.75);
     }
     100% {
       opacity: 1;
@@ -93,7 +93,7 @@ const TileContainer = styled.div`
     }
     100% {
       opacity: 0;
-      transform: scale(0.85);
+      transform: scale(0.75);
     }
   }
   
@@ -110,7 +110,7 @@ const TileContainer = styled.div`
   `}
   
   ${props => props.$isReplacement && `
-    animation: replaceCrossfade var(--motion-duration-40, 400ms) var(--motion-easing-ease-in-out, cubic-bezier(0.66, 0, 0.34, 1));
+    animation: replaceCrossfade 380ms var(--motion-easing-ease-in-out, cubic-bezier(0.66, 0, 0.34, 1));
     animation-fill-mode: both;
   `}
   

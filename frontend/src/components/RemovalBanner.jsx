@@ -120,13 +120,12 @@ export function RemovalBanner({
     }, 300);
   };
 
-  const actionText = action === 'replaced' ? 'Replaced' : 'Removed';
-  const suffixText = action === 'replaced' ? '' : ' from Your List';
+  const bannerText = action === 'replaced' ? 'Replaced title' : 'Removed title from Your List';
 
   return (
     <BannerContainer $isExiting={isExiting}>
       <BannerText>
-        {actionText} <BannerTitle>{title}</BannerTitle>{suffixText}
+        {bannerText}
       </BannerText>
       <UndoButton onClick={handleUndo}>
         Undo

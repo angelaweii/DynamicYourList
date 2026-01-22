@@ -656,6 +656,7 @@ function App() {
                 isNew={tile.isNew}
                 isReplacement={tile.isReplacement}
                 isRestored={tile.isRestored}
+                isRemoving={tile.isRemoving}
                 animationDelay={tile.animationDelay}
                 draggable={true}
                 isDragging={draggedIndexKebabRail === index}
