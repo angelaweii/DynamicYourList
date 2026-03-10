@@ -116,6 +116,11 @@ def read_root():
         "brand": tokens.brand
     }
 
+@app.get("/ping")
+def ping():
+    """Minimal keep-alive endpoint for cron jobs"""
+    return "ok"
+
 @app.get("/api/health")
 def health_check():
     """Health check endpoint"""

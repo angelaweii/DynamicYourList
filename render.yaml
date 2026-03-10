@@ -8,3 +8,15 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.0
 
+  - type: cron
+    name: keep-backend-warm
+    runtime: python
+    schedule: "*/14 * * * *"
+    buildCommand: echo "ready"
+    startCommand: >-
+      python -c "
+      import urllib.request, sys;
+      r = urllib.request.urlopen('https://dynamicyourlist.onrender.com/ping');
+      sys.exit(0 if r.status == 200 else 1)
+      "
+
