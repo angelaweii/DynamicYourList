@@ -66,6 +66,15 @@ For real ML-powered recommendations with poster images:
 3. Add: `VITE_API_URL` = `https://your-backend-url.onrender.com`
 4. Redeploy from the Deployments tab
 
+## Preview Password
+
+The frontend is gated by a universal password prompt.
+
+- **Local dev**: set `VITE_PREVIEW_PASSWORD` in `frontend/.env.local` (already created; ignored by git)
+- **Vercel**: go to Settings → Environment Variables and add `VITE_PREVIEW_PASSWORD` with your chosen value, then redeploy
+- Changing the password requires a redeploy (Vite bakes `VITE_*` values at build time)
+- `sessionStorage` is used to persist the unlock — the prompt will reappear when the browser tab is closed
+
 ## Update CORS in Backend
 
 The backend needs to allow requests from your Vercel domain. This is already configured to accept all origins in development, but you may want to restrict it in production.

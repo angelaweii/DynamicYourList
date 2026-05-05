@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from './theme/ThemeProvider';
 import { TileWithMetadata, Tile23WithMetadata, Tile23KebabWithMetadata, Rail, RemovalBanner } from './components';
+import { PasswordGate } from './components/PasswordGate';
 import api from './services/api';
 import './theme/fonts.css';
 
 function App() {
+  const [unlocked, setUnlocked] = useState(
+    () => sessionStorage.getItem('unlocked') === '1'
+  );
+
+  if (!unlocked) return <PasswordGate onUnlock={() => setUnlocked(true)} />;
   // Real titles from FF1000 dataset - first rail (16:9 tiles)
   const [tilesRail1, setTilesRail1] = useState([
     { id: 1, item_id: '4f6b4985-2dc9-4ab6-ac79-d60f0860b0ac', title: 'Game of Thrones', year: '2011', poster: 'https://images.cdn.prd.api.discomax.com/_tZfK/YmddU-Vwhc4FLvbNg.jpeg?w=200&f=png' },
